@@ -1,6 +1,18 @@
 #summary Reporting issues with the Open DELTA software
 
+This development is being funded by the Atlas of Living Australia.  The Atlas of Living Australia is an initiative to improve access to essential information on Australia’s biodiversity by providing tools for researchers and others to access, combine and map data on Australian species. The Atlas project is a partnership between the Commonwealth Scientific and Industrial Research Organisation (CSIRO), the Australian natural history collections community and the Australian Government.  For more information, go to [http://www.ala.org.au].
+
 = Reporting Issues =
+
+==Defects vs Enhancements==
+
+*Please note*: The Atlas of Living Australia is funding reimplementation work, not enhancements to the existing DELTA functionality.
+Defects in the reimplemented code will be addressed. Enhancement requests will be considered beyond the scope of the current work.
+You may also wish to consult the [http://delta-intkey.com/www/delta-l.htm DELTA-L mailing list] for general DELTA related issues.
+
+==Reporting a Defect== 
+
+Once you have identified a defect, please report it:
 
  * From the DELTA Editor, select Help->About... from the menu.
 [http://open-delta.googlecode.com/svn/wiki/HowToReportIssues.attach/AboutDELTA.png]
