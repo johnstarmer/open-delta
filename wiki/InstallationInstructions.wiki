@@ -1,10 +1,9 @@
 #summary Installing the Open Delta software.
 
-=Warning=
-==Not for production use==
+=Not for production use=
 ==Please backup your DELTA files before using them with this application==
 
-= Installing the Open DELTA software =
+== Installing the Open DELTA software ==
 
 Releases of the DELTA software are available in the [http://code.google.com/p/open-delta/downloads/list Downloads] section of this web site.  
 
