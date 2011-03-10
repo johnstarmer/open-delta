@@ -4,7 +4,7 @@
 = Milestone M1 =
 
 Milestone M1 of the Open Delta project is a demonstration of the DELTA Editor.
-For installation instructions see InstallationInstructions.
+For installation instructions see the [InstallationInstructions Installation Instructions].
 
 == DELTA Editor ==
 
