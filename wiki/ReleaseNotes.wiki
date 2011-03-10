@@ -1,0 +1,25 @@
+#summary Open Delta release notes.
+#labels releasenotes
+
+= Milestone M1 =
+
+Milestone M1 of the Open Delta project is a demonstration of the DELTA Editor.
+For installation instructions see InstallationInstructions.
+
+== DELTA Editor ==
+
+===New Features===
+ * Existing .dlt files can be opened and viewed using the DELTA Editor
+ * Save and Save As are implemented
+ * Simplified Chinese and Spanish language translations
+ * Existing Taxon attributes can be edited
+ * Help system (including context sensitive help) demonstration
+ * Windows installer with or without a bundled Java Runtime Environment
+
+===Bug Fixes===
+ * n/a
+
+===Known Problems===
+ * The Save menu item is not enabled only when a file has been modified.
+ * Features are still missing from read only mode, including Controlling/Controlled Attributes, Implicit values, Mandatory values.
+ * Items and Characters cannot be edited, added, re-ordered or deleted.
