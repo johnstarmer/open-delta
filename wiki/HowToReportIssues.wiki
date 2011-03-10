@@ -7,4 +7,4 @@
  * On the "About DELTA" dialog, press the "Show System Information" button
 [http://open-delta.googlecode.com/svn/wiki/HowToReportIssues.attach/SystemInformation.png]
  * On the "System Information" dialog, press the "Copy to clipboard" button
- * Create a new issue and include a description of the problem along with the System Information obtained from the dialog.
+ * [http://code.google.com/p/open-delta/issues/entry?template=Defect%20report%20from%20user Create a new issue] and include a description of the problem along with the System Information obtained from the dialog.
