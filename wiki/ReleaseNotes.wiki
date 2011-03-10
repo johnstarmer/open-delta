@@ -17,7 +17,7 @@ For installation instructions see the [InstallationInstructions Installation Ins
  * Windows installer with or without a bundled Java Runtime Environment
 
 ===Bug Fixes===
- * n/a
+ * Issue 1: 	Attached dlt file causes issues
 
 ===Known Problems===
  * The Save menu item is not enabled only when a file has been modified.
