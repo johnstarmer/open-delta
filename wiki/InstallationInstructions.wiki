@@ -1,6 +1,6 @@
 #summary Installing the Open Delta software.
 
-= Introduction =
+= Installing the Open DELTA software =
 
 Releases of the DELTA software are available in the [http://code.google.com/p/open-delta/downloads/list Downloads] section of this web site.  
 
@@ -9,17 +9,17 @@ Currently we distribute the Open DELTA software as either a jar file (all platfo
 It is planned to change the jar file distribute to a zipped format with scripts to run the various applications in a future release.
 
 
-= Windows =
+== Windows ==
 
-==If you have a Java 6 runtime environment installed==
+===If you have a Java 6 runtime environment installed===
 
  # Download and run DeltaInstaller.exe
 
-==If you do not have a Java 6 runtime environment installed or do not know if you have a Java 6 runtime installed ==
+===If you do not have a Java 6 runtime environment installed or do not know if you have a Java 6 runtime installed===
  
  # Download and run DeltaInstallerWithJre.exe 
 
-= Other Platforms =
+== Other Platforms ==
 You must have a Java 6 runtime environment installed on your computer.
 
  # Copy the file delta-editor-1.0-M1-jar-with-dependencies.jar to your computer.
