@@ -11,7 +11,7 @@ For installation instructions see the [InstallationInstructions Installation Ins
 ===New Features===
  * Existing .dlt files can be opened and viewed using the DELTA Editor
  * Save and Save As are implemented
- * Simplified Chinese and Spanish language translations
+ * Simplified Chinese language translation
  * Existing Taxon attributes can be edited
  * Help system (including context sensitive help) demonstration
  * Windows installer with or without a bundled Java Runtime Environment
