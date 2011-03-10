@@ -1,18 +1,43 @@
 #summary Open Delta release notes.
 #labels releasenotes
 
-= Milestone M1 =
+= Milestone 1 =
 
-Milestone M1 of the Open Delta project is a demonstration of the DELTA Editor.
+The goals of milestone 1 of the Open Delta project are:
+
+ * To formally establish the project, including tool chain and build environment
+ * To demonstrate and experiment with packaging and publishing options
+ * Investigate and address some of the risk issues identified during the scoping exercise:
+   * Java port of the slot file (`*`.dlt) backing store
+   * RTF processing and editing
+   * Context sensitive help system and "Tooltip" style assistance
+   * Internationalization and Localization
+   * Potential performance issues, including startup time, User Interface responsiveness and general processing performance.
+
+
 For installation instructions see the [InstallationInstructions Installation Instructions].
+
+*Please note:* Milestone 1 is an alpha release, and should not be used with production data. You should make a copy of your existing Delta data sets before opening them with this version.
+
 
 == DELTA Editor ==
 
 ===New Features===
- * Existing .dlt files can be opened and viewed using the DELTA Editor
+
+ * Existing .dlt files can be opened and viewed using the DELTA Editor. Both grid view and tree view attribute editors have been implemented.
  * Save and Save As are implemented
- * Simplified Chinese language translation
- * Existing Taxon attributes can be edited
+ * Simplified Chinese language and Spanish. The current locale and language are taken from operating system settings, but can be overridden for demonstration purposes by supplying command line arguments when launching the jar file:
+ To view Chinese captions, for example, launch the editor from the command line with the following command (assuming the jar file is in the current working directory):
+{{{
+   java -Duser.region=CN -Duser.language=zh -jar delta-editor-1.0-M1-jar-with-dependencies.jar
+}}}
+
+ To view Spanish captions, use:
+{{{
+   java -Duser.region=ES -Duser.language=es -jar delta-editor-1.0-M1-jar-with-dependencies.jar
+}}}
+
+ * Existing Taxon attributes can be edited, although state check boxes are currently read only
  * Help system (including context sensitive help) demonstration
  * Windows installer with or without a bundled Java Runtime Environment
 
