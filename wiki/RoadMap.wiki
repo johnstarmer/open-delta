@@ -2,4 +2,92 @@
 
 = OpenDELTA Project Roadmap =
 
-...
+The current plan is to publish monthly milestone releases, each designated with an 'M' number, until the software is largely complete, at which time it will be considered 'BETA' until sufficiently tested.
+
+[http://open-delta.googlecode.com/svn/wiki/RoadMap.attach/Delta_RoadMap.png]
+
+
+|| Milestone ||	Date ||	Description ||
+M1	16/03/2011	Technology proof of concept, project framework setup:
+•	Development environment setup.  Google code repository, continuous integration build, distribution model.
+•	DELTA Editor, read only data.
+•	Help demonstration, including context sensitive help, tooltips.
+•	About dialog with acknowledgements
+•	Internationalisation.  Use of UTF-8 character encoding and resource bundles for all displayed text.
+•	Save, Save As functions.
+M2	20/04/2011	DELTA Editor:
+•	Edit existing item attributes.
+•	Finish off read only view components.
+IntKey:
+•	Project establishment.
+•	Read file format.
+•	Main window UI.
+M3	18/05/2011	DELTA Editor:
+•	Item editor
+•	Add / Move / Edit / Delete Items
+IntKey:
+•	Read IntKey file format
+•	Command interpreter infrastructure
+CONFOR:
+•	Parsing infrastructure, ability to read DELTA chars / specs / items files.
+
+M4	15/06/2011	DELTA Editor:
+•	Character editor
+•	Add / Move / Edit / Delete Characters
+IntKey:
+•	BEST algorithm
+CONFOR:
+•	Parsing infrastructure and general purpose directives
+•	Read / Write DELTA files
+M5	20/07/2011	DELTA Editor:
+•	Implement the Controlling / Controlled by attributes editors
+•	Add / Remove controlling attributes
+•	Import / Export DELTA files
+•	Image Viewer / Hotspot selector
+
+IntKey:
+•	Use command (this provides much of the functionality of intkey in normal mode).
+•	RTF report infrastructure
+•	Differences command
+
+CONFOR:
+•	Output to IntKey format
+M6	17/08/2011	DELTA Editor:
+•	Action Sets (to the availability of CONFOR functions)
+•	Image Editor
+IntKey:
+•	Useable in Normal Mode
+•	Commands accessible in normal mode completed.
+
+CONFOR:
+•	Translate into Natural Language
+M7	14/09/2011	DELTA Editor:
+•	Integrate the image editor.  
+•	Image settings dialog
+•	Complete for BETA (search, help, fonts etc)
+•	Testing
+IntKey:
+•	Implementation of advanced mode commands.
+
+CONFOR:
+•	Add state qualification handling (enhancement)
+•	Handle multi-language output
+M8	19/10/2011	
+IntKey:
+•	Advanced Mode functions complete
+•	IntKey BETA ready
+
+CONFOR:
+•	Output to KEY format
+•	Integration test suite
+M9	16/11/2011	KEY
+•	KEY implemented
+CONFOR
+•	Output to other formats
+1.0-BETA	14/12/2011	•	NSim
+•	PClass
+•	DIST
+•	Tidy up any outstanding items
+•	Main software feature complete
+1.0-RC	01/04/2012	Release candidate – fixes from BETA
+1.0	30/06/2012	Final release – fixes from Release Candidate
