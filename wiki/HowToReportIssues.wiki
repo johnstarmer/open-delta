@@ -2,7 +2,9 @@
 
 = Reporting Issues =
 
- # From the DELTA Editor, select Help->About... from the menu. [http://code.google.com/p/open-delta/wiki/HowToReportIssues.attach/AboutDELTA.png]
- # On the "About DELTA" dialog, press the "Show System Information" button
- # On the "System Information" dialog, press the "Copy to clipboard" button
- #Create a new issue and include a description of the problem along with the System Information obtained from the dialog.
+ * From the DELTA Editor, select Help->About... from the menu.
+[http://open-delta.googlecode.com/svn/wiki/HowToReportIssues.attach/AboutDELTA.png]
+ * On the "About DELTA" dialog, press the "Show System Information" button
+[http://open-delta.googlecode.com/svn/wiki/HowToReportIssues.attach/SystemInformation.png]
+ * On the "System Information" dialog, press the "Copy to clipboard" button
+ * Create a new issue and include a description of the problem along with the System Information obtained from the dialog.
