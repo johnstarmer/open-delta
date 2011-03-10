@@ -1,0 +1,18 @@
+#summary Installing the Open Delta software.
+
+= Introduction =
+
+
+
+
+= Windows =
+
+= Other Platforms =
+You must have a Java 6 runtime environment installed on your computer.
+
+ # Copy the file delta-editor-1.0-M1-jar-with-dependencies.jar to your computer.
+ # Open a terminal and navigate to the diretory you copied the jar file to.
+ # Use the command below to launch the application.
+{{{
+java -jar delta-editor-1.0-M1-jar-with-dependencies.jar
+}}}
