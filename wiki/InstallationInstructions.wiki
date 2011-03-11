@@ -18,11 +18,30 @@ Currently we distribute the Open DELTA software as either a jar file (all platfo
 
 ===If you have a Java 6 runtime environment installed===
 
- # Download and run OpenDelta-1.0-M1-Installer-NOJRE.exe
+ # Download and run Open-DELTA-1.0-M1-Installer-NOJRE.exe
 
 ===If you do not have a Java 6 runtime environment installed or do not know if you have a Java 6 runtime installed===
  
- # Download and run OpenDelta-1.0-M1-Installer.exe 
+ # Download and run Open-DELTA-1.0-M1-Installer.exe
+ 
+===Choosing which users to install the application for===
+The installation wizard provides you with the choice to either install Open DELTA for anyone using the computer,
+or only for the current user:
+
+[http://open-delta.googlecode.com/svn/wiki/InstallationInstructions.attach/ChooseInstallMode.png]
+
+You should choose to install only for the current user if:
+ * You do not have administrator rights on the computer
+ * The other users of the computer will not want to use Open DELTA
+ 
+===Running Open DELTA===
+The tools in the Open DELTA suite can be run from the Windows Start Menu under _All Programs/Open DELTA Suite_.
+ 
+===Uninstalling Open DELTA===
+An uninstallation wizard is provided on windows. The uninstallation wizard can be run by selecting _Uninstall Open DELTA Suite_ from the Windows
+Start Menu under _All Programs/Open DELTA Suite_. It can also be run from the Control Panel under _Programs and Features_ or _Add/Remove Programs_
+on earlier versions of Windows.
+ 
 
 == Other Platforms ==
 You must have a Java 6 runtime environment installed on your computer.
