@@ -18,7 +18,8 @@
       <all-permissions/>
   </security>
   <resources>
-    <j2se version="1.6.0"/>
+    <j2se version="1.6+"/>
     <jar href="delta-editor-1.0-M1.jar" main="true"/>
   </resources>
+  <application-desc main-class="au.org.ala.delta.DeltaEditor"/> 
 </jnlp> 
