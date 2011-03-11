@@ -19,7 +19,7 @@ If you have a Java 6 runtime environment installed, you can launch the applicati
 
 ===If you have a Java 6 runtime environment installed===
 
- # Download and run Open-DELTA-1.0-M1-Installer-NOJRE.exe
+ # Download and run [http://code.google.com/p/open-delta/downloads/detail?name=Open-DELTA-1.0-M1-Installer-NOJRE.exe&can=2&q= Open-DELTA-1.0-M1-Installer-NOJRE.exe]
 
 ===If you do not have a Java 6 runtime environment installed or do not know if you have a Java 6 runtime installed===
  
