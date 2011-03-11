@@ -7,87 +7,141 @@ The current plan is to publish monthly milestone releases, each designated with 
 [http://open-delta.googlecode.com/svn/wiki/RoadMap.attach/Delta_RoadMap.png]
 
 
-|| Milestone ||	Date ||	Description ||
-M1	16/03/2011	Technology proof of concept, project framework setup:
-•	Development environment setup.  Google code repository, continuous integration build, distribution model.
-•	DELTA Editor, read only data.
-•	Help demonstration, including context sensitive help, tooltips.
-•	About dialog with acknowledgements
-•	Internationalisation.  Use of UTF-8 character encoding and resource bundles for all displayed text.
-•	Save, Save As functions.
-M2	20/04/2011	DELTA Editor:
-•	Edit existing item attributes.
-•	Finish off read only view components.
-IntKey:
-•	Project establishment.
-•	Read file format.
-•	Main window UI.
-M3	18/05/2011	DELTA Editor:
-•	Item editor
-•	Add / Move / Edit / Delete Items
-IntKey:
-•	Read IntKey file format
-•	Command interpreter infrastructure
-CONFOR:
-•	Parsing infrastructure, ability to read DELTA chars / specs / items files.
+<table border="1">
+<tr><td><h3>Milestone</h3></td><td><h3>Release Date</h3></td><td><h3>Description</h3></td></tr>
+<tr><td valign="top"> *M1* </td><td valign="top">	16/03/2011 </td>
+<td>
+Technology proof of concept, project framework setup: 
+ * Development environment setup.  Google code repository, continuous integration build, distribution model. 
+ * DELTA Editor, read only data.
+ * Help demonstration, including context sensitive help, tooltips.
+ * About dialog with acknowledgements
+ * Internationalisation.  Use of UTF-8 character encoding and resource bundles for all displayed text.
+ * Save, Save As functions. 
+</td>
+</tr>
 
-M4	15/06/2011	DELTA Editor:
-•	Character editor
-•	Add / Move / Edit / Delete Characters
+<tr>
+<td valign="top">*M2*</td><td valign="top">20/04/2011</td>
+<td>
+DELTA Editor:
+ * Edit existing item attributes.
+ * Finish off read only view components.
 IntKey:
-•	BEST algorithm
-CONFOR:
-•	Parsing infrastructure and general purpose directives
-•	Read / Write DELTA files
-M5	20/07/2011	DELTA Editor:
-•	Implement the Controlling / Controlled by attributes editors
-•	Add / Remove controlling attributes
-•	Import / Export DELTA files
-•	Image Viewer / Hotspot selector
+ * Project establishment.
+ * Read file format.
+ * Main window UI.
+</td>
+</tr>
 
+<tr><td valign="top">*M3*</td><td valign="top">18/05/2011</td><td>DELTA Editor:
+ * Item editor
+ * Add / Move / Edit / Delete Items
 IntKey:
-•	Use command (this provides much of the functionality of intkey in normal mode).
-•	RTF report infrastructure
-•	Differences command
-
+ * Read IntKey file format
+ * Command interpreter infrastructure
 CONFOR:
-•	Output to IntKey format
-M6	17/08/2011	DELTA Editor:
-•	Action Sets (to the availability of CONFOR functions)
-•	Image Editor
+ * Parsing infrastructure, ability to read DELTA chars / specs / items files.
+</td>
+</tr>
+<tr>
+<td valign="top">*M4*</td><td valign="top">15/06/2011</td>
+<td>
+DELTA Editor:
+ * Character editor
+ * Add / Move / Edit / Delete Characters
 IntKey:
-•	Useable in Normal Mode
-•	Commands accessible in normal mode completed.
-
+ * BEST algorithm
 CONFOR:
-•	Translate into Natural Language
-M7	14/09/2011	DELTA Editor:
-•	Integrate the image editor.  
-•	Image settings dialog
-•	Complete for BETA (search, help, fonts etc)
-•	Testing
+ * Parsing infrastructure and general purpose directives
+ * Read / Write DELTA files
+</td>
+</tr>
+<tr>
+<td valign="top">*M5*</td><td valign="top">20/07/2011</td>
+<td>
+DELTA Editor:
+ * Implement the Controlling / Controlled by attributes editors
+ * Add / Remove controlling attributes
+ * Import / Export DELTA files
+ * Image Viewer / Hotspot selector
 IntKey:
-•	Implementation of advanced mode commands.
-
+ * Use command (this provides much of the functionality of intkey in normal mode).
+ * RTF report infrastructure
+ * Differences command
 CONFOR:
-•	Add state qualification handling (enhancement)
-•	Handle multi-language output
-M8	19/10/2011	
+ * Output to IntKey format
+</td>
+</tr>
+<tr>
+<td valign="top">*M6*</td><td valign="top">17/08/2011</td>
+<td>
+DELTA Editor:
+ * Action Sets (to the availability of CONFOR functions)
+ * Image Editor
 IntKey:
-•	Advanced Mode functions complete
-•	IntKey BETA ready
-
+ * Useable in Normal Mode
+ * Commands accessible in normal mode completed.
 CONFOR:
-•	Output to KEY format
-•	Integration test suite
-M9	16/11/2011	KEY
-•	KEY implemented
+ * Translate into Natural Language
+</td>
+</tr>
+
+<tr>
+<td valign="top">*M7*</td><td valign="top">14/09/2011</td>
+<td>
+DELTA Editor:
+ * Integrate the image editor.  
+ * Image settings dialog
+ * Complete for BETA (search, help, fonts etc)
+ * Testing
+IntKey:
+ * Implementation of advanced mode commands.
+CONFOR:
+ * Add state qualification handling (enhancement)
+ * Handle multi-language output
+</td>
+</tr>
+
+<tr>
+<td valign="top">*M8*</td><td valign="top">19/10/2011</td>
+<td>
+IntKey:
+ * Advanced Mode functions complete
+ * IntKey BETA ready
+CONFOR:
+ * Output to KEY format
+ * Integration test suite
+</td>
+</tr>
+
+<tr>
+<td valign="top">*M9*</td><td valign="top">16/11/2011</td>
+<td>
+KEY
+ * KEY implemented
 CONFOR
-•	Output to other formats
-1.0-BETA	14/12/2011	•	NSim
-•	PClass
-•	DIST
-•	Tidy up any outstanding items
-•	Main software feature complete
-1.0-RC	01/04/2012	Release candidate – fixes from BETA
-1.0	30/06/2012	Final release – fixes from Release Candidate
+ * Output to other formats
+</td>
+</tr>
+
+<tr>
+<td valign="top">*1.0-BETA*</td><td valign="top">14/12/2011</td>
+<td>
+ * NSim
+ * PClass
+ * DIST
+ * Tidy up any outstanding items
+ * Main software feature complete
+</td>
+</tr>
+
+<tr>
+<td>*1.0-RC*</td><td>01/04/2012</td><td>Release candidate – fixes from BETA</td>
+</tr>
+
+<tr>
+<td>*1.0-GA*</td><td>30/06/2012</td><td>Final release – fixes from Release Candidate</td>
+</tr>
+
+</table>
