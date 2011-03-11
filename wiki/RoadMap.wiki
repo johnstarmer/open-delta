@@ -2,9 +2,9 @@
 
 = OpenDELTA Project Roadmap =
 
-The current release plan is to publish as series of monthly milestone releases, each designated with an 'M' number, until the software is feature complete, at which time it will be considered 'BETA'. Beta releases will be designated as Release Candidate (RC) until such time as the release is considered stable enough to be released generally (General availability, or GA).
+The current release plan is to publish as series of monthly milestone (alpha) releases, each designated with an 'M' number, until the software is generally feature complete, at which time it will be considered in 'beta'. Beta releases will be designated as Release Candidate (RC) until such time as the release is considered stable and designated as the General Availability (GA) build.
 
-*Note:* The following release road map is provisional, and may deviate based on what is actually achieved each milestone.
+*Note:* The following release schedule is provisional, and may deviate based on what is actually achieved each milestone.
 
 [http://open-delta.googlecode.com/svn/wiki/RoadMap.attach/Delta_RoadMap.png]
 
