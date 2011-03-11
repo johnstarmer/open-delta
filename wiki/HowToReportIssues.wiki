@@ -7,7 +7,7 @@ This development is being funded by the Atlas of Living Australia.  The Atlas of
 ==Defects vs Enhancements==
 
 *Please note*: The Atlas of Living Australia is funding reimplementation work, not enhancements to the existing DELTA functionality.
-Defects in the reimplemented code will be addressed. Enhancement requests will be considered beyond the scope of the current work.
+Defects in the reimplemented code will be addressed. Enhancement requests are considered beyond the scope of the current work.
 You may also wish to consult the [http://delta-intkey.com/www/delta-l.htm DELTA-L mailing list] for general DELTA related issues.
 
 ==Reporting a Defect== 
