@@ -37,7 +37,7 @@ For installation instructions see the [InstallationInstructions Installation Ins
    java -Duser.region=ES -Duser.language=es -jar delta-editor-1.0-M1-with-dependencies.jar
 }}}
 
- *Note:* Chinese and Spanish localisations have been chosen arbitrarily for demonstrative purposes. Please contact the project team should you have the desire and capability of contributing additional language translations.
+*Note* Chinese and Spanish localisations have been chosen arbitrarily for demonstrative purposes. Please contact the project team should you be willing and able to contribute additional language translations.
 
  * Existing Taxon attributes can be edited, although state check boxes are currently read only
  * Help system (including context sensitive help) demonstration
