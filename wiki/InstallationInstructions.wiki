@@ -12,7 +12,7 @@ Releases of the DELTA software are available in the [http://code.google.com/p/op
 
 Currently we distribute the Open DELTA software as either a jar file (all platforms) or as an installer (Microsoft Windows only).  
 
-If you have a Java 6 runtime environment installed, you can launch the application directly using Java Web Start by clicking [http://open-delta.googlecode.com/svn/wiki/jnlp/open-delta.jnlp HERE]
+If you have a Java 6 runtime environment installed, you can launch the application directly using Java Web Start by clicking [http://open-delta.googlecode.com/svn/wiki/jnlp/open-delta.jnlp HERE]  Please note it uses a self signed certificate so you will get a security warning dialog when running the application in this way.
 
 
 == Windows ==
