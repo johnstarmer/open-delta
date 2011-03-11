@@ -42,6 +42,7 @@ For installation instructions see the [InstallationInstructions Installation Ins
  * Existing Taxon attributes can be edited, although state check boxes are currently read only
  * Help system (including context sensitive help) demonstration
  * Windows installer with or without a bundled Java Runtime Environment
+ * Cross platform support.  Currently the application has been tested on Windows XP, Windows 7, Mac OS 10.6.6 (x86) and Ubuntu Linux.
 
 ===Bug Fixes===
  * Issue 1: 	Attached dlt file causes issues
