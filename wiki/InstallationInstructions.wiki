@@ -12,7 +12,6 @@ Releases of the DELTA software are available in the [http://code.google.com/p/op
 
 Currently we distribute the Open DELTA software as either a jar file (all platforms) or as an installer (Microsoft Windows only).  
 
-It is planned to change the jar file distribute to a zipped format with scripts to run the various applications in a future release.
 
 
 == Windows ==
@@ -28,7 +27,9 @@ It is planned to change the jar file distribute to a zipped format with scripts 
 == Other Platforms ==
 You must have a Java 6 runtime environment installed on your computer.
 
- # Copy the file delta-editor-1.0-M1-jar-with-dependencies.jar to your computer.
+_It is planned to distribute the software in a zipped format with scripts to run the various applications in a future release._
+
+ # Copy the file delta-editor-1.0-M1-with-dependencies.jar to your computer.
  # Open a terminal and navigate to the directory you copied the jar file to.
  # Use the command below to launch the application.
 {{{
