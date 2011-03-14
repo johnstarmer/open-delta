@@ -2,7 +2,7 @@
 
 <jnlp
   spec="1.0+"
-  codebase="http://open-delta.googlecode.com/svn/wiki/jnlp"
+  codebase="http://open-delta.googlecode.com/svn/wiki/jnlp/"
   href="open-delta.jnlp">
   <information>
     <title>Delta Editor</title>
