@@ -1,0 +1,7 @@
+#Download link for the last nightly build
+
+= Introduction =
+
+*Warning* The nightly build is not guaranteed to be tested in any way!
+
+The nightly build can be located [here].
