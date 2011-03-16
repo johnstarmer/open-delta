@@ -1,6 +1,6 @@
 #Download link for the last nightly build
 
-= Introduction =
+= Last Nightly Build =
 
 *Warning* The nightly build is not guaranteed to be tested in any way!
 
