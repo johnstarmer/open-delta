@@ -4,4 +4,4 @@
 
 *Warning* The nightly build is not guaranteed to be tested in any way!
 
-The nightly build can be located [[http://open-delta.googlecode.com/svn/wiki/NightlyBuild.attach/Open-DELTA-1.0-M2-Installer-NOJRE.exe HERE].
+The nightly build can be located [http://open-delta.googlecode.com/svn/wiki/NightlyBuild.attach/Open-DELTA-1.0-M2-Installer-NOJRE.exe HERE].
