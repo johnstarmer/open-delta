@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE map
+  PUBLIC "-//Sun Microsystems Inc.//DTD JavaHelp Map Version 1.0//EN"
+         "http://java.sun.com/products/javahelp/map_1_0.dtd">
+
+<map version="1.0">
+	<mapID target="root" url="pages/delta-ed.htm"/> 
+	<mapID target="characters" url="pages/delta-ed.htm#_The_Character_Editor" />
+	<mapID target="items" url="pages/delta-ed.htm#_The_Item_Editor" />
+	<mapID target="treeview" url="pages/delta-ed.htm#_The_tree-view_attribute_1" />
+	<mapID target="gridview" url="pages/delta-ed.htm#_The_grid-view_attribute" />
+	<mapID target="editor.image.icon" url="images/Delta_blue_16.png"/>
+</map>
