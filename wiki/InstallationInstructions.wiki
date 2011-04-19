@@ -51,7 +51,7 @@ You must have a Java 6 runtime environment installed on your computer.
  # Open a terminal and navigate to the directory you downloaded the archive to.
  # Use your favourite archive extracting tool or use the command below to extract the contents of the archive:
 {{{
-gunzip open-delta-1.0-M2-bin.tar.gz
+tar xvfz open-delta-1.0-M2-bin.tar.gz
 }}}
 
 Once the files have been extracted, the shell scripts will not be executable by default.  
