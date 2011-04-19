@@ -1,6 +1,91 @@
 #summary Open Delta release notes.
 #labels releasenotes
 
+= Milestone 2 =
+
+==General Release Notes:==
+
+The Milestone 2 (M2) release has progressed work on the DELTA Editor and produced initial prototypes of 
+the CONFOR and Intkey programs.
+As per Milestone 1, M2 is an alpha release and should not be used with production data.  You should make
+a copy of your existing DELTA data sets before accessing them with any of the 
+Open DELTA programs.
+
+To reflect the additional programs included in M2, the packaging of the downloads have been modified:
+ * The installers now install the programs: Intkey, CONFOR and the DELTA Editor.
+ * The jar file distribution has been replaced with a .zip/.tar.gz distribution.
+ * The JNLP launcher has been removed.
+
+
+
+==DELTA Editor Release Notes:==
+
+===New Features:===
+
+ * Implicit values are displayed correctly (ISSUE 4)
+ * Characters made inapplicable are displayed correctly
+ * New datasets can be created
+ * DELTA text files can be imported into a new data set (only).
+ * The user will be asked to if they want to save before closing a modified data set.
+ * The Item/Taxon editor has been created, but item images are not yet supported.
+ * Better support for Mac OS 10 menu bar.
+ * Enter/shift Enter key in attribute editor advances/reverses selection. (ISSUE 9)
+ * Special characters can be entered using key combinations as per the existing editor
+ * The recent file list appears on the File menu.
+ * Copy/Paste menus implemented. (ISSUE 5)
+ * A new "Copy All" feature introduced to allow easy copy and paste into Excel. (ISSUE 5)
+
+===Bug Fixes:===
+
+ * ISSUE 3 - Some non-letter symbols not displayed correctly in states
+ * ISSUE 6 - RTF formatting not displayed correctly
+ * ISSUE 8 - text not scrolling
+
+==CONFOR Release Notes:==
+
+===New Features:===
+
+ * Supports the following directives:
+   * NUMBER OF CHARACTERS 
+   * MAXIMUM NUMBER OF STATES
+   * MAXIMUM NUMBER OF ITEMS
+   * CHARACTER TYPES
+   * NUMBERS OF STATES
+   * CHARACTER LIST
+   * ITEM DESCRIPTIONS
+   * PRINT FILE
+   * LISTING FILE
+   * IMPLICIT VALUES
+
+ * Partial support for:
+   * TRANSLATE INTO (only NATURAL LANGAUGE currently supported, and only plain text output is produced)
+   * PRINT WIDTH 
+   * OMIT REDUNDANT VARIANT ATTRIBUTES
+   * INSERT REDUNDANT VARIANT ATTRIBUTES
+   * INSERT IMPLICIT VLAUES
+
+
+===Known Problems:===
+
+ * Error detection and reporting is not fully implemented. (i.e. errors will normally result in program termination).
+ * Some directives (not listed above) are partially implemented and may produce incorrect results.
+ * Typesetting marks are omitted regardless of whether the OMIT TYPESETTING MARKS directive is used.
+
+
+
+==IntKey Release Notes:==
+
+===New Features:===
+
+ * Intkey data files can be opened and the characters and taxa displayed.
+ * The advanced mode command interpreter functionality has been implemented.
+
+
+
+----
+
+
+
 = Milestone 1 =
 
 The goals of milestone 1 of the Open DELTA project are:
