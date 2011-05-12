@@ -53,7 +53,7 @@ DELTA Editor:
  * Character editor
  * Add / Move / Edit / Delete Characters
 IntKey:
- * BEST algorithm
+ * Use command (this provides much of the functionality of intkey in normal mode).
 CONFOR:
  * Parsing infrastructure and general purpose directives
  * Read / Write DELTA files
@@ -68,7 +68,7 @@ DELTA Editor:
  * Import / Export DELTA files
  * Image Viewer / Hotspot selector
 IntKey:
- * Use command (this provides much of the functionality of intkey in normal mode).
+ * BEST algorithm
  * RTF report infrastructure
  * Differences command
 CONFOR:
