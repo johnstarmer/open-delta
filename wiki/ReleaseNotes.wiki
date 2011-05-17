@@ -1,6 +1,51 @@
 #summary Open Delta release notes.
 #labels releasenotes
 
+= Milestone 3 =
+
+== General Release Notes: ==
+
+The Milestone 3 (M3) release has progressed work on the DELTA Editor, Intkey and CONFOR.
+
+There is now a Czech language translation available. (thanks to Michal Manas).
+
+The DELTA software is considered an alpha release.  Please make a copy of your existing DELTA data sets before accessing them with any of the Open DELTA programs.
+
+==DELTA Editor Release Notes:==
+
+====New Features====
+ * Items can be added / inserted / deleted using a right click menu on the tree and grid views.
+ * Items can be reordered using drag and drop on the tree and grid views.
+ * The attribute editor now supports undo and the behaviour of the enter key can be modified to change the selected item or character.
+ * "Simple" attributes can now be edited inline in the tree view.
+ * "Simple" multistate attributes can now be edited inline in the tree view or using the check boxes in the attribute editor.
+ * Some tidy up of the look and feel (grid row heights, selection highlighting, single click editing).
+ * Validation has been added to the item editor.
+ * Some support for displaying and editing images to items has been added.  This remains incomplete.
+ * The save menu item is only enabled when a dataset has been modified.
+
+====Known Problems====
+ * The image related functionality on the Item editor is only partially complete.
+
+
+==Intkey Release Notes==
+
+
+==CONFOR Release Notes==
+
+====New Features====
+ * The OMIT TYPESETTING MARKS directive is now supported.
+ * The TYPESETTING MARKS directive is now supported.
+
+====Bug Fixes====
+ * ISSUE 10 - default values for directives are now supported, but have not yet been specified for all directives.
+
+====Known Problems====
+ * Error detection and validation of DELTA files is not fully implemented.  Any errors encountered are likely to abort the program.
+
+----
+
+
 = Milestone 2 =
 
 ==General Release Notes:==
