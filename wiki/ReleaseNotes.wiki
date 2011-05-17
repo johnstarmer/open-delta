@@ -29,7 +29,11 @@ The DELTA software is considered an alpha release.  Please make a copy of your e
 
 
 ==Intkey Release Notes==
+===New Features===
 
+* DEFINE CHARACTERS directive implemented.
+* RESTART directive partially implemented - optional switches not handled.
+* USE directive partially implemented - users can add values for characters through the command bar or by double-clicking on entries in the "Available Characters" pane. The "Available Characters" and "Used Characters" panes are updated when this is done.
 
 ==CONFOR Release Notes==
 
