@@ -72,7 +72,7 @@ IntKey:
  * RTF report infrastructure
  * Differences command
 CONFOR:
- * Output to IntKey format
+ * Output to natural language format
 </td>
 </tr>
 <tr>
@@ -85,7 +85,7 @@ IntKey:
  * Useable in Normal Mode
  * Commands accessible in normal mode completed.
 CONFOR:
- * Translate into Natural Language
+ * Translate into Intkey format
 </td>
 </tr>
 
