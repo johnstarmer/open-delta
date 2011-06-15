@@ -23,7 +23,7 @@ The DELTA software is considered an alpha release.  Please make a copy of your e
  * CHANGE directive implemented
  * USE directive completed
 
-Intkey can now be used to conduct a basic identification of a specimen. Character values can be entered/changed by double clicking on items in the available characters and used characters panes and following the prompts. Alternatively USE and CHANGE command can be entered into the command bar at the bottom of the application window.
+Intkey can now be used to conduct a basic identification of a specimen. Character values can be entered/changed by double clicking on items in the _Available Characters_ and _Used Characters_ panes and following the prompts. Alternatively, _USE_ and _CHANGE_ commands can be entered into the command bar at the bottom of the application window.
 
 ----
 
