@@ -1,6 +1,32 @@
 #summary Open Delta release notes.
 #labels releasenotes
 
+= Milestone 4 =
+
+== General Release Notes: ==
+
+The Milestone 4 (M4) release has progressed work on the DELTA Editor and Intkey.
+
+There is now a French language translation available. (thanks to Yves Braet).
+
+The DELTA software is considered an alpha release.  Please make a copy of your existing DELTA data sets before accessing them with any of the Open DELTA programs.
+
+==DELTA Editor Release Notes:==
+
+====New Features====
+
+====Known Problems====
+
+
+==Intkey Release Notes==
+===New Features===
+* CHANGE directive implemented
+* USE directive completed
+
+Intkey can now be used to conduct a basic identification of a specimen. Character values can be entered/changed by double clicking on items in the available characters and used characters panes and following the prompts. Alternatively USE and CHANGE command can be entered into the command bar at the bottom of the application window.
+
+----
+
 = Milestone 3 =
 
 == General Release Notes: ==
