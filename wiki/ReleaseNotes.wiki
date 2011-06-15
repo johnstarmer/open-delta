@@ -11,12 +11,25 @@ There is now a French language translation available. (thanks to Yves Braet).
 
 The DELTA software is considered an alpha release.  Please make a copy of your existing DELTA data sets before accessing them with any of the Open DELTA programs.
 
+===Bug Fixes===
+ * ISSUE 11 - Can't compile from source.
+
 ==DELTA Editor Release Notes:==
 
 ====New Features====
+ * The character editor is largely complete.
+ * ISSUE 13 - Select All and Copy Selected Including Headers missing
+ * ISSUE 14 - Character and state editing
+
+====Bug Fixes====
+ * ISSUE 12 - Changing look and feel does not refresh existing views
 
 ====Known Problems====
-
+ * Some warnings and validations are missing from the Character Editor.
+ * New characters are created as unordered multistate by default.
+ * States cannot be reordered using drag and drop in the Tree View.
+ * The controlling attributes tab on the character editor is not complete.
+ * The image related functionality on the Item editor is not complete.
 
 ==Intkey Release Notes==
 ===New Features===
