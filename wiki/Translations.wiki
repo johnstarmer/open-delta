@@ -324,4 +324,239 @@ characterType.OrderedMultiState = Ordered multistate
 characterType.UnorderedMultiState = Unordered multistate
 characterType.RealNumeric = Real numeric
 
+
+# DELTA file loader
+title = Loads a DELTA file
+description = A task that loads a DELTA file and creates a tree view
+message = Loading file...
+loading = Loading %s
+
+BlockingDialog.title = Loading File...
+
+# Copy all data with headers (Grid viewer)
+title = Copy selected data (with headers)
+description = Copies selected grid data to the system clipboard, including column and row headers
+copying = Copying data to clipboard
+BlockingDialog.title = Please wait
+
+# Wait a second before displaying the dialog.
+BlockingDialogTimer.delay = 500
+BlockingDialog.cancelButton.text = Cancel
+
+
+#RTF Editor toolbar items
+text_bold.Action.icon = text_bold.png
+text_bold.Action.shortDescription = Bold
+text_italic.Action.icon = text_italic.png
+text_italic.Action.shortDescription = Italic
+text_underline.Action.icon = text_underline.png
+text_underline.Action.shortDescription = Underline
+text_superscript.Action.icon = text_superscript.png
+text_superscript.Action.shortDescription = Superscript
+text_subscript.Action.icon = text_subscript.png
+text_subscript.Action.shortDescription = Subscript
+undo.Action.icon = arrow_undo.png
+undo.Action.shortDescription = Reverses all changes made to this attribute
+
+
+}}}
+
+===Common to Intkey and the DELTA Editor===
+{{{
+#About Box 
+closeAboutBox.Action.text = &OK
+
+showLicense.Action.text = View &License Details
+showLicense.Action.accelerator = control L
+showLicense.Action.shortDescription = View details about the software license
+
+showSystemInfo.Action.text = Show &System Information
+
+AboutBox.versionString = Version %s
+AboutBox.attributionLine1 = Part of the Open DELTA suite
+AboutBox.attributionLine2 = <center>Based on work by M.J. Dallwitz, T.A. Paine and E.J. Zurcher</center>
+AboutBox.copyrightString = <center>Copyright Atlas of Living Australia 2011</center>
+AboutBox.alaAttribution = <center>This development is being funded by the <a href="http://www.ala.org.au">Atlas of Living Australia</a>.</center>
+
+#License Info Box
+LicenseInfoBox.windowTitle = License Information
+LicenseInfoBox.licenseAttribution = This software is made available under Version 1.1 of the Mozilla Public License
+LicenseInfoBox.sourceCodeLocation = Source code can be downloaded from: http://code.google.com/p/open-delta
+closeLicenseInfoBox.Action.text = OK
+
+#System Info Box
+SystemInfoBox.windowTitle = System Information
+copySystemInfoToClipboard.Action.text = Copy to clipboard
+closeSystemInfoBox.Action.text = OK
+}}}
+
+===Intkey===
+{{{
+
+Application.id = Intkey
+Application.title = Intkey
+Application.version = 1.0-M2
+Application.vendor = open-delta
+Application.vendorId = open-delta
+Application.homepage = http://code.google.com/p/open-delta/
+Application.description = An interactive program for identifying a specimen by comparing it with stored descriptions
+Application.lookAndFeel = system
+Application.shortName = Intkey
+
+Intkey.windowTitleWithDatasetTitle = Intkey: %s
+Intkey.availableCharactersCaption = Available Characters (%s)
+Intkey.bestCharactersCaption = Best Characters (%s)
+Intkey.usedCharactersCaption = Used Characters (%s)
+Intkey.remainingTaxaCaption = Remaining Taxa (%s)
+Intkey.eliminatedTaxaCaption = Eliminated Taxa (%s)
+Intkey.errorDlgTitle = Error
+Intkey.informationDlgTitle = Information
+
+# File menu
+mnuFile.text = &File
+mnuItNewDataSet.Action.text = &New Data Set...
+mnuItPreferences.Action.text = Preferences...
+mnuItContents.Action.text = Contents...
+mnuFileCmds.text = &File
+mnuItFileCharacters.Action.text = Characters...
+mnuItFileTaxa.Action.text = Taxa...
+mnuOutputCmds.text = &Output
+mnuItComment.Action.text = Comment...
+mnuItShow.Action.text = Show...
+mnuItNormalMode.Action.text = Normal Mode
+mnuItEditIndex.Action.text = Edit Index...
+mnuItExitApplication.Action.text = Quit (E&xit)
+
+# Queries menu
+mnuQueries.text = &Queries
+
+# Browsing menu
+mnuBrowsing.text = &Browsing
+
+# Settings menu
+mnuSettings.text = &Settings
+
+# ReExecute menu
+mnuReExecute.text = &ReExecute
+mnuItReExecute.Action.text = &ReExecute...
+
+# New Data Set Dialog
+browseForFile.Action.text = Browse...
+
+# Window menu
+mnuWindow.text = &Window
+mnuItCascadeWindows.Action.text = &Cascade
+mnuItTileWindows.Action.text = &Tile
+mnuItCloseAllWindows.Action.text = Close &All
+
+# Help menu
+mnuHelp.text = &Help
+mnuItHelpIntroduction.Action.text = Introduction...
+mnuItHelpCommands.Action.text = Commands...
+mnuItHelpAbout.Action.text = About Intkey
+
+# About Box 
+AboutBox.windowTitle = About Intkey
+AboutBox.applicationTitle = Intkey
+
+# Global option buttons
+btnContextHelp.Action.icon = icons/helpa.png
+
+# Character toolbar buttons
+btnRestart.Action.icon = icons/restarts.png
+btnBestOrder.Action.icon = icons/obests.png
+btnSeparate.Action.icon = icons/oseps.png
+btnNaturalOrder.Action.icon = icons/onats.png
+btnDiffSpecimenTaxa.Action.icon = icons/diff_ss.png
+btnSetTolerance.Action.icon = icons/set_tols.png
+btnSetMatch.Action.icon = icons/set_mats.png
+btnUseSubset.Action.icon = icons/inc_cs.png
+btnFindCharacter.Action.icon = icons/finds.png
+
+# Taxa toolbar buttons
+btnTaxonInfo.Action.icon = icons/infos.png
+btnDiffTaxa.Action.icon = icons/diff_ts.png
+btnSubsetTaxa.Action.icon = icons/inc_ts.png
+btnFindTaxon.Action.icon = icons/finds.png
+
+# Character Value Input Dialog
+characterValueInputDialog_OK.Action.text = OK
+characterValueInputDialog_Images.Action.text = Images
+characterValueInputDialog_FullText.Action.text = Full Text
+characterValueInputDialog_Search.Action.text = Search
+characterValueInputDialog_Cancel.Action.text = Cancel
+characterValueInputDialog_Notes.Action.text = Notes
+characterValueInputDialog_Help.Action.text = Help
+
+# Keyword selection dialog
+keywordSelectionDialog_OK.Action.text = OK
+keywordSelectionDialog_DeselectAll.Action.text = Deselect All
+keywordSelectionDialog_List.Action.text = List
+keywordSelectionDialog_Images.Action.text = Images
+keywordSelectionDialog_Search.Action.text = Search
+keywordSelectionDialog_Cancel.Action.text = Cancel
+keywordSelectionDialog_Help.Action.text = Help
+
+# Character selection dialog
+characterSelectionDialog_OK.Action.text = OK
+characterSelectionDialog_SelectAll.Action.text = Select All
+characterSelectionDialog_Keywords.Action.text = Keywords
+characterSelectionDialog_Images.Action.text = Images
+characterSelectionDialog_Search.Action.text = Search
+characterSelectionDialog_Cancel.Action.text = Cancel
+characterSelectionDialog_DeselectAll.Action.text = Deselect All
+characterSelectionDialog_FullText.Action.text = Full Text
+characterSelectionDialog_Notes.Action.text = Notes
+characterSelectionDialog_Help.Action.text = Help
+
+# Text Input Dialog
+TextInputDialog.title = Enter text
+
+# Integer Input Dialog
+IntegerInputDialog.title = Enter value or range of values
+IntegerInputDialog.validationErrorMessage = Integer value(s) required
+IntegerInputDialog.validationErrorTitle = Invalid input
+
+# Real Input Dialog
+RealInputDialog.title = Enter value or range of values
+RealInputDialog.validationErrorMessage = Real value(s) required
+RealInputDialog.validationErrorTitle = Invalid input
+
+# Mulitstate Input Dialog
+MultiStateInputDialog.title = Select state or states
+MultiStateInputDialog.selectionConfirmationMessage = You have selected all of the character states. Is that what you want?
+MultiStateInputDialog.selectionConfirmationTitle = Confirm selection
+
+# Character keyword selection dialog
+CharacterKeywordSelectionDialog.title = %s: Select character keywords
+
+# Character selection dialog
+CharacterSelectionDialog.title = %s: Select characters
+CharacterSelectionDialog.titleFromKeyword = %s: Select characters (from '%s')
+
+# Use Directive Messages
+UseDirective.NoDataSetMsg = Need to have a dataset loaded before USE can be called.
+UseDirective.CharacterAlreadyUsed = Character '%s' has already been used. Do you want to change the value(s) you entered?
+UseDirective.CharacterUnavailable = Character '%s' is unavailable.
+UseDirective.CharacterExcluded = Character '%s' is excluded.
+UseDirective.InvalidCharacterNumber = Invalid character number '%s'. Valid numbers are in the range 1-%s.
+UseDirective.InvalidIntegerValue = Invalid integer value '%s' for character %s - '%s'.
+UseDirective.InvalidRealValue = Invalid real value '%s' for character %s - '%s'.
+UseDirective.InvalidStateValue = Invalid state value '%s' for character %s - '%s'. This character has %s states.
+
+# Generic Errors
+CharactersFileNotFound.error = Characters file '%s' could not be found
+TaxaFileNotFound.error = Taxa file '%s' could not be found
+RedefineSystemKeyword.error = '%s' is a system keyword and cannot be redefined
+KeywordAmbiguous.error = Keyword '%s' is ambiguous
+KeywordNotFound.error = Keyword '%s' not found
+
+# ReExecute Dialog
+ReExecuteDialog.windowTitle = Select command to re-execute
+reExecuteDialog_Execute.Action.text = Execute
+reExecuteDialog_Cancel.Action.text = Cancel
+reExecuteDialog_Edit.Action.text = Edit
+
+
+
 }}}
