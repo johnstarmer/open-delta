@@ -1,0 +1,327 @@
+#summary How to provide a translation of the open-delta software.
+
+The text displayed in the open-delta software is stored separately in Java properties files.  A brief overview of the file format is:
+
+ # Lines starting with a `#` are comments and do not need to be translated.
+ # Blank lines are ignored by the program.
+ # Lines that do need to be translated have the form: <`key`>` = `<`value`>`  (e.g. DeltaEditor.warningTitle = WARNING - Not for production use)
+ # The & characters in some of the text identify characters for menu shortcuts.
+ # The %s characters in some of the text are used for text substitution by the program.
+
+To provide a translation, create a file that contains all of the same keys as the english version (see below) but uses the target language as the value of each key.
+
+As an example, here is a sample from the English and Czech language files:
+===English version===
+
+{{{
+DeltaEditor.windowTitleWithoutFilename = DELTA - DEscription Language for TAxonomy (prototype)
+DeltaEditor.windowTitleWithFilename = DELTA - DEscription Language for TAxonomy (prototype) - %s
+DeltaEditor.warning = This software is not for production use.  Please backup your data files before opening them using this application.
+DeltaEditor.warningTitle = WARNING - Not for production use
+DeltaEditor.closeWithoutSavingMessage = The document has been changed.\nDo you want to save the changes?
+DeltaEditor.newDataSetName = New Dataset
+}}}
+
+===Czech version===
+{{{
+DeltaEditor.windowTitleWithoutFilename = DELTA - DEscription Language for TAxonomy (prototyp)
+DeltaEditor.windowTitleWithFilename = DELTA - DEscription Language for TAxonomy (prototyp) - %s
+DeltaEditor.warning = Tento program není určen pro pracovní použití. Před používáním programu si zálohujte svá data.
+DeltaEditor.warningTitle = Upozornění - není určeno pro pracovní použití
+DeltaEditor.closeWithoutSavingMessage = Tento dokument byl změněn.\nChcete uložit změny?
+DeltaEditor.newDataSetName = Nová databáze
+
+}}}
+
+== English Text ==
+=== DELTA Editor ===
+
+{{{
+
+Application.id = DeltaViewer
+Application.title = DELTA - DEscription Language for TAxonomy (prototype)
+Application.version = 1.0-M1
+Application.vendor = open-delta
+Application.vendorId = open-delta
+Application.homepage = http://code.google.com/p/open-delta/
+Application.description = Allows creation and editing of DELTA data sets
+Application.lookAndFeel = system
+Application.shortName = DELTA Editor
+
+#Delta Editor Main Window
+
+DeltaEditor.windowTitleWithoutFilename = DELTA - DEscription Language for TAxonomy (prototype)
+DeltaEditor.windowTitleWithFilename = DELTA - DEscription Language for TAxonomy (prototype) - %s
+DeltaEditor.warning = This software is not for production use.  Please backup your data files before opening them using this application.
+DeltaEditor.warningTitle = WARNING - Not for production use
+DeltaEditor.closeWithoutSavingMessage = The document has been changed.\nDo you want to save the changes?
+DeltaEditor.newDataSetName = New Dataset
+
+# File menu
+mnuFile.text = &File
+
+newFile.Action.text = New Dataset
+newFile.Action.shortDescription = Creates a new Dataset
+newFile.Action.icon = icons/page_add.png
+
+loadFile.Action.text = Open Dataset...
+loadFile.Action.accelerator = control F
+loadFile.Action.icon = icons/folder_page.png
+
+closeFile.Action.text = Close Dataset
+closeFile.Action.shortDescription = Closes the current Dataset
+
+saveFile.Action.text = Save Dataset
+saveFile.Action.shortDescription = Saves the contents of the current data set
+saveFile.Action.accelerator = control S
+saveFile.Action.icon = icons/disk.png
+
+saveAsFile.Action.text = Save Dataset &As...
+saveAsFile.Action.shortDescription = Saves the contents of the current data set into a new file
+
+
+importDirectives.Action.text = &Import directives...
+importDirectives.Action.shortDescription = Imports DELTA directives into the current Dataset
+
+exportDirectives.Action.text = &Export directives...
+exportDirectives.Action.shortDescription = Exports the current Dataset to a set of DELTA directives files
+
+exitApplication.Action.text = E&xit
+
+# Edit menu
+mnuEdit.text = &Edit
+copy.Action.text = &Copy
+selectAll.Action.text=&Select All
+selectAll.Action.accelerator = control A
+copySelectedWithHeaders.Action.text = Copy Selected Including Headers
+copySelectedWithHeaders.Action.accelerator = control H
+
+# View menu
+mnuView.text = &View
+newTreeView.Action.text = Attribute editor (&Trees)
+newTreeView.Action.shortDescription = Creates and displays a tree view attribute editor based on the currently selected data set
+
+newGridView.Action.text = Attribute editor (&Grid)
+newGridView.Action.shortDescription = Creates and displays a tree view attribute editor based on the currently selected data set
+
+viewCharacterEditor.Action.text = &Character editor
+viewCharacterEditor.Action.shortDescription = Allows the currently selected character to be edited
+viewCharacterEditor.Action.enabled = false
+
+viewTaxonEditor.Action.text = &Taxon editor
+viewTaxonEditor.Action.shortDescription = Allows the currently selected taxon to be edited
+viewTaxonEditor.Action.enabled = false
+
+viewActionSets.Action.text = &Action sets
+viewActionSets.Action.enabled = false
+
+viewImageSettings.Action.text = &Image settings
+viewImageSettings.Action.enabled = false
+
+# Window menu
+mnuWindow.text = &Window
+
+tileFrames.Action.text = Tile Frames
+
+mnuLF.text = Look & feel
+
+metalLookAndFeel.Action.text = Metal
+systemLookAndFeel.Action.text = System
+nimbusLookAndFeel.Action.text = Nimbus
+
+# Help menu
+mnuHelp.text = &Help
+
+mnuItHelpContents.text = Contents...
+
+mnuItHelpOnSelection.text = Select Component
+
+openAbout.Action.text = About
+
+#About Box 
+closeAboutBox.Action.text = &OK
+
+showLicense.Action.text = View &License Details
+showLicense.Action.accelerator = control L
+showLicense.Action.shortDescription = View details about the software license
+
+showSystemInfo.Action.text = Show &System Information
+
+AboutBox.windowTitle = About DELTA
+AboutBox.applicationTitle = DELTA Editor
+AboutBox.versionString = Version %s
+AboutBox.attributionLine1 = Part of the Open DELTA suite
+AboutBox.attributionLine2 = <center>Based on work by M.J. Dallwitz, T.A. Paine and E.J. Zurcher</center>
+AboutBox.copyrightString = <center>Copyright Atlas of Living Australia 2011</center>
+AboutBox.alaAttribution = <center>This development is being funded by the <a href="http://www.ala.org.au">Atlas of Living Australia</a>.</center>
+
+#License Info Box
+LicenseInfoBox.windowTitle = License Information
+LicenseInfoBox.licenseAttribution = This software is made available under Version 1.1 of the Mozilla Public License
+LicenseInfoBox.sourceCodeLocation = Source code can be downloaded from: http://code.google.com/p/open-delta
+closeLicenseInfoBox.Action.text = OK
+
+#System Info Box
+SystemInfoBox.windowTitle = System Information
+copySystemInfoToClipboard.Action.text = Copy to clipboard
+closeSystemInfoBox.Action.text = OK
+
+#Matrix Viewer
+MatrixViewer.windowTitle = Matrix Viewer - %s
+ItemColumnModel.columnName =  
+
+#Tree Viewer
+TreeViewer.windowTitle = Tree Viewer - %s 
+
+#Attribute Editor
+advanceItem.Action.text =
+advanceItem.Action.shortDescription = Enter will advance the selection to the next Item
+advanceItem.Action.icon = icons/item_advance.png
+
+advanceCharacter.Action.text =
+advanceCharacter.Action.shortDescription = Enter will advance the selection to the next Character
+advanceCharacter.Action.icon = icons/character_advance.png
+
+
+# Validation errors
+errors.EAP_BAD_STATE_NUMBER = An invalid state number was detected near character position %d
+errors.EAP_UNMATCHED_CLOSEBRACK = An unmatched closing bracket was found near character position %d
+errors.EAP_MISSING_CLOSEBRACK = An opening bracket did not have a matching closing bracket near character position %d
+errors.EAP_BADATTR_SYMBOL = A bad or invalid symbol was found near character position %d
+errors.EAP_IS_INAPPLICABLE = This attribute has been made inapplicable, but an attempt to encode data was found near character position %d
+errors.EAP_CHARTYPE_UNDEFINED = The character type has not yet been defined, so no encoding should be made near character position %d
+errors.EAP_EXCLUSIVE_ERROR = This exclusive multistate character has been encoded with more that one state near character position %d
+errors.EAP_BAD_NUMERIC_ORDER = Numeric values not in ascending order near character position %d
+errors.EAP_BAD_RTF = RTF markup appears to have been used outside a text character or comment near character position %d
+errors.EAP_BAD_RTF_BRACKET = RTF markup appears to contain unmatched brackets near character position %d
+errors.EAP_BAD_SLASH = A slash followed by white space is not permitted in this context near character position %d
+errors.EMPTY_ITEM_DESCRIPTION = The item name field is blank.  Please enter a name for this item.	
+	
+# Import / Export Dialog.
+okPressed.Action.text = OK
+cancelPressed.Action.text = Cancel
+directorySelected.Action.text = Chan&ge...
+updateFilter.Action.text = ...
+ImportExportDialog.dialogTitle = Select DELTA files to import
+ImportExportDialog.directoryChooserTitle = Browse for import directory
+ImportExportDialog.specificationsPanelTitle = Specifications file
+ImportExportDialog.charsPanelTitle = Characters file
+ImportExportDialog.itemsPanelTitle = Items file
+ImportExportDialog.otherPanelTitle = Other directives files
+ImportExportDialog.possiblePanelTitle = Possible directives files
+ImportExportDialog.directiveTypePanelTitle = Directive type
+ImportExportDialog.filterDialogTitle = Change File Filter
+ImportExportDialog.filterDialogMessage = Enter wildcards patterns matching those filenames you wish to exclude.\n\nMultiple patterns should be separated with a semicolon (;) There should be no spaces between patterns.\n
+directiveTypeConfor.text = Confor
+directiveTypeIntkey.text = Intkey
+directiveTypeDist.text = Dist
+directiveTypeKey.text = Key
+
+# Import Status Dialog
+importDone.Action.text = Done
+cancelImport.Action.text = Cancel
+
+# Item Edit Dialog.
+ItemEditor.titleSuffix = - Item Edit
+ItemEditor.editTaxonLabelText = Edit taxon name:
+ItemEditor.selectTaxonLabelText = Select taxon:
+taxonNumberLabel.text = Taxon Number:
+selectItemByName.Action.text = Select
+editTaxonNameLabel.text = Edit taxon name:
+itemVarianceChanged.Action.text = Treat as &Variant
+itemEditDone.Action.text = D&one
+helpWithTaxonEditorButton.text = Help
+
+# Item menu actions
+editItem.Action.text = Edit selected item
+addItem.Action.text = Append new item to end of list
+addItem.Action.accelerator = alt insert
+insertItem.Action.text = Insert new item as this position
+insertItem.Action.accelerator = insert
+deleteItem.Action.text = Delete selected item
+deleteItem.Action.accelerator = delete
+cancel.Action.text = Cancel
+
+# Character Edit Dialog.
+CharacterEditor.titleSuffix = - Character edit
+CharacterEditor.editCharacterLabelText = Edit feature description:
+CharacterEditor.selectCharacterLabelText = Select character:
+characterNumberLabel.text = Character Number:
+characterTypeLabel.text = Character Type:
+lblEditCharacterName.text = Edit feature description:
+selectCharacterByName.Action.text = Select
+characterEditDone.Action.text = D&one
+mandatoryChanged.Action.text = Mandatory
+exclusiveChanged.Action.text = Exclusive
+characterNotesLabel.text = Edit character notes 
+characterUnitsLabel.text = Units:
+states.tab.title = States
+units.tab.title = Units
+notes.tab.title = Notes
+images.tab.title = Images
+controls.tab.title = Controls
+controlledBy.tab.title = Controlled by
+moveToControlledList.Action.icon = icons/arrow_left.png
+moveFromControlledList.Action.icon = icons/arrow_right.png
+moveToInapplicableList.Action.icon = icons/arrow_left.png
+moveFromInapplicableList.Action.icon = icons/arrow_right.png
+definedByStatesLabel.text = Defined by states:
+makesInapplicableLabel.text = Makes inapplicable:
+characterListLabel.text = Character list:
+controllingAttributeLabel.text = Controlling attribute:
+redefineControllingAttribute.Action.text = Redefine
+madeInapplicableByLabel.text = Made inapplicable by:
+definedControllingAttributesLabel.text = Defined controlling attributes:
+defineControllingAttributeButton.editText = Redefine
+defineControllingAttributeButton.newText = Define
+
+#Character menu actions
+editCharacter.Action.text = Edit selected character
+addCharacter.Action.text = Append new character to end of list
+addCharacter.Action.accelerator = alt insert
+insertCharacter.Action.text = Insert new character as this position
+insertCharacter.Action.accelerator = insert
+deleteCharacter.Action.text = Delete selected character
+deleteCharacter.Action.accelerator = delete
+cancel.Action.text = Cancel
+
+# Image details tab (Item and Character editor)
+displayImage.Action.text = Display
+addImage.Action.text = Add...
+deleteImage.Action.text = Delete
+deleteSound.Action.icon = icons/cross.png
+playSound.Action.icon = icons/play.png
+
+# State editor tab
+stateEditor.definedStatesLabel.text = Defined states:
+stateEditor.stateDescriptionLabel.text = Edit state description:
+addState.Action.text = Add
+deleteState.Action.text = Delete
+toggleStateImplicit.Action.text = Implicit
+
+# Dialog messages
+deleteImage.title = Delete Image?
+deleteImage.message = Please confirm that you really wish to delete this image
+deleteItem.title = Delete Taxon?
+deleteItem.message = Please confirm that you really wish to delete this taxon:\n%s
+errorLoadingImage.title = Image not found
+errorLoadingImage.message = Unable to locate the image: %s
+errorPlayingSound.title = Unable to play sound
+errorPlayingSound.message = Unable to play the sound file : %s
+uncodedMandatoryItems.title = Uncoded items
+uncodedMandatoryItems.message = Not all items have been encoded for this "mandatory" character!
+cannotMakeCharacterExclusive.title=Cannot make Character exclusive
+cannotMakeCharacterExclusive.message=Items are currently encoded for this character as having multiple states.
+deleteState.title = Delete state?
+deleteState.message = Please confirm that you really wish to delete this state:\n%s
+deleteCharacter.title = Delete character?
+deleteCharacter.message = Please confirm that you really wish to delete this character:\n%s
+
+# Character types for display
+characterType.Text = Text
+characterType.IntegerNumeric = Integer numeric
+characterType.OrderedMultiState = Ordered multistate
+characterType.UnorderedMultiState = Unordered multistate
+characterType.RealNumeric = Real numeric
+
+}}}
