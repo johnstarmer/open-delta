@@ -70,9 +70,7 @@ DELTA Editor:
 IntKey:
  * BEST algorithm
  * RTF report infrastructure
- * Differences command
-CONFOR:
- * Output to natural language format
+ * Differences command 
 </td>
 </tr>
 <tr>
@@ -102,6 +100,7 @@ IntKey:
 CONFOR:
  * Add state qualification handling (enhancement)
  * Handle multi-language output
+* Output to natural language format
 </td>
 </tr>
 
