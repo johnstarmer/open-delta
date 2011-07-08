@@ -100,7 +100,7 @@ IntKey:
 CONFOR:
  * Add state qualification handling (enhancement)
  * Handle multi-language output
-* Output to natural language format
+ * Output to natural language format
 </td>
 </tr>
 
