@@ -1,6 +1,51 @@
 #summary Open Delta release notes.
 #labels releasenotes
 
+= Milestone 5 =
+
+== General Release Notes: ==
+The Milestone 5 (M5) release has progressed work on the DELTA Editor and Intkey.
+
+There is now a Spanish language translation available.  (thanks to Roberto Castro-Cortes).
+
+The DELTA software is considered an alpha release.  Please make a copy of your existing DELTA data sets before accessing them with any of the Open DELTA programs.
+
+==DELTA Editor Release Notes:==
+
+====New Features====
+ * The character dependency editors have been implemented.
+ * Character and Taxon images can be displayed including any included overlays.
+ * The directive file export function has been implemented.
+
+====Known Problems====
+ * ISSUE 15 - Real numeric characters cannot be edited in locales with a ',' as a decimal separator.
+ * ISSUE 16 - no key combination to exit Complex-Attribute Editor pane
+ * ISSUE 17 - no key combination to exit Complex-Attribute Editor pane
+ * Status updates during import and export are not complete.
+ * The cimages and timages directives don't import correctly.
+ * Import / Export could use further testing.
+ 
+==CONFOR Release Notes:==
+
+====New Features====
+ * TRANSLATE INTO DELTA FORMAT has begun implementation.
+
+====Known Problems====
+ * The DECIMAL PLACES directive is not supported.
+ * If the output file is changed between the items and chars files the last output file will win.
+
+==Intkey Release Notes:==
+
+====New Features====
+ * 
+
+====Bug Fixes====
+ *
+
+====Known Problems====
+ *
+
+
 = Milestone 4 =
 
 == General Release Notes: ==
