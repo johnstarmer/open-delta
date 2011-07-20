@@ -37,13 +37,12 @@ The DELTA software is considered an alpha release.  Please make a copy of your e
 ==Intkey Release Notes:==
 
 ====New Features====
- * 
-
-====Bug Fixes====
- *
+ * BEST ordering of dataset characters has been implemented
+ * DIFFERENCES report has been implemented
 
 ====Known Problems====
- *
+ * An out of memory exception will be thrown if the content of a differences report is too large
+ * Differences report yields incorrect results when Intkey's match type option is set to "Subset". This is an advanced feature and is currently only evident when using the command text bar. This issue needs investigation.
 
 
 = Milestone 4 =
