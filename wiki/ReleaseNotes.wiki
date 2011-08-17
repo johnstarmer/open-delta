@@ -1,6 +1,35 @@
 #summary Open Delta release notes.
 #labels releasenotes
 
+= Milestone 6 =
+
+== General Release Notes: ==
+The Milestone 6 (M6) release has progressed work on the DELTA Editor and Intkey.
+
+The DELTA software is considered an alpha release.  Please make a copy of your existing DELTA data sets before accessing them with any of the Open DELTA programs.
+
+==DELTA Editor Release Notes:==
+
+====New Features====
+ * Image Overlays can be added and edited.
+
+====Known Problems====
+ * ISSUE 15 - Real numeric characters cannot be edited in locales with a ',' as a decimal separator.
+ * ISSUE 16 - no key combination to exit Complex-Attribute Editor pane
+ * ISSUE 17 - no key combination to exit Complex-Attribute Editor pane
+ * Status updates during import and export are not complete.
+ * The cimages and timages directives don't import correctly.
+ * Import / Export could use further testing.
+ * Hotspots cannot be edited using the dialog. 
+
+==Intkey Release Notes:==
+
+====New Features====
+
+====Known Problems====
+
+
+
 = Milestone 5 =
 
 == General Release Notes: ==
