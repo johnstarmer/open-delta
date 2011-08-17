@@ -31,12 +31,16 @@ The DELTA software is considered an alpha release.  Please make a copy of your e
  * EXCLUDE TAXA directive
  * SET TOLERANCE directive
  
+ * Characters and taxa can now be searched for in the main window
  * Support for character, taxon, keyword and startup images
-
+ * Buttons can be defined and added to the toolbar using directives files
  
 
 ====Known Problems====
-
+ * Image notes and character notes are currently not displayed.
+ * Switching to full screen mode when viewing a character, taxon or keyword image does not currently work correctly.
+ * Some toolbar buttons defined using directives files may not function correctly due to the directives that they run not yet being implemented. In addition, there is currently no support for the directive wildcards ?, ?K, ?L, ?L1 and ?S. Any buttons that use these wildcards will not function correctly.
+ * The text color of image overlays does not invert when the overlay is selected. Hence once an overlay is selected, its text will no longer be visible.
 
 
 = Milestone 5 =
