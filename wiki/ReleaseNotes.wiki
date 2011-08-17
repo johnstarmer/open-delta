@@ -37,6 +37,7 @@ The DELTA software is considered an alpha release.  Please make a copy of your e
  
 
 ====Known Problems====
+ * Datasets that are hosted on a remote server cannot be used.
  * Image notes and character notes are currently not displayed.
  * Switching to full screen mode when viewing a character, taxon or keyword image does not currently work correctly.
  * Some toolbar buttons defined using directives files may not function correctly due to the directives that they run not yet being implemented. In addition, there is currently no support for the directive wildcards ?, ?K, ?L, ?L1 and ?S. Any buttons that use these wildcards will not function correctly.
