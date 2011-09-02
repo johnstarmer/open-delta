@@ -1,5 +1,7 @@
 #summary A collection of tricks and tips
 
+<wiki:toc max_depth="1" />
+
 = Issues with multi monitor software such as !MaxiVista (Windows only) =
 
 Remote display server software, such as !MaxiVista, can cause problems with Delta due to the way that Java determines if hardware acceleration can be use to render windows. If !IntKey, for example, is started on a 'local' display (i.e. one that is attached directly to the computer running !IntKey), its is likely that Java can use hardware accelerated graphics (assuming the video card has support for !DirectDraw). If the !IntKey window is then moved to a 'remote' display (a monitor plugged into a different computer, but logically attached via display server software (!MaxiVista), hardware acceleration is unavailable, and a series of exceptions are cascaded, essentially crashing the application until the window is moved back to a local display. Likewise, problems can also arise if the application first starts on a 'remote' display, and is then moved to a local display. The solution to this problem (on Windows) is to start the Delta applications with the following command line switch applied, which will prevent Java from using Direct Draw (hardware acceleration).
