@@ -4,7 +4,7 @@ The text displayed in the open-delta software is stored separately in Java prope
 
  # Lines starting with a `#` are comments and do not need to be translated.
  # Blank lines are ignored by the program.
- # Lines that do need to be translated have the form: <`key`>` = `<`value`>`  (e.g. !DeltaEditor.warningTitle = WARNING - Not for production use). Note that some lines that have this format are specifying the location of icon files, e.g. "firstTaxon.Action.icon = icons/SkipStart.png". Such lines do NOT have to be translated.
+ # Lines that do need to be translated have the form: <`key`>` = `<`value`>`  (e.g. !DeltaEditor.warningTitle = WARNING - Not for production use). Note that some lines that have this format are specifying the location of icon files, e.g. "firstTaxon.Action.icon = icons/icon.png". Such lines do NOT have to be translated.
  # The & characters in some of the text identify characters for menu shortcuts.
  # The %s characters in some of the text are used for text substitution by the program.
 
