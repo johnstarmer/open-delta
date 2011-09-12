@@ -37,7 +37,6 @@ DeltaEditor.newDataSetName = Nová databáze
 === DELTA Editor ===
 
 {{{
-
 Application.id = DeltaViewer
 Application.title = DELTA - DEscription Language for TAxonomy (prototype)
 Application.version = 1.0-M1
@@ -182,6 +181,10 @@ advanceCharacter.Action.text =
 advanceCharacter.Action.shortDescription = Enter will advance the selection to the next Character
 advanceCharacter.Action.icon = icons/character_advance.png
 
+advanceNone.Action.text =
+advanceNone.Action.shortDescription = Enter will not advance the selection
+advanceNone.Action.icon = icons/none_advance.png
+
 
 # Validation errors
 errors.EAP_BAD_STATE_NUMBER = An invalid state number was detected near character position %d
@@ -195,34 +198,86 @@ errors.EAP_BAD_NUMERIC_ORDER = Numeric values not in ascending order near charac
 errors.EAP_BAD_RTF = RTF markup appears to have been used outside a text character or comment near character position %d
 errors.EAP_BAD_RTF_BRACKET = RTF markup appears to contain unmatched brackets near character position %d
 errors.EAP_BAD_SLASH = A slash followed by white space is not permitted in this context near character position %d
-errors.EMPTY_ITEM_DESCRIPTION = The item name field is blank.  Please enter a name for this item.	
+errors.EMPTY_ITEM_DESCRIPTION = The item name field is blank.  Please enter a name for this item.
+errors.COMMENT_MISMATCH = There is a mismatched comment symbol at position %d 	
+errors.UNRECOGNISED_DIRECTIVE = Unrecognised directive at postition %s: %s
+errors.DIRECTIVE_PARSE_ERROR = Error at position %s: %s
 	
 # Import / Export Dialog.
 okPressed.Action.text = OK
 cancelPressed.Action.text = Cancel
 directorySelected.Action.text = Chan&ge...
 updateFilter.Action.text = ...
-ImportExportDialog.dialogTitle = Select DELTA files to import
-ImportExportDialog.directoryChooserTitle = Browse for import directory
-ImportExportDialog.specificationsPanelTitle = Specifications file
-ImportExportDialog.charsPanelTitle = Characters file
-ImportExportDialog.itemsPanelTitle = Items file
-ImportExportDialog.otherPanelTitle = Other directives files
-ImportExportDialog.possiblePanelTitle = Possible directives files
-ImportExportDialog.directiveTypePanelTitle = Directive type
-ImportExportDialog.filterDialogTitle = Change File Filter
-ImportExportDialog.filterDialogMessage = Enter wildcards patterns matching those filenames you wish to exclude.\n\nMultiple patterns should be separated with a semicolon (;) There should be no spaces between patterns.\n
+ImportDialog.dialogTitle = Select DELTA files to import
+ImportDialog.directoryChooserTitle = Browse for import directory
+ImportDialog.specificationsPanelTitle = Specifications file
+ImportDialog.charsPanelTitle = Characters file
+ImportDialog.itemsPanelTitle = Items file
+ImportDialog.otherPanelTitle = Other directives files
+ImportDialog.possiblePanelTitle = Possible directives files
+ImportDialog.directiveTypePanelTitle = Directive type
+ImportDialog.filterDialogTitle = Change File Filter
+ImportDialog.filterDialogMessage = Enter wildcards patterns matching those filenames you wish to exclude.\n\nMultiple patterns should be separated with a semicolon (;) There should be no spaces between patterns.\n
+ImportDialog.directoryLabel = Import directory:
+
+ExportDialog.dialogTitle = Select DELTA files to export
+ExportDialog.directoryChooserTitle = Browse for export directory
+ExportDialog.specificationsPanelTitle = Specifications file
+ExportDialog.charsPanelTitle = Characters file
+ExportDialog.itemsPanelTitle = Items file
+ExportDialog.otherPanelTitle = Other directives files
+ExportDialog.possiblePanelTitle = Do not export
+ExportDialog.directiveTypePanelTitle = Directive type
+ExportDialog.directoryLabel = Export directory:
+
 directiveTypeConfor.text = Confor
 directiveTypeIntkey.text = Intkey
 directiveTypeDist.text = Dist
 directiveTypeKey.text = Key
+changeImportDirectory.Action.text=Change...
+changeExportDirectory.Action.text=Change...
 
 # Import Status Dialog
-importDone.Action.text = Done
-cancelImport.Action.text = Cancel
+importExportFinished.Action.text = Done
+cancelImportExport.Action.text = Cancel
+continueImportExport.Action.text = Continue
+pauseOnErrors.Action.text = Pause on error
+
+importDialogHeading = Importing DELTA data set
+exportDialogHeading = Exporting DELTA data set
+lastShowDirectiveLabel.text = Text from last *SHOW directive:
+importExportStatisticsLabel.text = Statistics
+importExportTotalLabel.text = Total
+importExportCurrentFileLabel.text = Current file
+importExportDirectivesLabel.text = Directives:
+importExportErrorsLabel.text = Errors:
+importExportCurrentLabel.text = Current:
+importExportCurrentFileLabel.text = Current file:
+importDirectoryLabel.text = Import directory:
+exportDirectoryLabel.text = Export directory:
+importExportHeadingLabel.text = Heading:
+
+importReport.heading = DELTA - Import log
+exportReport.heading = DELTA - Export log
+importExportReport.dataSetLabel = Dataset: %s
+importReport.directoryLabel = Import directory: %s
+exportReport.directoryLabel = Export directory: %s
+importReport.timeLabel = Import began %s
+exportReport.timeLabel = Export began %s
+importExportReport.directivesFileLabel = Directives file: \\b %s \\b0
+importExportReport.fileTypeLabel = File type %s
+importReport.success = Import succeeded.
+exportReport.success = Export succeeded.
+importReport.failure = Import \\b failed \\b0 .
+exportReport.failure = Export \\b failed \\b0 .
+importReport.finished = Import finished
+exportReport.finished = Export finished
+importReport.failureMessage = \\b %s files failed to import correctly \\b0
+exportReport.failureMessage = \\b %s files failed to export correctly \\b0
+
 
 # Item Edit Dialog.
-ItemEditor.titleSuffix = - Item Edit
+ItemEditor.titleSuffix = Item Edit - %s
 ItemEditor.editTaxonLabelText = Edit taxon name:
 ItemEditor.selectTaxonLabelText = Select taxon:
 taxonNumberLabel.text = Taxon Number:
@@ -243,7 +298,7 @@ deleteItem.Action.accelerator = delete
 cancel.Action.text = Cancel
 
 # Character Edit Dialog.
-CharacterEditor.titleSuffix = - Character edit
+CharacterEditor.titleSuffix = Character edit - %s
 CharacterEditor.editCharacterLabelText = Edit feature description:
 CharacterEditor.selectCharacterLabelText = Select character:
 characterNumberLabel.text = Character Number:
@@ -290,7 +345,19 @@ displayImage.Action.text = Display
 addImage.Action.text = Add...
 deleteImage.Action.text = Delete
 deleteSound.Action.icon = icons/cross.png
+deleteSound.Action.shortDescription = Deletes the selected sound
 playSound.Action.icon = icons/play.png
+playSound.Action.shortDescription = Plays the selected sound
+addSound.Action.text = Insert...
+addSound.Action.shortDescription = Select a sound to add to the image
+confirmNotOnImagePath.title = Not on image path
+confirmNotOnImagePath.message = You have selected a file which is not on the current image path. \nYou may still use this file, but its name will be saved as a full path specification.\nDo you really want to use this file?
+confirmDuplicateFilename.title = Duplicate file exists
+confirmDuplicateFilename.message = A file with the same name exists already on the image path.  \nYou may still use this file, but its name will be saved as a full path specification.\nDo you really want to use this file? 
+imageDetailsSubjectLabel.text = Subject text:
+imageDetailsDevelopersNotesLabel.text = Developer's notes:
+imageDetailsSoundTitle = Image Sound
+imageDetailsImageFilesLabel.text = Image files:
 
 # State editor tab
 stateEditor.definedStatesLabel.text = Defined states:
@@ -316,6 +383,17 @@ deleteState.title = Delete state?
 deleteState.message = Please confirm that you really wish to delete this state:\n%s
 deleteCharacter.title = Delete character?
 deleteCharacter.message = Please confirm that you really wish to delete this character:\n%s
+deleteDependency.title = Delete Controlling Attribute?
+deleteDependency.message = There are no states selected. Do you wish to DELETE this controlling attribute?\n%s
+saveBeforeClosing.title = Save changes?
+saveBeforeClosing.message = The data has been edited.  Save changes?
+deleteOverlay.title = Delete overlay?
+deleteOverlay.message = Please confirm that you really wish to delete all image overlays
+controllingAttributeLabelPrompt.title = Attribute label
+controllingAttributeLabelPrompt.message = Enter a label for this controlling attribute.\n\nBy default, a label is generated from this character's feature and state descriptions.\n
+circularDependencyError.title = Error adding dependency
+circularDependencyError.message = Unable to add this dependency, since it would (perhaps indirectly) make a character dependent on itself.
+
 
 # Character types for display
 characterType.Text = Text
@@ -324,8 +402,166 @@ characterType.OrderedMultiState = Ordered multistate
 characterType.UnorderedMultiState = Unordered multistate
 characterType.RealNumeric = Real numeric
 
+#Image/Overlay Editor
+subjectMenu.text = Subject
+controlMenu.text = Control
+windowMenu.text = Window
+# Control Menu
+nextImage.Action.text = Next image
+previousImage.Action.text = Previous image
+nextCharacterWithImage.Action.text = Next character with image
+previousCharacterWithImage.Action.text = Previous character with image
+nextItemWithImage.Action.text = Next item with image
+previousItemWithImage.Action.text = Previous item with image
+showCharacterDetails.Action.text = Full text
+showImageNotes.Action.text = Notes
+showCharacterNotes.Action.text = Notes
+# Window Menu
+toggleScaling.Action.text = Scaled
+toggleHideText.Action.text = Hide text
+toggleHideHotSpots.Action.text = Hide hotspots
+replaySound.Action.text = Replay sound
+replayVideo.Action.text = Replay video
+reloadImage.Action.text = Reload image
+fitToImage.Action.text = Fit to image
+fullScreen.Action.text = Full Screen
+togglePreviewMode.Action.text = Preview mode
+aboutImage.Action.text = About image...
+closeImage.Action.text = Close
+#Overlays
+imageOverlay.imageNotesButton.text = Notes
+imageOverlay.notesButton.text = Notes
+imageOverlay.okButton.text = OK
+imageOverlay.cancelButton.text = Cancel
 
-# DELTA file loader
+#Overlay popup menu
+editSelectedOverlay.Action.text=Edit overlay
+deleteSelectedOverlay.Action.text=Delete overlay
+deleteAllOverlays.Action.text=Delete all overlays
+displayImageSettings.Action.text=Image Settings...
+cancelPopup.Action.text=Cancel 
+overlayPopup.stackOverlayMenu=Stack overlay
+overlayPopup.insertOverlayMenu=Insert overlay
+overlayPopup.alignButtonsMenu=Align buttons	
+
+stackSelectedOverlayHigher.Action.text=Higher
+stackSelectedOverlayLower.Action.text=Lower
+stackSelectedOverlayOnTop.Action.text=On top
+stackSelectedOverlayOnBottom.Action.text=On bottom
+		
+addTextOverlay.Action.text=Text
+addItemNameOverlay.Action.text=Item (taxon) name
+addAllUsualOverlays.Action.text=All usual overlays
+addFeatureDescriptionOverlay.Action.text=Feature description
+addStateOverlay.Action.text=State
+addHotspot.Action.text=Hotspot
+addOkOverlay.Action.text=Ok
+addCancelOverlay.Action.text=Cancel
+addNotesOverlay.Action.text=Notes
+addImageNotesOverlay.Action.text=Image notes
+		
+useDefaultButtonAlignment.Action.text=Use default
+alignButtonsVertically.Action.text=Vertically
+alignButtonsHorizontally.Action.text=Horizontally
+dontAlignButtons.Action.text=Unaligned
+
+overlayEditDialog.title=Modify overlay
+okOverlayChanges.Action.text = Ok
+applyOverlayChanges.Action.text = Apply
+cancelOverlayChanges.Action.text = Cancel
+overlayEditStateNumberLabel.text=State number:
+overlayEditAdditionalTextLabel.text=Additional text:
+overlayEditCentreInBoxLabel.text=Centre in box:
+overlayEditIncludeCommentsLabel.text=Include comments:
+overlayEditOmitDescriptionLabel.text=Omit description:
+overlayEditUseIntegralHeightLabel.text=Use integral height:
+overlayEditDimensionsLabel.text=Dimensions
+overlayEditImageUnitsLabel.text=Image units
+overlayEditLinesLabel.text=Lines
+overlayEditXLabel.text=X:
+overlayEditYLabel.text=Y:
+overlayEditWidthLabel.text=W:
+overlayEditHeightLabel.text=H:
+
+hotSpotEditDialog.title=Modify hostspot (State: %s)
+popupSelected.Action.text = Pop up
+useCustomColourSelected.Action.text=Use custom colour
+displayColourChooser.Action.text = Choose colour
+ellipseSelected.Action.text = Ellipse
+rectangleSelected.Action.text = Rectangle
+
+hotSpotColourChooser.title=Choose colour
+
+#Image settings dialog
+imageSettingsDialog.title = Image Settings
+okImageSettingsChanges.Action.text = Ok
+applyImageSettingsChanges.Action.text = Apply
+cancelImageSettingsChanges.Action.text = Cancel
+addToImagePath.Action.text = Browse
+imagePathFileChooser.title=Browse for image path
+imageSettingsCentreInBox.text = Centre in box
+imageSettingsIncludeComments.text = Include comments
+imageSettingsOmitDescription.text = Omit description
+imageSettingsUseIntegralHeight.text = Use integral height
+imageSettingsHotspotsPopUp.text = Hotspots pop up
+imageSettingsCustomPopupColour.text = Custom popup colour
+imageSettingsButtonAlignment.text = Button alignment
+imageSettingsFontName.text=	Font
+imageSettingsFontSize.text = Size
+imageSettingsFontBold.text = Bold
+imageSettingsFontItalic.text = Italic
+imageSettingsDefaultFont.text = Default:
+imageSettingsFeatureFont.text = Feature:
+imageSettingsButtonFont.text = Button:
+imageSettingsSample.text = Sample:
+imageSettingsSaveSampleAs.text = Save sample as comment
+imageSettingsOverlayDefaults.title = Defaults for new overlays
+imageSettingsImagePath.title = Image path	
+imageSettingsOverlayFonts.title = Overlay font settings
+
+#Button alignment combo box
+imageSettingsDialog.buttonAlignment.noAlign = Don't align
+imageSettingsDialog.buttonAlignment.alignVertically = Align vertically
+imageSettingsDialog.buttonAlignment.alignHorizontally = Align horizontally
+
+#Action sets dialog
+actionSetsDialog.title = Actions
+actionSetsActionSetsLabel.text = Action set: 
+runDirectiveFile.Action.text = Run
+editDirectiveFile.Action.text = Edit
+deleteDirectiveFile.Action.text = Delete
+doneWithActionSets.Action.text = Done
+addDirectiveFile.Action.text = Add
+actionSetsActionColumn = Action
+actionSetsFileNameColumn = File name
+actionSetsImportExportColumn = Imported / exported
+actionSetsNoDescription = [Not specified]
+actionSetsDefaultConforAction = Directives for program CONFOR
+actionSetsDefaultIntkeyAction = Directives for program INTKEY
+actionSetsDefaultDistAction = Directives for program DIST
+actionSetsDefaultKeyAction = Directives for program KEY
+actionSetsSpecsFileAction = (Dataset specifications)
+actionSetsCharsFileAction = (Character list)
+actionSetsItemsFileAction = (Item descriptions)
+directiveFileNamePrompt.title = New Directive File
+directiveFileNamePrompt.message = Please enter a name for the new directives file
+
+applyChanges.Action.icon = icons/save.png
+applyChanges.Action.shortDescription = Apply changes
+
+
+deleteDirectiveFile.title = Delete directives file
+deleteDirectiveFile.message = Are you SURE you want to delete this set of directives? (%s) 
+errorRunningDirectiveFile.title = Unable to run program!
+errorRunningDirectiveFile.message = Unable to run program for file: %s
+
+directiveFileEditor.title=
+saveDirectiveFile.Action.text = Save Directives File
+saveDirectiveFile.Action.shortDescription = Saves the contents in the directives file editor.
+saveDirectiveFile.Action.accelerator = control S
+saveDirectiveFile.Action.icon = icons/disk.png
+
+#====== DeltaFileLoader.properties ======
 title = Loads a DELTA file
 description = A task that loads a DELTA file and creates a tree view
 message = Loading file...
@@ -333,230 +569,40 @@ loading = Loading %s
 
 BlockingDialog.title = Loading File...
 
-# Copy all data with headers (Grid viewer)
-title = Copy selected data (with headers)
-description = Copies selected grid data to the system clipboard, including column and row headers
+# Wait half a second before displaying the dialog.
+BlockingDialogTimer.delay = 500
+BlockingDialog.cancelButton.text = Cancel
+
+#====== CopySelectedTask.properties ============
+title = Copy selected data
+description = Copies selected grid data to the system clipboard
 copying = Copying data to clipboard
+
 BlockingDialog.title = Please wait
 
 # Wait a second before displaying the dialog.
 BlockingDialogTimer.delay = 500
 BlockingDialog.cancelButton.text = Cancel
 
+#====== CopySelectedWithHeadersTask.properties =======
+title = Select All
+description = Select all cells in the grid view
 
-#RTF Editor toolbar items
-text_bold.Action.icon = text_bold.png
-text_bold.Action.shortDescription = Bold
-text_italic.Action.icon = text_italic.png
-text_italic.Action.shortDescription = Italic
-text_underline.Action.icon = text_underline.png
-text_underline.Action.shortDescription = Underline
-text_superscript.Action.icon = text_superscript.png
-text_superscript.Action.shortDescription = Superscript
-text_subscript.Action.icon = text_subscript.png
-text_subscript.Action.shortDescription = Subscript
-undo.Action.icon = arrow_undo.png
-undo.Action.shortDescription = Reverses all changes made to this attribute
+BlockingDialog.title = Please wait
 
+# Wait a second before displaying the dialog.
+BlockingDialogTimer.delay = 500
+BlockingDialog.cancelButton.text = Cancel
 
+#====== SelectAllTask.properties =======
+title = Select All
+description = Select all cells in the grid view
+
+BlockingDialog.title = Please wait
+
+# Wait a second before displaying the dialog.
+BlockingDialogTimer.delay = 500
+BlockingDialog.cancelButton.text = Cancel
 }}}
 
-===Common to Intkey and the DELTA Editor===
-{{{
-#About Box 
-closeAboutBox.Action.text = &OK
-
-showLicense.Action.text = View &License Details
-showLicense.Action.accelerator = control L
-showLicense.Action.shortDescription = View details about the software license
-
-showSystemInfo.Action.text = Show &System Information
-
-AboutBox.versionString = Version %s
-AboutBox.attributionLine1 = Part of the Open DELTA suite
-AboutBox.attributionLine2 = <center>Based on work by M.J. Dallwitz, T.A. Paine and E.J. Zurcher</center>
-AboutBox.copyrightString = <center>Copyright Atlas of Living Australia 2011</center>
-AboutBox.alaAttribution = <center>This development is being funded by the <a href="http://www.ala.org.au">Atlas of Living Australia</a>.</center>
-
-#License Info Box
-LicenseInfoBox.windowTitle = License Information
-LicenseInfoBox.licenseAttribution = This software is made available under Version 1.1 of the Mozilla Public License
-LicenseInfoBox.sourceCodeLocation = Source code can be downloaded from: http://code.google.com/p/open-delta
-closeLicenseInfoBox.Action.text = OK
-
-#System Info Box
-SystemInfoBox.windowTitle = System Information
-copySystemInfoToClipboard.Action.text = Copy to clipboard
-closeSystemInfoBox.Action.text = OK
-}}}
-
-===Intkey===
-{{{
-
-Application.id = Intkey
-Application.title = Intkey
-Application.version = 1.0-M2
-Application.vendor = open-delta
-Application.vendorId = open-delta
-Application.homepage = http://code.google.com/p/open-delta/
-Application.description = An interactive program for identifying a specimen by comparing it with stored descriptions
-Application.lookAndFeel = system
-Application.shortName = Intkey
-
-Intkey.windowTitleWithDatasetTitle = Intkey: %s
-Intkey.availableCharactersCaption = Available Characters (%s)
-Intkey.bestCharactersCaption = Best Characters (%s)
-Intkey.usedCharactersCaption = Used Characters (%s)
-Intkey.remainingTaxaCaption = Remaining Taxa (%s)
-Intkey.eliminatedTaxaCaption = Eliminated Taxa (%s)
-Intkey.errorDlgTitle = Error
-Intkey.informationDlgTitle = Information
-
-# File menu
-mnuFile.text = &File
-mnuItNewDataSet.Action.text = &New Data Set...
-mnuItPreferences.Action.text = Preferences...
-mnuItContents.Action.text = Contents...
-mnuFileCmds.text = &File
-mnuItFileCharacters.Action.text = Characters...
-mnuItFileTaxa.Action.text = Taxa...
-mnuOutputCmds.text = &Output
-mnuItComment.Action.text = Comment...
-mnuItShow.Action.text = Show...
-mnuItNormalMode.Action.text = Normal Mode
-mnuItEditIndex.Action.text = Edit Index...
-mnuItExitApplication.Action.text = Quit (E&xit)
-
-# Queries menu
-mnuQueries.text = &Queries
-
-# Browsing menu
-mnuBrowsing.text = &Browsing
-
-# Settings menu
-mnuSettings.text = &Settings
-
-# ReExecute menu
-mnuReExecute.text = &ReExecute
-mnuItReExecute.Action.text = &ReExecute...
-
-# New Data Set Dialog
-browseForFile.Action.text = Browse...
-
-# Window menu
-mnuWindow.text = &Window
-mnuItCascadeWindows.Action.text = &Cascade
-mnuItTileWindows.Action.text = &Tile
-mnuItCloseAllWindows.Action.text = Close &All
-
-# Help menu
-mnuHelp.text = &Help
-mnuItHelpIntroduction.Action.text = Introduction...
-mnuItHelpCommands.Action.text = Commands...
-mnuItHelpAbout.Action.text = About Intkey
-
-# About Box 
-AboutBox.windowTitle = About Intkey
-AboutBox.applicationTitle = Intkey
-
-# Global option buttons
-btnContextHelp.Action.icon = icons/helpa.png
-
-# Character toolbar buttons
-btnRestart.Action.icon = icons/restarts.png
-btnBestOrder.Action.icon = icons/obests.png
-btnSeparate.Action.icon = icons/oseps.png
-btnNaturalOrder.Action.icon = icons/onats.png
-btnDiffSpecimenTaxa.Action.icon = icons/diff_ss.png
-btnSetTolerance.Action.icon = icons/set_tols.png
-btnSetMatch.Action.icon = icons/set_mats.png
-btnUseSubset.Action.icon = icons/inc_cs.png
-btnFindCharacter.Action.icon = icons/finds.png
-
-# Taxa toolbar buttons
-btnTaxonInfo.Action.icon = icons/infos.png
-btnDiffTaxa.Action.icon = icons/diff_ts.png
-btnSubsetTaxa.Action.icon = icons/inc_ts.png
-btnFindTaxon.Action.icon = icons/finds.png
-
-# Character Value Input Dialog
-characterValueInputDialog_OK.Action.text = OK
-characterValueInputDialog_Images.Action.text = Images
-characterValueInputDialog_FullText.Action.text = Full Text
-characterValueInputDialog_Search.Action.text = Search
-characterValueInputDialog_Cancel.Action.text = Cancel
-characterValueInputDialog_Notes.Action.text = Notes
-characterValueInputDialog_Help.Action.text = Help
-
-# Keyword selection dialog
-keywordSelectionDialog_OK.Action.text = OK
-keywordSelectionDialog_DeselectAll.Action.text = Deselect All
-keywordSelectionDialog_List.Action.text = List
-keywordSelectionDialog_Images.Action.text = Images
-keywordSelectionDialog_Search.Action.text = Search
-keywordSelectionDialog_Cancel.Action.text = Cancel
-keywordSelectionDialog_Help.Action.text = Help
-
-# Character selection dialog
-characterSelectionDialog_OK.Action.text = OK
-characterSelectionDialog_SelectAll.Action.text = Select All
-characterSelectionDialog_Keywords.Action.text = Keywords
-characterSelectionDialog_Images.Action.text = Images
-characterSelectionDialog_Search.Action.text = Search
-characterSelectionDialog_Cancel.Action.text = Cancel
-characterSelectionDialog_DeselectAll.Action.text = Deselect All
-characterSelectionDialog_FullText.Action.text = Full Text
-characterSelectionDialog_Notes.Action.text = Notes
-characterSelectionDialog_Help.Action.text = Help
-
-# Text Input Dialog
-TextInputDialog.title = Enter text
-
-# Integer Input Dialog
-IntegerInputDialog.title = Enter value or range of values
-IntegerInputDialog.validationErrorMessage = Integer value(s) required
-IntegerInputDialog.validationErrorTitle = Invalid input
-
-# Real Input Dialog
-RealInputDialog.title = Enter value or range of values
-RealInputDialog.validationErrorMessage = Real value(s) required
-RealInputDialog.validationErrorTitle = Invalid input
-
-# Mulitstate Input Dialog
-MultiStateInputDialog.title = Select state or states
-MultiStateInputDialog.selectionConfirmationMessage = You have selected all of the character states. Is that what you want?
-MultiStateInputDialog.selectionConfirmationTitle = Confirm selection
-
-# Character keyword selection dialog
-CharacterKeywordSelectionDialog.title = %s: Select character keywords
-
-# Character selection dialog
-CharacterSelectionDialog.title = %s: Select characters
-CharacterSelectionDialog.titleFromKeyword = %s: Select characters (from '%s')
-
-# Use Directive Messages
-UseDirective.NoDataSetMsg = Need to have a dataset loaded before USE can be called.
-UseDirective.CharacterAlreadyUsed = Character '%s' has already been used. Do you want to change the value(s) you entered?
-UseDirective.CharacterUnavailable = Character '%s' is unavailable.
-UseDirective.CharacterExcluded = Character '%s' is excluded.
-UseDirective.InvalidCharacterNumber = Invalid character number '%s'. Valid numbers are in the range 1-%s.
-UseDirective.InvalidIntegerValue = Invalid integer value '%s' for character %s - '%s'.
-UseDirective.InvalidRealValue = Invalid real value '%s' for character %s - '%s'.
-UseDirective.InvalidStateValue = Invalid state value '%s' for character %s - '%s'. This character has %s states.
-
-# Generic Errors
-CharactersFileNotFound.error = Characters file '%s' could not be found
-TaxaFileNotFound.error = Taxa file '%s' could not be found
-RedefineSystemKeyword.error = '%s' is a system keyword and cannot be redefined
-KeywordAmbiguous.error = Keyword '%s' is ambiguous
-KeywordNotFound.error = Keyword '%s' not found
-
-# ReExecute Dialog
-ReExecuteDialog.windowTitle = Select command to re-execute
-reExecuteDialog_Execute.Action.text = Execute
-reExecuteDialog_Cancel.Action.text = Cancel
-reExecuteDialog_Edit.Action.text = Edit
-
-
-
-}}}
+=== Common to Intkey and the DELTA Editor ===
