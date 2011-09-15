@@ -38,7 +38,6 @@ The DELTA software is considered an alpha release.  Please make a copy of your e
 
 ====Known Problems====
  * ISSUE 33 - Layout of character state image overlays can be untidy
- * The ?L1 directive wildcard is not yet supported
 
 = Milestone 6 =
 
