@@ -11,6 +11,10 @@ The DELTA software is considered an alpha release.  Please make a copy of your e
 ==DELTA Editor Release Notes:==
 
 ====New Features====
+ * Implemented the image settings dialog
+ * Implemented directive file editing
+ * Further work on import/export functionality
+ * Various bug fixes
 
 ====Known Problems====
  * ISSUE 36 - Can't add new character in grid view when there are zero characters
