@@ -13,6 +13,13 @@ The DELTA software is considered an alpha release.  Please make a copy of your e
 ====New Features====
 
 ====Known Problems====
+ * ISSUE 36 - Can't add new character in grid view when there are zero characters
+ * ISSUE 37 - Help is still missing
+ * ISSUE 41 - Editor does not support importing chars or items into an existing data set.
+ * ISSUE 42 - Action sets hooked up to old CONFOR/KEY/DIST
+ * ISSUE 44 - Search menu missing from Editor
+ * ISSUE 49 - The character edit dialog can be closed, and the selected character can change even if a validation error is present.
+ * ISSUE 50 - Multistate characters with zero states are not validated
 
 ==Intkey Release Notes:==
 
@@ -26,6 +33,8 @@ The DELTA software is considered an alpha release.  Please make a copy of your e
  * Fixed various image display problems
 
 ====Known Problems====
+ * ISSUE 33 - Layout of character state image overlays can be untidy
+ * The ?L1 directive wildcard is not yet supported
 
 = Milestone 6 =
 
