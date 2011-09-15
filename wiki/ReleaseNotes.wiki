@@ -32,7 +32,7 @@ The DELTA software is considered an alpha release.  Please make a copy of your e
  * Added support for remotely hosted datasets
  * Added tooltips for toolbar buttons and menu items
  * Reworked directive handling to support ?,?K,?L and ?S wildcards
- * Implemented DELETE, and ILLUSTRATE TAXA directives
+ * Implemented DELETE, CHARACTERS and ILLUSTRATE TAXA directives
  * Basic implementation of the DESCRIBE directive
  * Fixed various image display problems
 
