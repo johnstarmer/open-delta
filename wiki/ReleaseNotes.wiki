@@ -1,7 +1,7 @@
 #summary Open Delta release notes.
 #labels releasenotes
 
-= Milestone 6 =
+= Milestone 7 =
 
 == General Release Notes: ==
 The Milestone 7 (M7) release has progressed work on the DELTA Editor and Intkey.
@@ -17,6 +17,13 @@ The DELTA software is considered an alpha release.  Please make a copy of your e
 ==Intkey Release Notes:==
 
 ====New Features==== 
+ * Implemented taxon information dialog
+ * Added support for remotely hosted datasets
+ * Added tooltips for toolbar buttons and menu items
+ * Reworked directive handling to support ?,?K,?L and ?S wildcards
+ * Implemented DELETE, and ILLUSTRATE TAXA directives
+ * Basic implementation of the DESCRIBE directive
+ * Fixed various image display problems
 
 ====Known Problems====
 
