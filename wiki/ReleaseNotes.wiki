@@ -1,6 +1,57 @@
 #summary Open Delta release notes.
 #labels releasenotes
 
+= Milestone 8 =
+
+== General Release Notes: ==
+The Milestone 8 (M8) release has progressed work on CONFOR and Intkey.  Some fixes were made to the DELTA Editor.
+
+The DELTA software is considered an alpha release.  Please make a copy of your existing DELTA data sets before accessing them with any of the Open DELTA programs.
+
+==DELTA Editor Release Notes:==
+
+====New Features====
+ * Help tooltips have been added to the directives file editor windows.
+ * Action Sets now use the ported (Java) CONFOR when running CONFOR directives files.
+ * ISSUE 44 - Search menu missing from Editor
+
+====Bug Fixes====
+ * ISSUE 53 - In grid view the tab key moves focus to the attribute editor.
+ * ISSUE 54 - Number the open windows in the DELTA editor.
+ * ISSUE 56 - Some status updates during export are missing.
+ * ISSUE 57 - Run directives file currently doesn't use the export directory.
+ * ISSUE 58 - Exporting a new data set doesn't work correctly.
+
+====Known Problems====
+ * ISSUE 36 - Can't add new character in grid view when there are zero characters
+ * ISSUE 37 - Help is still missing
+ * ISSUE 41 - Editor does not support importing chars or items into an existing data set.
+ * ISSUE 42 - Action sets hooked up to old CONFOR/KEY/DIST
+ * ISSUE 49 - The character edit dialog can be closed, and the selected character can change even if a validation error is present.
+ * ISSUE 50 - Multistate characters with zero states are not validated
+
+==CONFOR Release Notes==
+====New Features====
+ * PRINT CHARACTER LIST is now supported
+ * PRINT ITEM NAMES is now supported
+ * PRINT ITEM DESCRIPTIONS is now supported
+ * TRANSLATE INTO KEY FORMAT is now supported
+ * TRANSLATE INTO DIST FORMAT is now supported
+ * OUTPUT FORMAT HTML is now supported
+ 
+====Bug Fixes====
+ * Several fixes to the TRANSLATE INTO INTKEY FORMAT routine.
+
+====Known Problems====
+ * Validation and error handling during directives parsing is not complete. 
+
+==Intkey Release Notes:==
+
+====New Features==== 
+
+====Known Problems====
+
+
 = Milestone 7 =
 
 == General Release Notes: ==
@@ -14,14 +65,13 @@ The DELTA software is considered an alpha release.  Please make a copy of your e
  * Implemented the image settings dialog
  * Implemented directive file editing
  * Further work on import/export functionality
- * Various bug fixes
+ 
 
 ====Known Problems====
  * ISSUE 36 - Can't add new character in grid view when there are zero characters
  * ISSUE 37 - Help is still missing
  * ISSUE 41 - Editor does not support importing chars or items into an existing data set.
  * ISSUE 42 - Action sets hooked up to old CONFOR/KEY/DIST
- * ISSUE 44 - Search menu missing from Editor
  * ISSUE 49 - The character edit dialog can be closed, and the selected character can change even if a validation error is present.
  * ISSUE 50 - Multistate characters with zero states are not validated
 
