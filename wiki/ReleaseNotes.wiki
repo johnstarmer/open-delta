@@ -43,14 +43,49 @@ The DELTA software is considered an alpha release.  Please make a copy of your e
  * Several fixes to the TRANSLATE INTO INTKEY FORMAT routine.
 
 ====Known Problems====
- * Validation and error handling during directives parsing is not complete. 
+ *  Validation and error handling during directives parsing is not complete. 
 
 ==Intkey Release Notes:==
 
 ====New Features==== 
 
+ * "SEPARATE" character ordering
+ * Describe report
+ * Summary report
+ * Other advanced mode commands
+
+The majority of the advanced mode commands have been completed. See "Known Problems" below for a list of those that are yet to be implemented.
+
 ====Known Problems====
 
+ * Help and context sensitive help are yet to be completed
+ * ISSUE 33 - Intkey character layout can be untidy
+ * ISSUE 59 - Intkey hangs when loading remotely hosted images
+ * ISSUE 60 - Intkey UI can be unresponsi​ve when generating reports or loading files
+
+The following advanced mode commands are yet to be implemented:
+
+ * DEFINE ENDIDENTIFY
+ * DEFINE SUBJECTS
+ * DIAGNOSE
+ * DISPLAY ENDIDENTIFY
+ * DISPLAY CONTINUOUS
+ * DISPLAY IMAGES
+ * DISPLAY KEYWORDS
+ * DISPLAY INPUT
+ * DISPLAY SCALED
+ * DISPLAY WINDOWING
+ * OUTPUT CHARACTERS
+ * OUTPUT TAXA
+ * OUTPUT DESCRIBE
+ * OUTPUT SUMMARY
+ * OUTPUT DIAGNOSE
+ * OUTPUT DIFFERENCES
+ * OUTPUT SIMILARITIES
+ * OUTPUT COMMENT
+ * PREFERENCES
+ * SET DEMONSTRATION
+ * STATUS
 
 = Milestone 7 =
 
