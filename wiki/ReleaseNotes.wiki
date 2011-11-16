@@ -1,6 +1,67 @@
 #summary Open Delta release notes.
 #labels releasenotes
 
+= Milestone 9 =
+
+== General Release Notes: ==
+The Milestone 9 (M9) release has progressed work on CONFOR, DIST, KEY and Intkey. 
+
+The DELTA software is considered an alpha release.  Please make a copy of your existing DELTA data sets before accessing them with any of the Open DELTA programs.
+
+==DELTA Editor Release Notes:==
+
+====New Features====
+ * KEY, DIST and IntKey are integrated into the DELTA Editor action sets.
+
+====Bug Fixes====
+ * ISSUE 82 - Date / Times in the Action Sets dialog are nonsense.
+ * ISSUE 74 - Missing expand all on right click menu in tree view.
+ * ISSUE 67 - RTF despace routine fails with unicode chars
+ * ISSUE 42 - Action Sets running original programs
+
+====Known Problems====
+ * ISSUE 36 - Can't add new character in grid view when there are zero characters
+ * ISSUE 37 - Help is still missing
+ * ISSUE 41 - Editor does not support importing chars or items into an existing data set.
+ * ISSUE 49 - The character edit dialog can be closed, and the selected character can change even if a validation error is present.
+ * ISSUE 50 - Multistate characters with zero states are not validated
+ * ISSUE 55 - Add new states always adds to the end instead of highlighted position.
+ * ISSUE 64 - Inapplicable characters sometimes don't show up after an import.
+ * ISSUE 73 - Exporting intkey directives with unix end of lines cause the original Inkey to crash.
+
+==CONFOR Release Notes==
+====New Features====
+ * TRANSLATE INTO NEXUS FORMAT is now supported
+ * TRANSLATE INTO PAUP FORMAT is now supported
+ * TRANSLATE INTO HENNING86 FORMAT is now supported
+ * PRINT UNCODED CHARACTERS is now supported.
+ * Error handling has been improved.
+
+====Bug Fixes====
+ * ISSUE 63 - Inapplicable bit not set in Intkey attributes 
+ * ISSUE 65 - Intkey directives and binaries not being created via OpenDelta Editor and Confor.sh
+ * ISSUE 68 - INTKEY translation fails when encountering a numeric attribute coded with only a comment.
+ * ISSUE 69 - Spaces in the value of the CHARACTER FOR OUTPUT FILES result in errors in the INTKEY translation
+ * ISSUE 75 - CONFOR fails on real dataset
+ * ISSUE 81 - CONFOR RTF reports have spaces in the rtf header which MS Word doesn't like
+
+====Known Problems====
+ *  Validation and error handling during directives parsing is not complete. 
+ * ISSUE 61 - problem: Action set: Translate into Intkey format (intkey.ink) not output correctly
+ * ISSUE 83 - Various issues with PRINT CHARACTER LIST (from Mike Dallwitz via DELTA-L)
+ 
+==DIST Release Notes==
+====New Features====
+ * DIST has been implemented.
+
+==Intkey Release Notes:==
+
+====New Features==== 
+
+
+====Known Problems====
+
+
 = Milestone 8 =
 
 == General Release Notes: ==
