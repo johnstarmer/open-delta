@@ -49,6 +49,7 @@ The DELTA software is considered an alpha release.  Please make a copy of your e
  *  Validation and error handling during directives parsing is not complete. 
  * ISSUE 61 - problem: Action set: Translate into Intkey format (intkey.ink) not output correctly
  * ISSUE 83 - Various issues with PRINT CHARACTER LIST (from Mike Dallwitz via DELTA-L)
+ * Output from EMPHASIZE CHARACTERS only partially correct.
  * TRANSLATE INTO PAYNE FORMAT not implemented
  * PRINT SUMMARY not implemented
  * USE LANGUAGE not implemented
