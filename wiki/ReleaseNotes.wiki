@@ -70,10 +70,26 @@ The DELTA software is considered an alpha release.  Please make a copy of your e
 ==Intkey Release Notes:==
 
 ====New Features==== 
-
+ * All advanced mode directives have now been implemented, with the exception of the DIAGNOSE directive.
 
 ====Known Problems====
+ * ISSUE 33 - Intkey character layout can be untidy
+ * ISSUE 59 - Intkey hangs when loading remotely hosted images
+ * ISSUE 60 - Intkey UI can be unresponsi?ve when generating reports or loading files
+ * ISSUE 76 - Intkey online help yet to be implemented
+ * ISSUE 77 - Intkey web search yet to be implemented
+ * ISSUE 78 - Intkey window tiling, cascading and closing yet to be implemeted
+ * ISSUE 79 - Intkey RTF report dialog find menu yet to be implemented
+ * ISSUE 80 - Intkey RTF report printing yet to be implemented
+ 
+==KEY Release Notes:==
 
+====New Features==== 
+ * A basic implementation of key has been completed. The ABASE and REUSE values are currently ignored. Item adundances are currently ignored.
+ 
+===Known problems===
+ * The character ordering chosen by the BEST algorithm is in some circumstances slightly different to that chosen by the legacy version of key.
+ This problem is being investigated.
 
 = Milestone 8 =
 
@@ -135,7 +151,7 @@ The majority of the advanced mode commands have been completed. See "Known Probl
  * Help and context sensitive help are yet to be completed
  * ISSUE 33 - Intkey character layout can be untidy
  * ISSUE 59 - Intkey hangs when loading remotely hosted images
- * ISSUE 60 - Intkey UI can be unresponsi​ve when generating reports or loading files
+ * ISSUE 60 - Intkey UI can be unresponsi?ve when generating reports or loading files
 
 The following advanced mode commands are yet to be implemented:
 
