@@ -1,6 +1,67 @@
 #summary Open Delta release notes.
 #labels releasenotes
 
+= Milestone 10 =
+The Milestone 10 (M10) release has progressed work on KEY, Intkey and CONFOR.  The DELFOR program has been implemented.
+Please make a copy of your existing DELTA data sets before accessing them with any of the Open DELTA programs.
+
+==DELTA Editor Release Notes==
+
+====New Features====
+ * Improved integration with CONFOR / Intkey / DIST / KEY.
+
+====Bug Fixes====
+ * ISSUE 64 - Something is wrong with inapplicability checking after an import.
+ * ISSUE 85 - chars, items, specs only exported second time.
+ * ISSUE 86 - Intkey doesn't launch from the Editor if DELTA was installed with the .exe
+ * ISSUE 87 - Intkey DEFINE CHARACTERS / DEFINE TAXA are not imported / exported correctly.
+
+==== Known problems====
+ * ISSUE 36 - Can't add new character in grid view when there are zero characters
+ * ISSUE 37 - Help is still missing
+ * ISSUE 41 - Editor does not support importing chars or items into an existing data set.
+ * ISSUE 49 - The character edit dialog can be closed, and the selected character can change even if a validation error is present.
+ * ISSUE 50 - Multistate characters with zero states are not validated
+ * ISSUE 55 - Add new states always adds to the end instead of highlighted position.
+ * ISSUE 73 - Exporting intkey directives with unix end of lines cause the original Inkey to crash.
+ * ISSUE 89 - The DELTA Editor should launch Intkey in a new process
+
+==CONFOR Release Notes==
+====New Features====
+ * TRANSLATE INTO PAYNE FORMAT is now supported
+ * TRANSLATE INTO HENNING86 FORMAT is now supported
+ * PRINT SUMMARY is now supported.
+ * Error handling has been improved.
+
+====Bug Fixes====
+ * ISSUE 61 - problem: Action set: Translate into Intkey format (intkey.ink) not output correctly
+
+====Known Problems====
+ *  Validation and error handling during directives parsing is not complete. 
+ * ISSUE 83 - Various issues with PRINT CHARACTER LIST (from Mike Dallwitz via DELTA-L)
+ * USE LANGUAGE not implemented
+ * ALTERNATE LANGUAGES not implemented
+ * page break directives not implemented (NEW LISTING PAGE, NEW PRINT PAGE, PAGE LENGTH)
+ * PRINT ALL CHARACTERS not implemented
+ * ACCEPT DUPLICATE VALUES not implemented
+ * DATA COMPRESSION not implemented
+ * STOP AFTER ITEM not implemented
+ * OMIT LOWER FOR CHARACTERS not implemented
+ * CHINESE FORMAT not implemented
+ * INSERT UNCODED ATTRIBUTES not implemented
+
+==DELFOR Release Notes==
+DELFOR has been implemented.  A change from the original DELFOR is that the items file is required as an INPUT FILE.  This change has been made in the reorder file included with the sample.
+
+==Intkey Release Notes==
+
+====Bug Fixes====
+ * ISSUE 79 - Intkey RTF report dialog find menu.
+
+==KEY Release Notes==
+KEY has been partially implemented.  The key can be created and printed but only a subset of the directives are implemented.
+
+
 = Milestone 9 =
 
 == General Release Notes: ==
