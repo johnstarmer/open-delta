@@ -15,15 +15,15 @@ Currently we distribute the Open DELTA software as either a .zip/.tar.gz archive
 
 == Windows ==
 
-Please uninstall the Open DELTA Milestone 8 release before installing the Milestone 9 release.
+Please uninstall the Open DELTA Milestone 9 release before installing the Milestone 10 release.
 
 ===If you have a Java 6 runtime environment installed===
 
- # Download and run [http://open-delta.googlecode.com/files/open-delta-1.0-M9-Installer-NOJRE.exe open-delta-1.0-M9-Installer-NOJRE.exe]
+ # Download and run [http://open-delta.googlecode.com/files/open-delta-1.0-M10-Installer-NOJRE.exe open-delta-1.0-M10-Installer-NOJRE.exe]
 
 ===If you do not have a Java 6 runtime environment installed or do not know if you have a Java 6 runtime installed===
  
- # Download and run [http://open-delta.googlecode.com/files/open-delta-1.0-M9-Installer.exe open-delta-1.0-M9-Installer.exe]
+ # Download and run [http://open-delta.googlecode.com/files/open-delta-1.0-M10-Installer.exe open-delta-1.0-M10-Installer.exe]
  
 ===Choosing which users to install the application for===
 The installation wizard provides you with the choice to either install Open DELTA for anyone using the computer,
@@ -47,18 +47,18 @@ on earlier versions of Windows.
 == Other Platforms ==
 You must have a Java 6 runtime environment installed on your computer.
 
- # Download either [http://open-delta.googlecode.com/files/open-delta-1.0-M9-bin.tar.gz open-delta-1.0-M9-bin.tar.gz] or [http://open-delta.googlecode.com/files/open-delta-1.0-M9-bin.zip open-delta-1.0-M9-bin.zip] to your computer.
+ # Download either [http://open-delta.googlecode.com/files/open-delta-1.0-M10-bin.tar.gz open-delta-1.0-M10-bin.tar.gz] or [http://open-delta.googlecode.com/files/open-delta-1.0-M10-bin.zip open-delta-1.0-M10-bin.zip] to your computer.
  # Open a terminal and navigate to the directory you downloaded the archive to.
  # Use your favourite archive extracting tool or use the command below to extract the contents of the archive:
 {{{
-tar xvfz open-delta-1.0-M9-bin.tar.gz
+tar xvfz open-delta-1.0-M10-bin.tar.gz
 }}}
 
 Once the files have been extracted, the shell scripts will not be executable by default.  
  # Open a terminal and change to the directly where you extracted the archive.
  # Execute the following commands to make the scripts executable.
 {{{
-cd open-delta-1.0-M9-bin/bin
+cd open-delta-1.0-M10-bin/bin
 chmod u+x *.sh
 }}}
 
