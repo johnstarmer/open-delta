@@ -672,7 +672,7 @@ aboutImageDialog.colourLabel.text = Displayed using %d colours
 {{{
 Application.id = Intkey
 Application.title = Intkey
-Application.version = 1.0-M7-SNAPSHOT
+Application.version = 1.0-BETA-SNAPSHOT
 Application.vendor = open-delta
 Application.vendorId = open-delta
 Application.homepage = http://code.google.com/p/open-delta/
@@ -680,16 +680,18 @@ Application.description = An interactive program for identifying a specimen by c
 Application.lookAndFeel = system
 Application.shortName = Intkey
 
-Intkey.windowTitleWithDatasetTitle = Intkey: %s
-Intkey.availableCharactersCaption = Available Characters (%s)
-Intkey.bestCharactersCaption = Best Characters (%s)
-Intkey.usedCharactersCaption = Used Characters (%s)
-Intkey.remainingTaxaCaption = Remaining Taxa (%s)
-Intkey.eliminatedTaxaCaption = Eliminated Taxa (%s)
+Intkey.windowTitleWithDatasetTitle = Intkey: {0}
+Intkey.availableCharactersCaption = Available Characters ({0})
+Intkey.bestCharactersCaption = Best Characters ({0})
+Intkey.separateCharactersCaption = Separate {0} ({1})
+Intkey.usedCharactersCaption = Used Characters ({0})
+Intkey.remainingTaxaCaption = Remaining Taxa ({0})
+Intkey.eliminatedTaxaCaption = Eliminated Taxa ({0})
 Intkey.calculatingBestCaption = Calculating best characters
 Intkey.errorDlgTitle = Error
 Intkey.informationDlgTitle = Information
 Intkey.loadingReportCaption = Loading report...
+Intkey.logDialogTitle = Log
 
 Intkey.identificationCompleteCaption = Identification complete.
 Intkey.availableCharactersCannotSeparateCaption = The available characters cannot separate the remaining taxa.
@@ -698,47 +700,176 @@ Intkey.charactersExcludedCannotSeparateCaption = Characters have been excluded f
 Intkey.mismatchesAllowCannotSeparateCaption = Mismatches between the specimen and the taxa have been allowed, and the available characters cannot separate the remaining taxa.
 Intkey.selectCharacterKeywordsCaption = Select character keywords
 Intkey.selectTaxonKeywordsCaption = Select taxon keywords
+Intkey.badlyFormedRTFContentMessage = Badly formed RTF content.
+Intkey.separateInformationMessage = In the 'Remaining Taxa' window, select the taxon to the separated.\nSelect one and only one taxon. 
 
 # File menu
 mnuFile.text = &File
 mnuFile.toolTipText = File input, output and program exit
 mnuFileRecents.text = Recent Datasets
 mnuFileRecents.toolTipText = Open a recently used dataset 
-mnuItNewDataSet.Action.text = New &Data Set...
-mnuItNewDataSet.Action.shortDescription = Change to a different data set 
-mnuItPreferences.Action.text = Preferences...
-mnuItPreferences.Action.shortDescription = Select and execute an input file specifying preferred parameter settings
-mnuItContents.Action.text = Contents...
-mnuItContents.Action.shortDescription = Select a file containing a table of contents for the current data set, and select an entry from that table
+mnuItNewDataSet.text = New &Data Set...
+mnuItNewDataSet.toolTipText = Change to a different data set 
+mnuItPreferences.text = Preferences...
+mnuItPreferences.toolTipText = Select and execute an input file specifying preferred parameter settings
+mnuItContents.text = Contents...
+mnuItContents.toolTipText = Select a file containing a table of contents for the current data set, and select an entry from that table
 mnuFileCmds.text = &File
 mnuFileCmds.toolTipText = Specify names of input and output files
-mnuItFileCharacters.Action.text = Characters...
-mnuItFileTaxa.Action.text = Taxa...
+mnuItFileInput.text = &Input...
+mnuItFileOutput.text = &Output...
+mnuItFileDisplay.text = &Display...
+mnuItFileLog.text = &Log...
+mnuItFileJournal.text = &Journal...
+mnuItFileClose.text = &Close...
+mnuItFileCharacters.text = Characters...
+mnuItFileTaxa.text = Taxa...
 mnuOutputCmds.text = &Output
 mnuOutputCmds.toolTipText = Generate files for input to other programs
-mnuItComment.Action.text = Comment...
-mnuItComment.Action.shortDescription = Annotate the output window and files 
-mnuItShow.Action.text = Show...
-mnuItShow.Action.shortDescription = Display text on the screen 
+mnuItComment.text = Comment...
+mnuItComment.toolTipText = Annotate the output window and files 
+mnuItShow.text = Show...
+mnuItShow.toolTipText = Display text on the screen 
 mnuItNormalMode.Action.text = Normal Mode
 mnuItNormalMode.Action.shortDescription = Switch to normal mode
 mnuItAdvancedMode.Action.text = Advanced Mode
-mnuItAdvancedMode.Action.shortDescription = Switch to advanced mode
-mnuItEditIndex.Action.text = Edit Index...
+mnuItAdvancedMode.Action.shortDescription= Switch to advanced mode
 mnuItExitApplication.Action.text = Quit (E&xit)
 mnuItExitApplication.Action.shortDescription = Exit from the program
 
 # Queries menu
 mnuQueries.text = &Queries
 mnuQueries.toolTipText = Interrogate data
+mnuItRestart.text = &Restart
+mnuItRestart.toolTipText = Start a new identification
+mnuItDescribe.text = &Describe...
+mnuItDescribe.toolTipText = Display descriptions of taxa
+mnuItDiagnose.text = D&iagnose...
+mnuItDiagnose.toolTipText = Generate and display diagnostic descriptions of taxa
+mnuItDifferences.text = Di&fferences...
+mnuItDifferences.toolTipText = Display the differences between taxa
+mnuItSimilarities.text = &Similarities...
+mnuItSimilarities.toolTipText = Display the similarities between taxa
+mnuItSummary.text = S&ummary...
+mnuItSummary.toolTipText = Display a summary of the data
 
 # Browsing menu
 mnuBrowsing.text = &Browsing
 mnuBrowsing.toolTipText = View character list, taxon names or illustrations
+mnuItCharacters.text = Characters...
+mnuItCharacters.toolTipText = Display characters
+mnuItTaxa.text = Taxa...
+mnuItTaxa.toolTipText = Display names of taxa
+mnuFind.text = Find...
+mnuFind.toolTipText = Find a text string in character descriptions or taxon names
+mnuItFindCharacters.text = Characters...
+mnuItFindTaxa.text = Taxa...
+mnuIllustrate.text = Illustrate...
+mnuIllustrate.toolTipText = Display Images
+mnuItIllustrateCharacters.text = Characters...
+mnuItIllustrateTaxa.text = Taxa...
+mnuItInformation.text = Information...
 
 # Settings menu
 mnuSettings.text = &Settings
 mnuSettings.toolTipText = Set program and data parameters
+# Set submenu
+mnuSet.text = &Set
+mnuSet.toolTipText = &Set parameters
+mnuAutotolerance.text = Aut&otolerance
+mnuItAutotoleranceOn.text = O&n
+mnuItAutotoleranceOff.text = O&ff
+mnuDemonstration.text = Demo&nstration
+mnuItDemonstrationOn.text = O&n
+mnuItDemonstrationOff.text = O&ff
+mnuItDiagLevel.text = &DiagLevel...
+mnuDiagType.text = Dia&gType
+mnuItDiagTypeSpecimens.text = &Specimens
+mnuItDiagTypeTaxa.text = &Taxa
+mnuItExact.text = &Exact
+mnuFix.text = &Fix
+mnuItFixOn.text = O&n
+mnuItFixOff.text = O&ff
+mnuItImagePath.text = &Imagepath...
+mnuItInfoPath.text = Info&path...
+mnuItMatch.text = &Match...
+mnuItRbase.text = &Rbase...
+mnuItReliabilities.text = Rel&iabilities
+mnuItStopBest.text = &Stopbest...
+mnuItTolerance.text = &Tolerance...
+mnuItVaryWt.text = &Varywt...
+# Display submenu
+mnuDisplay.text = &Display
+mnuDisplay.toolTipText = Set screen display
+mnuCharacterOrder.text = C&haracterOrder
+mnuItCharacterOrderBest.text = &Best
+mnuItCharacterOrderNatural.text = &Natural
+mnuItCharacterOrderSeparate.text = &Separate...
+mnuComments.text = &Comments
+mnuItCommentsOn.text = O&n
+mnuItCommentsOff.text = O&ff
+mnuContinuous.text = Co&ntinuous
+mnuItContinuousOn.text = O&n
+mnuItContinuousOff.text = O&ff
+mnuEndIdentify.text = &EndIdentify
+mnuItEndIdentifyOn.text = O&n
+mnuItEndIdentifyOff.text = O&ff
+mnuItImages.text = I&mages...
+mnuInapplicables.text = &Inapplicables
+mnuItInapplicablesOn.text = O&n
+mnuItInapplicablesOff.text = O&ff
+mnuInput.text = In&put
+mnuItInputOn.text = O&n
+mnuItInputOff.text = O&ff
+mnuKeywords.text = &Keywords
+mnuItKeywordsOn.text = O&n
+mnuItKeywordsOff.text = O&ff
+mnuNumbering.text = Num&bering
+mnuItNumberingOn.text = O&n
+mnuItNumberingOff.text = O&ff
+mnuLog.text = &Log
+mnuItLogOn.text = O&n
+mnuItLogOff.text = O&ff
+mnuScaled.text = &Scaled
+mnuItScaledOn.text = O&n
+mnuItScaledOff.text = O&ff
+mnuUnknowns.text = &Unknowns
+mnuItUnknownsOn.text = O&n
+mnuItUnknownsOff.text = O&ff
+
+# Define submenu
+mnuDefine.text = De&fine
+mnuDefine.toolTipText = Define: a keyword to represent a set of characters or taxa; a toolbar button; actions to be taken at the completion of an identification; information commands; or subjects for selection of taxon images.
+mnuItDefineCharacters.text = &Characters...
+mnuItDefineTaxa.text = &Taxa...
+mnuItDefineNames.text = &Names...
+mnuItDefineButton.text = &Button...
+mnuItDefineEndIdentify.text = &EndIdentify...
+mnuItDefineInformation.text = &Information...
+mnuItDefineSubjects.text = &Subjects...
+# Include submenu
+mnuInclude.text = &Include
+mnuInclude.toolTipText = Restrict all subsequent operations to subsets of characters or taxa
+mnuItIncludeCharacters.text = &Characters
+mnuItIncludeTaxa.text = &Taxa
+# Exclude submenu
+mnuExclude.text = &Exclude
+mnuExclude.toolTipText = Exclude subsets of characters or taxa from all subsequent operations
+mnuItExcludeCharacters.text = &Characters
+mnuItExcludeTaxa.text = &Taxa
+# Status submenu
+mnuStatus.text = S&tatus
+mnuStatus.toolTipText = Display parameter values
+mnuItStatusDisplay.text = &Display 
+mnuStatusInclude.text = &Include
+mnuItStatusIncludeCharacters.text = &Characters
+mnuItStatusIncludeTaxa.text = &Taxa
+mnuStatusExclude.text = &Exclude
+mnuItStatusExcludeCharacters.text = &Characters
+mnuItStatusExcludeTaxa.text = &Taxa
+mnuItStatusFiles.text = &Files
+mnuItStatusSet.text = &Set
+mnuItStatusAll.text = &All 
 
 # ReExecute menu
 mnuReExecute.text = &ReExecute
@@ -831,20 +962,20 @@ keywordSelectionDialog_Help.Action.text = Help
 keywordSelectionDialog_SelectFromCaption = Select from:
 
 # Character keyword selection dialog
-CharacterKeywordSelectionDialog.title = %s: Select character keywords
+CharacterKeywordSelectionDialog.title = {0}: Select character keywords
 CharacterKeywordSelectionDialog.selectFromAllCharactersCaption = All characters
 CharacterKeywordSelectionDialog.selectFromIncludedCharactersCaption = Included characters
 CharacterKeywordSelectionDialog.allCharactersInSelectedSetExcludedCaption = All characters in the specified set have been excluded.
 
 # Taxon keyword selection dialog
-TaxonKeywordSelectionDialog.title = %s: Select taxon keywords
+TaxonKeywordSelectionDialog.title = {0}: Select taxon keywords
 TaxonKeywordSelectionDialog.selectFromAllTaxaCaption = All taxa
 TaxonKeywordSelectionDialog.selectFromIncludedTaxaCaption = Included taxa
 TaxonKeywordSelectionDialog.allTaxaInSelectedSetExcludedCaption = All taxa in the specified set have been excluded.
 
 # Character selection dialog
-CharacterSelectionDialog.title = %s: Select characters
-CharacterSelectionDialog.titleFromKeyword = %s: Select characters (from '%s')
+CharacterSelectionDialog.title = {0}: Select characters
+CharacterSelectionDialog.titleFromKeyword = {0}: Select characters (from ''{1}'')
 
 characterSelectionDialog_OK.Action.text = OK
 characterSelectionDialog_SelectAll.Action.text = Select All
@@ -858,8 +989,8 @@ characterSelectionDialog_Notes.Action.text = Notes
 characterSelectionDialog_Help.Action.text = Help
 
 # Taxon selection dialog
-TaxonSelectionDialog.title = %s: Select taxa
-TaxonSelectionDialog.titleFromKeyword = %s: Select taxa (from '%s')
+TaxonSelectionDialog.title = {0}: Select taxa
+TaxonSelectionDialog.titleFromKeyword = {0}: Select taxa (from ''{1}'')
 
 taxonSelectionDialog_OK.Action.text = OK
 taxonSelectionDialog_SelectAll.Action.text = Select All
@@ -891,31 +1022,73 @@ MultiStateInputDialog.selectionConfirmationTitle = Confirm selection
 
 # Use Directive Messages
 UseDirective.NoDataSetMsg = Need to have a dataset loaded before USE can be called.
-UseDirective.CharacterAlreadyUsed = Character '%s' has already been used. Do you want to change the value(s) you entered?
-UseDirective.CharacterUnavailable = Character '%s' is unavailable.
-UseDirective.CharacterExcluded = Character '%s' is excluded.
-UseDirective.InvalidCharacterNumber = Invalid character number '%s'. Valid numbers are in the range 1-%s.
-UseDirective.InvalidIntegerValue = Invalid integer value '%s' for character %s - '%s'.
-UseDirective.InvalidRealValue = Invalid real value '%s' for character %s - '%s'.
-UseDirective.InvalidStateValue = Invalid state value '%s' for character %s - '%s'. This character has %s states.
+UseDirective.CharacterAlreadyUsed = Character ''{0}'' has already been used. Do you want to change the value(s) you entered?
+UseDirective.CharacterUnavailable = Character ''{0}'' is unavailable.
+UseDirective.CharacterExcluded = Character ''{0}'' is excluded.
+UseDirective.CharacterFixed = Character ''{0}'' is fixed.
+UseDirective.InvalidCharacterNumber = Invalid character number ''{0}''. Valid numbers are in the range 1-{1}.
+UseDirective.InvalidIntegerValue = Invalid integer value ''{0}'' for character {1} - ''{2}''.
+UseDirective.InvalidRealValue = Invalid real value ''{0}'' for character {1} - ''{2}''.
+UseDirective.InvalidStateValue = Invalid state value ''{0}'' for character {1} - ''{2}''. This character has {3} states.
+UseDirective.TaxonToSeparateEliminatedMsg = The value for character ''{0}'' caused {1} to be eliminated. Do you want to change that value?
+
+# Display CharacterOrder Separate Message
+DisplayCharacterOrderSeparate.TaxonNoLongerInContentionMsg = {0} is no longer in contention
 
 # Differences Directive Captions
 DifferencesDirective.Specimen = Specimen
-DifferencesDirective.NotRecorded = not recorded
-DifferencesDirective.NotApplicable = not applicable
 DifferencesDirective.NoDifferences = No differences
 DifferencesDirective.OneDifference = 1 difference
-DifferencesDirective.ManyDifferences = %s differences
+DifferencesDirective.ManyDifferences = {0} differences
+DifferencesDirective.ReportTitle = Differences
+
+# Similarities Directive Captions
+SimilaritiesDirective.NoDifferences = No similarities
+SimilaritiesDirective.OneDifference = 1 similarity
+SimilaritiesDirective.ManyDifferences = {0} similarities
+SimilaritiesDirective.ReportTitle = Similarities
+
+# Summary Directive Captions
+SummaryDirective.ReportTitle = Summary
+SummaryDirective.ReportHeading = Summary for Items: {0}
+SummaryDirective.UnknownInapplicableRecorded = U/I/Recorded
+SummaryDirective.DistributionOfValues = Distribution of values
+SummaryDirective.Mean = Mean
+SummaryDirective.StandardDeviation = Standard Deviation
+SummaryDirective.Minimum = Minimum
+SummaryDirective.Maximum = Maximum
+SummaryDirective.MultiStateCharacterDetail = {0} states
+SummaryDirective.IntegerCharacterDetail = integer
+SummaryDirective.RealCharacterDetail = real
+SummaryDirective.TextCharacterDetail = text
+SummaryDirective.ItemNumber = Item {0}
+
 
 # SET RBASE Directive Messages
 SetRBaseDirective.InvalidValue = Invalid rbase value. A valid value is a real number in the range 1-5.
 
 # Generic Errors
-CharactersFileNotFound.error = Characters file '%s' could not be found
-TaxaFileNotFound.error = Taxa file '%s' could not be found
-RedefineSystemKeyword.error = '%s' is a system keyword and cannot be redefined
-KeywordAmbiguous.error = Keyword '%s' is ambiguous
-KeywordNotFound.error = Keyword '%s' not found
+CharactersFileNotFound.error = Characters file ''{0}'' could not be found
+TaxaFileNotFound.error = Taxa file ''{0}'' could not be found
+RedefineSystemKeyword.error = ''{0}'' is a system keyword and cannot be redefined
+CharacterKeywordNotFoundOrAmbiguous.error = Character keyword ''{0}'' not found or ambiguous
+TaxonKeywordNotFoundOrAmbiguous.error = Taxon keyword ''{0}'' not found or ambiguous
+NoCharactersInSet.error = There are no characters in the specified set
+NoTaxaInSet.error = There are no taxa in the specified set
+InvalidSetMatchOption.error = Invalid option for SET MATCH: ''{0}''
+InvalidTaxonNumber.error = Invalid taxon number {0}, expecting number in the range 1-{0}
+InvalidTaxonName.error = ''{0}'' is not a valid taxon name
+InvalidCharacterNumber.error = Invalid character number {0}, expecting number in the range 1-{0} 
+DirectiveCallNoDatasetLoaded.error = The command ''{0}'' requires data files. Use the NewDataSet option in the Files menu.
+DirectiveParseError.error = An error occurred while parsing the command ''{0}''. See the log for details. 
+UnrecognizedTaxonKeyword.error = Unrecognized taxon keyword ''{0}''
+UnrecognizedCharacterKeyword.error = Unrecognized character keyword ''{0}''
+ErrorCreatingFile.error = Error creating file
+ErrorCreatingFileWithName.error = Error creating file ''{0}''
+IntegerValueRequired.error = Integer value required
+RealValueRequired.error = Real value required
+NoOutputFileOpen.error = No OUTPUT file is open
+ImageDisplayDisabled.error = Image display is disabled.
 
 # ReExecute Dialog
 ReExecuteDialog.windowTitle = Select command to re-execute
@@ -926,10 +1099,14 @@ reExecuteDialog_Edit.Action.text = Edit
 #RtfReportDisplayDialog
 rtfReportDisplayDialog_mnuFile.text = File
 rtfReportDisplayDialog_mnuItSaveAs.Action.text = Save As
+rtfReportDisplayDialog_mnuItPrint.Action.text = Print
 rtfReportDisplayDialog_mnuEdit.text = Edit
 rtfReportDisplayDialog_mnuItFind.Action.text = Find...
+rtfReportDisplayDialog_mnuItFind.Action.accelerator = control F
 rtfReportDisplayDialog_mnuItCopy.Action.text = Copy
+rtfReportDisplayDialog_mnuItCopy.Action.accelerator = control C
 rtfReportDisplayDialog_mnuItSelectAll.Action.text = Select All
+rtfReportDisplayDialog_mnuItSelectAll.Action.accelerator = control A
 rtfReportDisplayDialog_mnuWindow.text = Window
 rtfReportDisplayDialog_mnuItCascade.Action.text = Cascade
 rtfReportDisplayDialog_mnuItTile.Action.text = Tile
@@ -937,7 +1114,7 @@ rtfReportDisplayDialog_mnuItCloseAll.Action.text = Close All
 
 RtfReportDisplayDialog.fileChooserTitle = Save As
 RtfReportDisplayDialog.fileFilterDescription = Rich Text Format (RTF) file (*.rtf)
-RtfReportDisplayDialog.fileWriteError = Error writing to file '%s' 
+RtfReportDisplayDialog.fileWriteError = Error writing to file ''{0}'' 
 
 # ImageDialog
 ImageDialog.mnuSubjectCaption = Subject
@@ -965,7 +1142,7 @@ FindInCharactersDialog.enterSearchStringCaption = Enter search string:
 FindInCharactersDialog.searchStatesCaption = Search states
 FindInCharactersDialog.searchUsedCharactersCaption = Search used characters
 FindInCharactersDialog.windowTitle = Find in characters
-FindInCharactersDialog.windowTitleNumberFound = Find in characters: %s found
+FindInCharactersDialog.windowTitleNumberFound = Find in characters: {0} found
 FindInCharactersDialog.noCharactersFoundMessage = No characters found.
 
 # FindInTaxaDialog
@@ -979,7 +1156,7 @@ FindInTaxaDialog.selectAllCaption = Select all
 FindInTaxaDialog.searchSynonymsCaption = Search synonyms
 FindInTaxaDialog.searchEliminatedTaxaCaption = Search eliminated taxa
 FindInTaxaDialog.windowTitle = Find in taxa
-FindInTaxaDialog.windowTitleNumberFound = Find in taxa: %s found
+FindInTaxaDialog.windowTitleNumberFound = Find in taxa: {0} found
 FindInTaxaDialog.noTaxaFoundMessage = No taxa found.
 
 # TaxonInformationDialog
@@ -989,6 +1166,7 @@ nextTaxon.Action.icon = icons/next.png
 lastTaxon.Action.icon = icons/SkipEnd.png
 displaySelectedTaxonInformation.Action.text = Display
 displayMultipleImages.Action.text = Multiple Images...
+webSearch.Action.text = Web Search...
 deselectAllTaxonInformation.Action.text = Deselect All
 done.Action.text = Done
 TaxonInformationDialog.noImagesCaption = No images
@@ -998,10 +1176,14 @@ viewNextTaxon.Action.text = Next Taxon
 viewPreviousTaxon.Action.text = Previous Taxon
 displayMultipleImages.Action.text = Multiple Images...
 
-#CharacterImageInputDialog
-CharacterImageInputDialog.integerTitle = Enter value or values
-CharacterImageInputDialog.realTitle = Enter value or range of values
-CharacterImageInputDialog.multistateTitle = Select state or states
+#CharacterInputDialog
+CharacterImageDialog.integerTitle = Enter value or values
+CharacterImageDialog.realTitle = Enter value or range of values
+CharacterImageDialog.multistateTitle = Select state or states
+CharacterImageDialog.imageForViewingOnlyMessage = This image is for viewing only. To enter character values, you should first select a character from the top-left pane in the main window.
+CharacterImageDialog.notEditableTitle = Character {0}: {1}
+viewNextCharacter.Action.text = Next Character
+viewPreviousCharacter.Action.text = Previous Character
 
 #OnOffPromptDialog
 onOffPromptDialog_OkPressed.Action.text = OK
@@ -1009,7 +1191,109 @@ onOffPromptDialog_CancelPressed.Action.text = Cancel
 rdBtnOn.text = ON
 rdBtnOff.text = OFF
 
+#ContentsDialog
+ContentsDialog.title = Select topic
+contentsDialogOkButtonPressed.Action.text = OK
+contentsDialogCancelButtonPressed.Action.text = Cancel
+
+#OutputFileSelectionDialog
+OutputFileSelectionDialog.title = Select output file to close
+outputFileSelectionDialog_OkPressed.Action.text = OK
+outputFileSelectionDialog_CancelPressed.Action.text = Cancel
+
+# SET MATCH prompt dialog
+SetMatchPromptDialog.title = Set Match
+SetMatchPromptDialog.inapplicablesCaption = Inapplicables
+SetMatchPromptDialog.unknownsCaption = Unknowns
+SetMatchPromptDialog.subsetCaption = Subset
+SetMatchPromptDialog.overlapCaption = Overlap
+SetMatchPromptDialog.exactCaption = Exact
+SetMatchPromptDialog.setValuesForIdentificationCaption = Set values for identification
+SetMatchPromptDialog.setValuesForInformationRetrievalCaption = Set values for information retrieval
+setMatchPromptDialog_okAction.Action.text = Ok
+setMatchPromptDialog_cancelAction.Action.text = Cancel
+setMatchPromptDialog_helpAction.Action.text = Help
+
+#DEFINE BUTTON prompt dialog
+DefineButtonDialog.title = Define Button
+DefineButtonDialog.enterFileNameCaption = Select image file to display on the button
+DefineButtonDialog.enterCommandsCaption = Enter the commands to be associated with the button
+DefineButtonDialog.enterBriefHelpCaption = Enter brief help for the button
+DefineButtonDialog.enterDetailedHelpCaption = Enter more detailed help for the button (optional)
+DefineButtonDialog.enableOnlyIfUsedCaption = Enable only if there are used characters
+DefineButtonDialog.enableInAllModesCaption = Enable in ALL modes
+DefineButtonDialog.enableInNormalModeCaption = Enable in Normal Mode only
+DefineButtonDialog.enableInAdvancedModeCaption = Enable in Advanced mode only
+DefineButtonDialog.insertSpaceCaption = Insert a space between buttons
+DefineButtonDialog.removeAllCaption = Remove all buttons
+DefineButtonDialog.inputValidationError = Missing value for image file, commands or brief help.
+DefineButtonDialog.fileFilterDescription = Image Files (*.bmp, *.png) 
+DefineButtonDialog_Browse.Action.text = Browse...
+DefineButtonDialog_OK.Action.text = OK
+DefineButtonDialog_Cancel.Action.text = Cancel 
+DefineButtonDialog_Help.Action.text = Help
+
+#DISPLAY IMAGES prompt dialog
+DisplayImagesDialog.title = Display Images
+DisplayImagesDialog.imageDisplayModeCaption = Image display mode:
+DisplayImagesDialog.autoCaption = Auto
+DisplayImagesDialog.manualCaption = Manual
+DisplayImagesDialog.offCaption = Off
+DisplayImagesDialog.generateReportCaption = Generate report:
+DisplayImagesDialog.missingImageListCaption = Missing image list
+DisplayImagesDialog.characterImageListCaption = Character image list
+DisplayImagesDialog.taxonImageListCaption = Taxon image list
+DisplayImagesDialog_OK.Action.text = OK
+DisplayImagesDialog_OK.Action.mnemonic = O
+DisplayImagesDialog_Cancel.Action.text = Cancel
+DisplayImagesDialog_Cancel.Action.mnemonic = C
+DisplayImagesDialog_Help.Action.text = Help
+DisplayImagesDialog_Help.Action.mnemonic = H
+
+# DISPLAY IMAGES MISSING_CHARACTERS_LIST report messages
+MissingCharactersList.CharacterImageFileNotFound = Image file ''{0}'' for character {1} does not exist.
+MissingCharactersList.TaxonImageFileNotFound = Image file ''{0}'' for {1} does not exist.
+
 #Busy GlassPane
 BusyGlassPane.icon = icons/ajax-loader.gif
+
+# Captions for STATUS directives
+Status.title = Status 
+Status.onValue = on
+Status.offValue = off
+Status.IncludeCharacters.title = *Status Include Characters
+Status.IncludeCharacters.content = Include characters: {0}. {1}
+Status.IncludeTaxa.title = *Status Include Taxa
+Status.IncludeTaxa.content = Include taxa: {0}. {1}
+Status.ExcludeCharacters.title = *Status Exclude Characters
+Status.ExcludeCharacters.content = Exclude characters: {0}. {1}
+Status.ExcludeTaxa.title = *Status Include Taxa
+Status.ExcludeTaxa.content = Include taxa: {0}. {1}
+Status.Files.title = *Status Files
+Status.Files.heading = FILES
+Status.Files.noFiles = There are no output files.
+Status.Files.journalFile = journal: {0}
+Status.Files.logFile = log: {0}
+Status.Files.outputFile = output: {0}
+Status.Set.title = *Status Set
+Status.Set.heading = Set:
+Status.Set.line1 = autotolerance {0}, stopbest={1}, rbase={2}, tolerance={3}, varywt={4}, demonstration {5}, imagepath={6}, infopath={7}
+Status.Set.matchSettings = Match {0}
+Status.Set.diagSettings = Diaglevel = {0}, Diagtype = {1}
+Status.Set.reliabilities = Reliabilities: {0}
+Status.Set.exactCharacters = EXACT characters: {0}
+Status.Set.fixedCharacters = FIXED characters: {0}
+Status.Set.emptyCharacterSet = none
+Status.Set.inapplicablesMatchValue = inapplicables
+Status.Set.unknownsMatchValue = unknowns
+Status.Set.overlapMatchValue = overlap
+Status.Set.exactMatchValue = exact
+Status.Set.specimensDiagType = specimens
+Status.Set.taxaDiagType = taxa
+Status.Display.title = *Status Display
+Status.Display.content = Display unknowns {0}, inapplicables {1}, comments {2}, continuous {3}, endidentify {4}, keywords {5}, log {6}, input {7}, numbering {8}, images {9}, scaled {10}
+Status.Display.imageDisplayManual = manual
+Status.Display.imageDisplayAuto = auto
+Status.All.title = *Status All
 
 }}}
