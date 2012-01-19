@@ -38,9 +38,12 @@ DeltaEditor.newDataSetName = Nová databáze
 === DELTA Editor ===
 
 {{{
+AboutBox.windowTitle = About DELTA
+AboutBox.applicationTitle = DELTA Editor
+
 Application.id = DeltaViewer
 Application.title = DELTA - DEscription Language for TAxonomy (prototype)
-Application.version = 1.0-M1
+Application.version = 1.0-BETA-SNAPSHOT
 Application.vendor = open-delta
 Application.vendorId = open-delta
 Application.homepage = http://code.google.com/p/open-delta/
@@ -65,7 +68,7 @@ newFile.Action.shortDescription = Creates a new Dataset
 newFile.Action.icon = icons/page_add.png
 
 loadFile.Action.text = Open Dataset...
-loadFile.Action.accelerator = control F
+loadFile.Action.accelerator = control O
 loadFile.Action.icon = icons/folder_page.png
 
 closeFile.Action.text = Close Dataset
@@ -96,6 +99,13 @@ selectAll.Action.accelerator = control A
 copySelectedWithHeaders.Action.text = Copy Selected Including Headers
 copySelectedWithHeaders.Action.accelerator = control H
 
+# Search menu
+mnuSearch.text = &Search
+find.Action.text = Find/Replace...
+find.Action.accelerator = control F
+findNext.Action.text = Find Next
+findNext.Action.accelerator = F3
+
 # View menu
 mnuView.text = &View
 newTreeView.Action.text = Attribute editor (&Trees)
@@ -122,6 +132,11 @@ viewImageSettings.Action.enabled = false
 mnuWindow.text = &Window
 
 tileFrames.Action.text = Tile Frames
+tileFramesHorizontally.Action.text = Tile Frames Horizontally
+cascadeFrames.Action.text = Cascade Frames
+arrangeIcons.Action.text = Arrange Icons
+closeAllFrames.Action.text = Close All
+chooseFont.Action.text = Set Font
 
 mnuLF.text = Look & feel
 
@@ -137,34 +152,6 @@ mnuItHelpContents.text = Contents...
 mnuItHelpOnSelection.text = Select Component
 
 openAbout.Action.text = About
-
-#About Box 
-closeAboutBox.Action.text = &OK
-
-showLicense.Action.text = View &License Details
-showLicense.Action.accelerator = control L
-showLicense.Action.shortDescription = View details about the software license
-
-showSystemInfo.Action.text = Show &System Information
-
-AboutBox.windowTitle = About DELTA
-AboutBox.applicationTitle = DELTA Editor
-AboutBox.versionString = Version %s
-AboutBox.attributionLine1 = Part of the Open DELTA suite
-AboutBox.attributionLine2 = <center>Based on work by M.J. Dallwitz, T.A. Paine and E.J. Zurcher</center>
-AboutBox.copyrightString = <center>Copyright Atlas of Living Australia 2011</center>
-AboutBox.alaAttribution = <center>This development is being funded by the <a href="http://www.ala.org.au">Atlas of Living Australia</a>.</center>
-
-#License Info Box
-LicenseInfoBox.windowTitle = License Information
-LicenseInfoBox.licenseAttribution = This software is made available under Version 1.1 of the Mozilla Public License
-LicenseInfoBox.sourceCodeLocation = Source code can be downloaded from: http://code.google.com/p/open-delta
-closeLicenseInfoBox.Action.text = OK
-
-#System Info Box
-SystemInfoBox.windowTitle = System Information
-copySystemInfoToClipboard.Action.text = Copy to clipboard
-closeSystemInfoBox.Action.text = OK
 
 #Matrix Viewer
 MatrixViewer.windowTitle = Matrix Viewer - %s
@@ -244,8 +231,8 @@ cancelImportExport.Action.text = Cancel
 continueImportExport.Action.text = Continue
 pauseOnErrors.Action.text = Pause on error
 
-importDialogHeading = Importing DELTA data set
-exportDialogHeading = Exporting DELTA data set
+importHeading.text = Importing DELTA data set
+exportHeading.text = Exporting DELTA data set
 lastShowDirectiveLabel.text = Text from last *SHOW directive:
 importExportStatisticsLabel.text = Statistics
 importExportTotalLabel.text = Total
@@ -339,6 +326,8 @@ insertCharacter.Action.text = Insert new character as this position
 insertCharacter.Action.accelerator = insert
 deleteCharacter.Action.text = Delete selected character
 deleteCharacter.Action.accelerator = delete
+expandAll.Action.text = Expand all
+collapseAll.Action.text = Collapse all
 cancel.Action.text = Cancel
 
 # Image details tab (Item and Character editor)
@@ -395,6 +384,8 @@ controllingAttributeLabelPrompt.message = Enter a label for this controlling att
 circularDependencyError.title = Error adding dependency
 circularDependencyError.message = Unable to add this dependency, since it would (perhaps indirectly) make a character dependent on itself.
 
+findCharacter.title = Find Character
+findItem.title = Find Item
 
 # Character types for display
 characterType.Text = Text
@@ -429,11 +420,6 @@ fullScreen.Action.text = Full Screen
 togglePreviewMode.Action.text = Preview mode
 aboutImage.Action.text = About image...
 closeImage.Action.text = Close
-#Overlays
-imageOverlay.imageNotesButton.text = Notes
-imageOverlay.notesButton.text = Notes
-imageOverlay.okButton.text = OK
-imageOverlay.cancelButton.text = Cancel
 
 #Overlay popup menu
 editSelectedOverlay.Action.text=Edit overlay
@@ -561,6 +547,9 @@ saveDirectiveFile.Action.text = Save Directives File
 saveDirectiveFile.Action.shortDescription = Saves the contents in the directives file editor.
 saveDirectiveFile.Action.accelerator = control S
 saveDirectiveFile.Action.icon = icons/disk.png
+
+confirmExport.title = Query Export
+confirmExport.message = Do you wish to export your DELTA directives associated with this program?\n\nYou will need to export these files if you have not done so previously, or if you have made changes to the data since the files were last exported.
 
 #====== DeltaFileLoader.properties ======
 title = Loads a DELTA file
