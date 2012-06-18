@@ -9,4 +9,4 @@ The DELTA Editor program is able to convert between the ".dlt" and text/directiv
 
 Internally, all formats are represented as an instance of a DeltaDataSet. 
 
-An example of how to produce a DeltaDataSet from the text file and ".dlt" file formats can be found at [LoadingDataSets].
+An example of how to produce a DeltaDataSet from the text file and ".dlt" file formats can be found at [LoadingDeltaDataSets].
