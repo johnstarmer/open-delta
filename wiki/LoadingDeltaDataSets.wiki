@@ -1,0 +1,34 @@
+#summary How to load a data set from the file system.
+
+A DELTA data set can be stored in one of two formats:
+ * A set of text files containing DELTA directives. (http://delta-intkey.com/www/uguide.htm#_2._Characters_and)
+ * A binary format used by the DELTA editor. (http://delta-intkey.com/www/delta-ed.htm)
+
+The DELTA Editor program is able to convert between the two formats. 
+
+Internally, both formats are represented as an instance of a DeltaDataSet. 
+
+To create a DeltaDataSet from the binary format used by the DELTA Editor:
+
+{{{
+
+    String dataSet = "/path/to/dataset.dlt";
+
+    DataSetRepository repository = new SlotFileRepository();
+    MutableDataSet dataSet = repository.findByName(dataSet, null);
+
+}}}
+
+In this case the runtime type of the returned {{{MutableDataSet}}} will be a {{{SlotFileDataSet}}}.
+
+To create a DeltaDataSet from the directive file format used by the DELTA Editor, the argument passed to the DataSetRepository findByName method can be one of two things:
+ # The path to a directory containing the directives files.  In this case, the directory must contain files named specs, items and chars.  
+ # The path to a directives file that includes the directives that specify the data set.  
+
+{{{
+    String dataSet = "/path/to/";
+
+    DataSetRepository repository = new TextFileDataSetRepository();
+    MutableDataSet dataSet = repository.findByName(dataSet, null);
+
+}}}
