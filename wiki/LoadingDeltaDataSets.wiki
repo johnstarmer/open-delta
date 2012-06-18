@@ -12,6 +12,11 @@ To create a DeltaDataSet from text files in directive file format, the argument 
 
 }}}
 
+For a complete example, see:
+http://code.google.com/p/open-delta/source/browse/trunk/common/src/test/java/au/org/ala/delta/model/TextFileDataSetRepositoryTest.java
+
+----
+
 To create a DeltaDataSet from the binary format used by the DELTA Editor:
 
 {{{
