@@ -9,6 +9,26 @@ Please make a copy of your existing DELTA data sets before accessing them with a
 
 ==CONFOR Release Notes==
 
+====New Features====
+ * DECIMAL PLACES has been implemented
+ * PRINT ALL CHARACTERS has been implemented
+ * ACCEPT DUPLICATE VALUES has been implemented
+ * STOP AFTER ITEM has been implemented
+ * OMIT LOWER FOR CHARACTERS has been implemented
+
+====Bug Fixes====
+ * ISSUE 122 - Validation and error handling during directives parsing has been sign
+ * ISSUE 83 - Various issues with PRINT CHARACTER LIST (from Mike Dallwitz via DELTA-L)
+ * Numeric attributes are now output in the same way as the original CONFOR during natural language translation (which is five significant figures (with no rounding of non-decimal digits) by default).
+
+====Known Problems====
+ * DATA COMPRESSION not implemented
+ * CHINESE FORMAT not implemented
+ * INSERT UNCODED ATTRIBUTES not implemented
+ * USE LANGUAGE not implemented
+ * ALTERNATE LANGUAGES not implemented
+ * page break directives not implemented (NEW LISTING PAGE, NEW PRINT PAGE, PAGE LENGTH)
+
 ==DELFOR Release Notes==
 No changes
  
