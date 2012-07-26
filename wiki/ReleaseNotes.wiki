@@ -7,6 +7,20 @@ Please make a copy of your existing DELTA data sets before accessing them with a
 
 ==DELTA Editor Release Notes==
 
+====New Features====
+
+====Bug Fixes====
+ * ISSUE 36 - Can't add new character in grid view when there are zero characters
+ * ISSUE 37 - Help is still missing
+ * ISSUE 49 - The character edit dialog can be closed, and the selected character can change even if a validation error is present.
+ * ISSUE 50 - Multistate characters with zero states are not validated
+ * ISSUE 55 - Add new states always adds to the end instead of highlighted position.
+ * ISSUE 73 - Exporting intkey directives with unix end of lines cause the original Inkey to crash.
+ * ISSUE 89 - The DELTA Editor should launch Intkey in a new process
+
+====Known Problems====
+
+
 ==CONFOR Release Notes==
 
 ====New Features====
@@ -20,15 +34,16 @@ Please make a copy of your existing DELTA data sets before accessing them with a
  * ISSUE 122 - Validation and error handling during directives parsing has been sign
  * ISSUE 83 - Various issues with PRINT CHARACTER LIST (from Mike Dallwitz via DELTA-L)
  * Numeric attributes are now output in the same way as the original CONFOR during natural language translation (which is five significant figures (with no rounding of non-decimal digits) by default).
+ * ISSUE 106 - Duplicate APPLICABLE CHARACTERS/INAPPLICABLE CHARACTERS / DEPENDENT CHARACTERS error reduced to a warning.
 
 ====Known Problems====
- * DATA COMPRESSION not implemented
- * CHINESE FORMAT not implemented
- * INSERT UNCODED ATTRIBUTES not implemented
+ * ISSUE 136 - page break directives not implemented (NEW LISTING PAGE, NEW PRINT PAGE, PAGE LENGTH) 
+ * ISSUE 137 - DATA COMPRESSION not implemented
+ * ISSUE 138 - CHINESE FORMAT not implemented
+ * ISSUE 139 - INSERT UNCODED ATTRIBUTES not implemented
  * USE LANGUAGE not implemented
  * ALTERNATE LANGUAGES not implemented
- * page break directives not implemented (NEW LISTING PAGE, NEW PRINT PAGE, PAGE LENGTH)
-
+ 
 ==DELFOR Release Notes==
 No changes
  
