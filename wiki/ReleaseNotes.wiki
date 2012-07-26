@@ -1,6 +1,28 @@
 #summary Open Delta release notes.
 #labels releasenotes
 
+= Release Candidate 1 =
+The Open DELTA Release Candidate 1 (RC1) release consists predominantly of bug fixes.
+Please make a copy of your existing DELTA data sets before accessing them with any of the Open DELTA programs.
+
+==DELTA Editor Release Notes==
+
+==CONFOR Release Notes==
+
+==DELFOR Release Notes==
+No changes
+ 
+==DIST Release Notes==
+No changes
+
+==Intkey Release Notes:==
+
+
+==Key Release Notes==
+The implementation of KEY has been completed.
+
+
+
 = Milestone 10 =
 The Milestone 10 (M10) release has progressed work on KEY, Intkey and CONFOR.  The DELFOR program has been implemented.
 Please make a copy of your existing DELTA data sets before accessing them with any of the Open DELTA programs.
