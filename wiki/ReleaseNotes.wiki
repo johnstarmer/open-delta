@@ -54,6 +54,7 @@ Please make a copy of your existing DELTA data sets before accessing them with a
  * ISSUE 126 - The import dialog exclusion filter doesn't seem to work correctly on Windows XP.
  * ISSUE 127 - Opening an action set in the editor marks the data set as needing to be saved.
  * ISSUE 134 - Pressing ESC in the attribute editor commits changes instead of cancelling them.
+ * ISSUE 142 - 	Some directive file templates don't import correctly when a new dataset is created
 
 ==CONFOR Release Notes==
 
