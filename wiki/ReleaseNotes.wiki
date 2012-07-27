@@ -38,7 +38,10 @@ Please make a copy of your existing DELTA data sets before accessing them with a
 
 
 ====Known Problems====
-
+ * ISSUE 120 - Actions - Results dialog has hardcoded english labels.
+ * ISSUE 126 - The import dialog exclusion filter doesn't seem to work correctly on Windows XP.
+ * ISSUE 127 - Opening an action set in the editor marks the data set as needing to be saved.
+ * ISSUE 134 - Pressing ESC in the attribute editor commits changes instead of cancelling them.
 
 ==CONFOR Release Notes==
 
@@ -81,7 +84,12 @@ No changes
  * ISSUE 113 - Intkey: conflict between different characters using same control
  * ISSUE 112 - Inkey doesn't resize large taxon images to tile in current window
  * ISSUE 76 - Intkey online help
- 
+ * ISSUE 59 - Intkey UI can be unresponsive when generating reports or loading files. 
+
+====Known Problems====
+ * ISSUE 33 - Intkey character layout can be untidy.
+ * ISSUE 59 - Intkey hangs when loading remotely hosted images.
+ * ISSUE 99 - Information panels' "Mulitple Images" button inoperative.
 
 ==Key Release Notes==
 
