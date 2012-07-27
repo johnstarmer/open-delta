@@ -11,7 +11,7 @@ The release plan from the release candidate 1 release through to the 1.0 final b
  * Important bug fixes identified in the release candidate release will be addressed.
  * If there are a lot of changes made, a release candidate 2 release may be considered before releasing a 1.0 final.
 
-After 1.0 has been released, development resources will be limited and only critical bug fixes will able to be addressed.
+After 1.0 has been released, development resources will be limited and unfortunately only critical bug fixes will able to be addressed.
 
 
 ----
