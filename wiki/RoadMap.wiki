@@ -162,6 +162,7 @@ CONFOR
 <td>*1.0-GA*</td><td>~~30/06/2012~~</td>
 <td>
  * Fixes for important Issues found in the Release Candidate
+ * Ensure the software is in a position to be able to be translated into other languages.
  * ISSUE 41 - DELTA Editor does not support importing items into an existing data set.
  * ISSUE 142 - 	Some directive file templates don't import correctly when a new dataset is created
 </td>
