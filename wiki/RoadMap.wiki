@@ -163,6 +163,7 @@ CONFOR
 <td>
  * Fixes for important Issues found in the Release Candidate
  * ISSUE 41 - DELTA Editor does not support importing items into an existing data set.
+ * ISSUE 142 - 	Some directive file templates don't import correctly when a new dataset is created
 </td>
 </tr>
 
