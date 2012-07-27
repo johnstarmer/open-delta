@@ -70,11 +70,21 @@ No changes
 
 ==Intkey Release Notes:==
 
+====Bug Fixes====
+
+ * ISSUE 100 - In Intkey multiple images cannot be Cascaded, Tiled or Closed
+ * ISSUE 98 - Information panel's "Illustrations" and "Other" display doesn't tile or cascade
+ * ISSUE 90  - Minor Intkey problem
+ * ISSUE 77 - Intkey web search
+ * ISSUE 104 - Inktey is not defaulting to iitems and ichars if FILE directives missing
+ * ISSUE 113 - Intkey: conflict between different characters using same control
+ * ISSUE 112 - Inkey doesn't resize large taxon images to tile in current window
+ * ISSUE 76 - Intkey online help
+ 
 
 ==Key Release Notes==
-The implementation of KEY has been completed.
 
-
+ * ISSUE 101 - The implementation of KEY has been completed.
 
 = Milestone 10 =
 The Milestone 10 (M10) release has progressed work on KEY, Intkey and CONFOR.  The DELFOR program has been implemented.
