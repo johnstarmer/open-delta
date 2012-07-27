@@ -120,7 +120,7 @@ CONFOR:
 <td valign="top">*M9*</td><td valign="top">16/11/2011</td>
 <td>
 KEY
- * KEY implemented
+ * ~~KEY implemented~~
 CONFOR
  * Output to other formats
 </td>
@@ -129,8 +129,8 @@ CONFOR
 <tr>
 <td valign="top">*1.0-BETA*</td><td valign="top">14/12/2011</td>
 <td>
- * NSim
- * PClass
+ * ~~NSim~~
+ * ~~PClass~~
  * DIST
  * Tidy up any outstanding items
  * Main software feature complete
@@ -138,11 +138,14 @@ CONFOR
 </tr>
 
 <tr>
-<td>*1.0-RC*</td><td>01/04/2012</td><td>Release candidate – fixes from BETA</td>
+<td>*1.0-RC*</td><td>~~01/04/2012~~ 27/07/2012</td>
+<td>
+ * Key implemented 
+ * Bug fixes from previous release</td>
 </tr>
 
 <tr>
-<td>*1.0-GA*</td><td>30/06/2012</td><td>Final release – fixes from Release Candidate</td>
+<td>*1.0-GA*</td><td>~~30/06/2012~~</td><td>Final release – fixes from Release Candidate</td>
 </tr>
 
 </table>
