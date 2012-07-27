@@ -2,6 +2,20 @@
 
 = Open DELTA Project Roadmap =
 
+----
+
+*Updated 27/04/2012*
+_Changes from the original plan have been highlighted in the ~~strikethrough~~ font._
+
+The release plan from the release candidate 1 release through to the 1.0 final build is as follows:
+ * Important bug fixes identified in the release candidate release will be addressed.
+ * If there are a lot of changes made, a release candidate 2 release may be considered before releasing a 1.0 final.
+
+After 1.0 has been released, development resources will be limited and only critical bug fixes will able to be addressed.
+
+
+----
+
 The release plan is to publish a series of monthly milestone (alpha) releases, each designated with an 'M' number, until the software is generally feature complete, at which time it will be considered in 'beta'. Once all open issues with beta releases have been addressed, the releases will be designated as Release Candidate (RC) until such time as the software is considered complete and stable, and designated as the Version 1.0 General Availability (GA) build.
 
 *Note:* The following release schedule is provisional, and may deviate based on what is actually achieved each milestone.
