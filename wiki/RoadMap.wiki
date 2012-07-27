@@ -167,7 +167,7 @@ CONFOR
 </tr>
 
 <tr>
-<td>1.1</td><td></td>
+<td>*Post 1.0*</td><td></td>
 <td>
  * Critical bug fixes from 1.0 if they arise.
  * ISSUE 135 - Implement a "Present by misinterpretation" feature
