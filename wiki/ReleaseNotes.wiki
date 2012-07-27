@@ -49,6 +49,7 @@ Please make a copy of your existing DELTA data sets before accessing them with a
 
 
 ====Known Problems====
+ * ISSUE 41 - Delta Editor doesn't support importing Items into an existing data set.
  * ISSUE 120 - Actions - Results dialog has hardcoded english labels.
  * ISSUE 126 - The import dialog exclusion filter doesn't seem to work correctly on Windows XP.
  * ISSUE 127 - Opening an action set in the editor marks the data set as needing to be saved.
