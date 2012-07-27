@@ -8,6 +8,7 @@ Please make a copy of your existing DELTA data sets before accessing them with a
 ==DELTA Editor Release Notes==
 
 ====New Features====
+ * ISSUE 117 - Long feature descriptions will be displayed in a tooltip if you hover the mouse over a character feature description.
 
 ====Bug Fixes====
  * ISSUE 36 - Can't add new character in grid view when there are zero characters
