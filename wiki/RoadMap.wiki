@@ -145,7 +145,19 @@ CONFOR
 </tr>
 
 <tr>
-<td>*1.0-GA*</td><td>~~30/06/2012~~</td><td>Final release – fixes from Release Candidate</td>
+<td>*1.0-GA*</td><td>~~30/06/2012~~</td>
+<td>
+ * Fixes for important Issues found in the Release Candidate
+ * ISSUE 41 - DELTA Editor does not support importing items into an existing data set.
+</td>
+</tr>
+
+<tr>
+<td>1.1</td><td></td>
+<td>
+ * Critical bug fixes from 1.0 if they arise.
+ * ISSUE 135 - Implement a "Present by misinterpretation" feature
+</td>
 </tr>
 
 </table>
