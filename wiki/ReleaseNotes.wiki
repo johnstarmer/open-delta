@@ -5,6 +5,13 @@
 The Open DELTA Release Candidate 1 (RC1) release consists predominantly of bug fixes.
 Please make a copy of your existing DELTA data sets before accessing them with any of the Open DELTA programs.
 
+==General fixes==
+ * ISSUE 125 - Removed .svn folder from installer.
+
+==Known Problems==
+ * ISSUE 140 - PClass not implemented.
+ * ISSUE 141 - NSim not implemented.
+
 ==DELTA Editor Release Notes==
 
 ====New Features====
