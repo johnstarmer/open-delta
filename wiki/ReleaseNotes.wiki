@@ -17,6 +17,24 @@ Please make a copy of your existing DELTA data sets before accessing them with a
  * ISSUE 55 - Add new states always adds to the end instead of highlighted position.
  * ISSUE 73 - Exporting intkey directives with unix end of lines cause the original Inkey to crash.
  * ISSUE 89 - The DELTA Editor should launch Intkey in a new process
+ * ISSUE 96 - Delta Editor import pre-selected home dir in wrong place.
+ * ISSUE 97 - Action Sets Panel doesn't sort columns when column headings clicked
+ * ISSUE 108 - deleting characters will affect layout for CONFOR
+ * ISSUE 109 - The editor export is not handling items / items.txt well.
+ * ISSUE 114 - Key not properly integrated with the DELTA Editor
+ * ISSUE 116 - Offer to link the .dlt file extension to the Delta Editor on install
+ * ISSUE 118 - Image Settings dialog sometimes opens too small
+ * ISSUE 115 - Images won't upload, image path can't be specified
+ * ISSUE 123 - Saving a DLT file on top of an existing DLT file is allowed and causes problems
+ * ISSUE 124 - Internal frame titles are not updated during the saveAs operation
+ * ISSUE 129 - taxon names don't redraw in matrix viewer while scrolling
+ * ISSUE 130 - "treat items as variant" causes items file and item outputs to be truncated for the variant and all subsequent items
+ * ISSUE 131 - tonatr confor directives leaves .rtf output file locked.
+ * ISSUE 121 - process cannot access file because another process has locked portion of the file
+ * ISSUE 132 - Triggering a validation error using the "next/previous" character spinner results in too many error dialogs
+ * ISSUE 133 - Attribute editors don't commit until "Enter" is pressed.
+ * ISSUE 122 - Issues with directives files validation 
+
 
 ====Known Problems====
 
