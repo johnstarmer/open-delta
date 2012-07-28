@@ -58,7 +58,7 @@ Once the files have been extracted, the shell scripts will not be executable by 
  # Open a terminal and change to the directly where you extracted the archive.
  # Execute the following commands to make the scripts executable.
 {{{
-cd open-delta-1.0-RC1-bin/bin
+cd open-delta-1.0-RC1/bin
 chmod u+x *.sh
 }}}
 
