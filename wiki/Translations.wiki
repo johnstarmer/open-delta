@@ -649,11 +649,41 @@ LicenseInfoBox.windowTitle = License Information
 LicenseInfoBox.licenseAttribution = This software is made available under Version 1.1 of the Mozilla Public License
 LicenseInfoBox.sourceCodeLocation = Source code can be downloaded from: http://code.google.com/p/open-delta
 closeLicenseInfoBox.Action.text = OK
+closeLicenseInfoBox.Action.mnemonic = O
 
 #System Info Box
 SystemInfoBox.windowTitle = System Information
 copySystemInfoToClipboard.Action.text = Copy to clipboard
+copySystemInfoToClipboard.Action.mnemonic = C
 closeSystemInfoBox.Action.text = OK
+closeSystemInfoBox.Action.mnemonic = O
+
+#Search Dialog (Common)
+searchDialog.lblFind = Find
+searchDialog.lblMatchCase = Match Case
+searchDialog.lblWrapSearch = Wrap Search
+searchDialog.groupDirection = Direction
+searchDialog.directionForwards = Forwards
+searchDialog.directionBackwards = Backwards
+searchDialog.btnFindNext = Find Next
+searchDialog.btnCancel = Cancel
+searchDialog.optionsPanelTitle = Options
+
+#Search Replace Dialog
+searchReplaceDialog.title = Search/Replace
+searchReplaceDialog.findButton = Find
+searchReplaceDialog.replaceFindButton = Replace/Find
+searchReplaceDialog.replaceButton = Replace
+searchReplaceDialog.replaceAllButton = Replace All
+searchReplaceDialog.findLabel = Find:
+searchReplaceDialog.replaceLabel = Replace with:
+searchReplaceDialog.directionPanelTitle = Direction
+searchReplaceDialog.forwardRadioButton = Forward
+searchReplaceDialog.backwardRadioButton = Backward
+searchReplaceDialog.optionsPanelTitle = Options
+searchReplaceDialog.caseSensitiveCheck = Match Case
+searchReplaceDialog.wrapSearchCheck = Wrap Search
+searchReplaceDialog.closeButton = Close
 
 #RTF Editor toolbar items
 text_bold.Action.icon = text_bold.png
@@ -668,16 +698,6 @@ text_subscript.Action.icon = text_subscript.png
 text_subscript.Action.shortDescription = Subscript
 undo.Action.icon = arrow_undo.png
 undo.Action.shortDescription = Reverses all changes made to this attribute
-
-#Directive Editor toolbar items
-show_whitespace.Action.icon = icons/show_whitespace.png
-show_whitespace.Action.shortDescription = Show or hide whitespace characters
-show_linenumbers.Action.icon = icons/show_linenumbers.png
-show_linenumbers.Action.shortDescription = Show or hide line numbers
-editor_find.Action.icon = icons/editor_find.png
-editor_find.Action.shortDescription = Find and/or replace text
-editor_gotoline.Action.icon = icons/editor_gotoline.png
-editor_gotoline.Action.shortDescription = Go to a line number
 
 # Text used in image overlays
 imageOverlay.okButton.text = Ok
@@ -694,6 +714,35 @@ imageTypeLabel.text = Image type:
 widthLabel.text = Width:
 heightLabel.text = Height:
 aboutImageDialog.colourLabel.text = Displayed using %d colours
+
+#Code Editor toolbar items
+show_whitespace.Action.icon = icons/show_whitespace.png
+show_whitespace.Action.shortDescription = Show or hide whitespace characters
+show_linenumbers.Action.icon = icons/show_linenumbers.png
+show_linenumbers.Action.shortDescription = Show or hide line numbers
+editor_find.Action.icon = icons/editor_find.png
+editor_find.Action.shortDescription = Find and/or replace text
+editor_gotoline.Action.icon = icons/editor_gotoline.png
+editor_gotoline.Action.shortDescription = Go to a line number
+
+errors.empty.character.description = The character description cannot be blank
+errors.empty.character.description.title = Empty description
+errors.items.with.multiple.states.encoded = Items exist with multiple states encoded for this character
+errors.items.with.multiple.states.encoded.title = Multiple states coded
+errors.only.multistate.chars.exclusive = Only multi-state characters can be marked has having exclusive values
+errors.only.multistate.chars.exclusive.title = Not a multistate character
+errors.multistate.character.no.states = This multi-state character must have at least one state defined
+errors.multistate.character.no.states.title = No states defined
+errors.coded.data.exists = Coded data exists for this character. Changing its character type may have undesirable consequences.
+errors.coded.data.exists.title = Coded data exists
+errors.unknown.character.type = The character type cannot be unknown
+errors.unknown.character.type.title = Character type not set
+
+#Goto line dialog
+gotoLineDialog.title = Goto line
+gotoLineDialog.lineNumberLabel.text = Line number
+gotoLineDialog.okButton.text = Ok
+gotoLineDialog.cancelButton.text = Cancel
 }}}
 
 === Intkey ===
