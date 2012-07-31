@@ -38,12 +38,13 @@ DeltaEditor.newDataSetName = Nová databáze
 === DELTA Editor ===
 
 {{{
+#
 AboutBox.windowTitle = About DELTA
 AboutBox.applicationTitle = DELTA Editor
 
 Application.id = DeltaViewer
-Application.title = DELTA - DEscription Language for TAxonomy (prototype)
-Application.version = 1.0-BETA-SNAPSHOT
+Application.title = DELTA - DEscription Language for TAxonomy
+Application.version = 1.0-RC1
 Application.vendor = open-delta
 Application.vendorId = open-delta
 Application.homepage = http://code.google.com/p/open-delta/
@@ -53,12 +54,14 @@ Application.shortName = DELTA Editor
 
 #Delta Editor Main Window
 
-DeltaEditor.windowTitleWithoutFilename = DELTA - DEscription Language for TAxonomy (prototype)
-DeltaEditor.windowTitleWithFilename = DELTA - DEscription Language for TAxonomy (prototype) - %s
-DeltaEditor.warning = This software is not for production use.  Please backup your data files before opening them using this application.
-DeltaEditor.warningTitle = WARNING - Not for production use
+DeltaEditor.windowTitleWithoutFilename = DELTA - DEscription Language for TAxonomy
+DeltaEditor.windowTitleWithFilename = DELTA - DEscription Language for TAxonomy  - %s
+DeltaEditor.warning = Please backup your data files before opening them using this application.
+DeltaEditor.warningTitle = WARNING - Backup Recommended
 DeltaEditor.closeWithoutSavingMessage = The document has been changed.\nDo you want to save the changes?
+DeltaEditor.unableToCloseMessage = Unable to close one or more windows - please fix any validation errors before continuing
 DeltaEditor.newDataSetName = New Dataset
+DeltaEditor.fileExists = The file name you have selected already exists.  Please use a unique file name.
 
 # File menu
 mnuFile.text = &File
@@ -208,6 +211,8 @@ ImportDialog.filterDialogTitle = Change File Filter
 ImportDialog.filterDialogMessage = Enter wildcards patterns matching those filenames you wish to exclude.\n\nMultiple patterns should be separated with a semicolon (;) There should be no spaces between patterns.\n
 ImportDialog.directoryLabel = Import directory:
 
+closePressed.Action.text = Close
+
 ExportDialog.dialogTitle = Select DELTA files to export
 ExportDialog.directoryChooserTitle = Browse for export directory
 ExportDialog.specificationsPanelTitle = Specifications file
@@ -217,6 +222,9 @@ ExportDialog.otherPanelTitle = Other directives files
 ExportDialog.possiblePanelTitle = Do not export
 ExportDialog.directiveTypePanelTitle = Directive type
 ExportDialog.directoryLabel = Export directory:
+ExportDialog.lineSeparator.system.default = System default
+ExportDialog.lineSeparator.unix = Unix
+ExportDialog.lineSeparator.windows = Windows (legacy)
 
 directiveTypeConfor.text = Confor
 directiveTypeIntkey.text = Intkey
@@ -224,8 +232,12 @@ directiveTypeDist.text = Dist
 directiveTypeKey.text = Key
 changeImportDirectory.Action.text=Change...
 changeExportDirectory.Action.text=Change...
+exportLineSeparator.text= Line separator
+importExportExcludeLabel.text = Exclude
 
 # Import Status Dialog
+importStatusDialog.title = Importing DELTA data set...
+exportStatusDialog.title = Exporting DELTA data set...
 importExportFinished.Action.text = Done
 cancelImportExport.Action.text = Cancel
 continueImportExport.Action.text = Continue
@@ -236,7 +248,6 @@ exportHeading.text = Exporting DELTA data set
 lastShowDirectiveLabel.text = Text from last *SHOW directive:
 importExportStatisticsLabel.text = Statistics
 importExportTotalLabel.text = Total
-importExportCurrentFileLabel.text = Current file
 importExportDirectivesLabel.text = Directives:
 importExportErrorsLabel.text = Errors:
 importExportCurrentLabel.text = Current:
@@ -328,7 +339,7 @@ deleteCharacter.Action.text = Delete selected character
 deleteCharacter.Action.accelerator = delete
 expandAll.Action.text = Expand all
 collapseAll.Action.text = Collapse all
-cancel.Action.text = Cancel
+
 
 # Image details tab (Item and Character editor)
 displayImage.Action.text = Display
@@ -480,7 +491,7 @@ rectangleSelected.Action.text = Rectangle
 hotSpotColourChooser.title=Choose colour
 
 #Image settings dialog
-imageSettingsDialog.title = Image Settings
+imageSettingsDialog.title = Image Settings - %s
 okImageSettingsChanges.Action.text = Ok
 applyImageSettingsChanges.Action.text = Apply
 cancelImageSettingsChanges.Action.text = Cancel
@@ -512,7 +523,7 @@ imageSettingsDialog.buttonAlignment.alignVertically = Align vertically
 imageSettingsDialog.buttonAlignment.alignHorizontally = Align horizontally
 
 #Action sets dialog
-actionSetsDialog.title = Actions
+actionSetsDialogView.title = Action Sets - %s
 actionSetsActionSetsLabel.text = Action set: 
 runDirectiveFile.Action.text = Run
 editDirectiveFile.Action.text = Edit
@@ -551,6 +562,24 @@ saveDirectiveFile.Action.icon = icons/disk.png
 confirmExport.title = Query Export
 confirmExport.message = Do you wish to export your DELTA directives associated with this program?\n\nYou will need to export these files if you have not done so previously, or if you have made changes to the data since the files were last exported.
 
+# Results of running a directives file
+runDirectivesProgressDialog.title = Actions - Results
+runDirectivesProgressLabel.text = Progress
+runDirectivesOutputFilesLabel.text = Output Files
+runDirectivesOutputLabel.text = Output
+runDirectivesFileCloseButton.text = Close
+runDirectivesProgressDialog.fileNameColumn.text = File name
+runDirectivesProgressDialog.viewButton.text = View...
+
+# Warning when importing an Items file into a dataset and a duplicate item is encountered.
+duplicateItemWarningDialog.title = Duplicate item encountered
+overwriteItem.Action.text = Overwrite
+retainItem.Action.text = Retain
+actionDescriptionLabel.text = Please select the way in which you want this item to be treated
+retainButtonLabel.text = Do NOT replace the description of this item
+overwriteButtonLabel.text = Replace the description of this item
+applyToAllCheckBox.text = Apply this choice to ALL duplicate items encountered in this file
+duplicateItemWarningDescription.text = An item which is being imported has the same name as an item already in your database.  You may choose either to use the newly imported description to replace the current description, or to ignore the imported description and leave the current description unchanged.  You may also indicate whether to apply this choice to all subsequent duplicate items in this file.
 #====== DeltaFileLoader.properties ======
 title = Loads a DELTA file
 description = A task that loads a DELTA file and creates a tree view
