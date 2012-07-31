@@ -159,7 +159,7 @@ CONFOR
 </tr>
 
 <tr>
-<td>*1.0-GA*</td><td>~~30/06/2012~~</td>
+<td>*1.0-GA*</td><td>~~30/06/2012~~ 31/08/2012</td>
 <td>
  * Fixes for important Issues found in the Release Candidate
  * Ensure the software is in a position to be able to be translated into other languages.
