@@ -1,6 +1,43 @@
 #summary Open Delta release notes.
 #labels releasenotes
 
+= Release Candidate 2 =
+The Open DELTA Release Candidate 2 (RC2) release has been created primarily to address a serious problem with Intkey. 
+
+==Known Problems==
+ * ISSUE 140 - PClass not implemented.
+ * ISSUE 141 - NSim not implemented.
+
+==DELTA Editor Release Notes==
+
+====New Features====
+ * The DELTA Editor will now restore the most recently selected Look & Feel on startup
+
+====Bug Fixes====
+ * ISSUE 145 - Maximised internal frame on Mac OS still has a large drop shadow border.
+ * ISSUE 144 - Spurious validation error when opening Character Editor on Linux
+ * ISSUE 41 - Importing items into an existing data set is now supported.
+ * ISSUE 142 - The todis directive file wasn't being included in a new dataset due to an import error.
+ * ISSUE 120 - Actions - Results dialog has hardcoded english labels.
+
+====Known Problems====
+ * ISSUE 126 - The import dialog exclusion filter doesn't seem to work correctly on Windows XP.
+ * ISSUE 127 - Opening an action set in the editor marks the data set as needing to be saved.
+ * ISSUE 134 - Pressing ESC in the attribute editor commits changes instead of cancelling them.
+
+==Intkey Release Notes==
+ 
+====New Features====
+* ISSUE 143 - Intkey imagepath a problem for site maintenance.
+
+====Bug Fixes====
+* ISSUE 146 - Not doing well with intkey.ink (intkey datasets with no heading or sub heading would not load).
+
+====Known Problems====
+ * ISSUE 33 - Intkey character layout can be untidy.
+ * ISSUE 59 - Intkey hangs when loading remotely hosted images.
+ * ISSUE 99 - Information panels' "Mulitple Images" button inoperative.
+ 
 = Release Candidate 1 =
 The Open DELTA Release Candidate 1 (RC1) release consists predominantly of bug fixes.
 Please make a copy of your existing DELTA data sets before accessing them with any of the Open DELTA programs.
