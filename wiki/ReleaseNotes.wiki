@@ -28,10 +28,11 @@ The Open DELTA Release Candidate 2 (RC2) release has been created primarily to a
 ==Intkey Release Notes==
  
 ====New Features====
-* ISSUE 143 - Intkey imagepath a problem for site maintenance.
+ * ISSUE 143 - Intkey imagepath a problem for site maintenance.
 
 ====Bug Fixes====
-* ISSUE 146 - Not doing well with intkey.ink (intkey datasets with no heading or sub heading would not load).
+ * ISSUE 146 - Not doing well with intkey.ink (intkey datasets with no heading or sub heading would not load).
+ * ISSUE 147 - Can't open recent files with spaces in the path or filename. 
 
 ====Known Problems====
  * ISSUE 33 - Intkey character layout can be untidy.
