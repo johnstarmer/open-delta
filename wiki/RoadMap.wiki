@@ -152,19 +152,25 @@ CONFOR
 </tr>
 
 <tr>
-<td>*1.0-RC*</td><td>~~01/04/2012~~ 27/07/2012</td>
+<td>*1.0-RC1*</td><td>~~01/04/2012~~ 27/07/2012</td>
 <td>
  * Key implemented 
  * Bug fixes from previous release</td>
+</tr>
+<tr>
+<td>*1.0-RC2*</td><td>01/08/2012</td>
+<td>
+ * ISSUE 120 - Ensure the software is in a position to be able to be translated into other languages.
+ * ISSUE 41 - DELTA Editor does not support importing items into an existing data set.
+ * ISSUE 142 - 	Some directive file templates don't import correctly when a new dataset is created
+ * ISSUE 144 - Opening the character editor on Ubuntu 11 triggers a spurious validation error.
+</td>
 </tr>
 
 <tr>
 <td>*1.0-GA*</td><td>~~30/06/2012~~ 31/08/2012</td>
 <td>
  * Fixes for important Issues found in the Release Candidate
- * Ensure the software is in a position to be able to be translated into other languages.
- * ISSUE 41 - DELTA Editor does not support importing items into an existing data set.
- * ISSUE 142 - 	Some directive file templates don't import correctly when a new dataset is created
 </td>
 </tr>
 
