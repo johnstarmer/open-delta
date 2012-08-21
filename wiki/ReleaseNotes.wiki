@@ -13,7 +13,7 @@ The Open DELTA Release Candidate 3 (RC3) release has been created primarily to a
 
 ====Bug Fixes====
  * ISSUE 148 - CONFOR does not recognise punctuation at end of a directive during data import
- * ISSUE 149 - DELTA Editor does not recognise non-contiguous character numbers in *CHARACTER NOTES directive
+ * ISSUE 149 - DELTA Editor does not recognise non-contiguous character numbers in CHARACTER NOTES directive
  * ISSUE 152 - Editor problems with import and export of ITEMS file apparently due to very large text character content
 
 ====Known Problems====
