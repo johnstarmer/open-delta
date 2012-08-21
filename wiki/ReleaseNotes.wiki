@@ -22,7 +22,7 @@ The Open DELTA Release Candidate 3 (RC3) release has been created primarily to a
 ==Intkey Release Notes==
  
 ====New Features====
-
+None.
 
 ====Bug Fixes====
  * ISSUE 150 - Intkey deadlock when prompting for input while processing the startup file
