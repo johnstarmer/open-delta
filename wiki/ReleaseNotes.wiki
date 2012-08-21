@@ -25,7 +25,29 @@ The Open DELTA Release Candidate 3 (RC3) release has been created primarily to a
 
 
 ====Bug Fixes====
-
+ * ISSUE 150 - Intkey deadlock when prompting for input while processing the startup file
+ * ISSUE 151 - Intkey prompting for input during startup when the original does not.
+ * ISSUE 158 - Should be able to delete character values by selecting no value in prompt then clicking OK
+ * ISSUE 159 - Best ordering should be recalculated when error tolerance is changed
+ * ISSUE 160 - Issue with controlling characters and inapplicability
+ * ISSUE 162 - Maximum number of recent datasets should be increased
+ * ISSUE 164 - Font sizing
+ * ISSUE 165 - Text in main pane touches left boundary
+ * ISSUE 166 - The limits on the position of the vertical pane divider should be relaxed
+ * ISSUE 168 - Font in output of SHOW command
+ * ISSUE 172 - The ‘Best’ and ‘Natural’ order buttons should be grey when not applicable
+ * ISSUE 173 - The ‘Information’ button should work when no taxa are selected
+ * ISSUE 175 - ‘Display CharacterOrder’ should default to ‘Natural’ in Advanced mode
+ * ISSUE 176 - ‘Display images’ should default to ‘Manual’ in Advanced mode.
+ * ISSUE 181 - Some directives incorrectly fail due to no dataset being loaded
+ * ISSUE 185 - Incorrect message when Identification complete
+ * ISSUE 186 - When a state-selection image window is closed the text version of the window should be displayed.
+ * ISSUE 188 - In ‘Natural’ order the focus should move to the next character after a character is used
+ * ISSUE 189 - Focus on first character when character order recalculated or identification is restarted
+ * ISSUE 194 - The ‘Illustrate Characters’ command doesn’t display the first illustrated character in the set
+ * ISSUE 195 - When a character is re-used, currently set states should be in the dialog
+ * ISSUE 196 - Issues with Display Images command
+ * ISSUE 201 -  Setting the size of the main window via ‘Window > Tile’ is not implemented
 
 ====Known Problems====
  * ISSUE 59 - Intkey hangs when loading remotely hosted images
