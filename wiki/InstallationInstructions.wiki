@@ -45,7 +45,7 @@ on earlier versions of Windows.
  
 
 == Mac OS (version 10.6.8 and above) ==
- # Download  [http://open-delta.googlecode.com/files/open-delta-1.0-RC3.dmg open-delta-1.0-RC3.dmg] to your computer.
+ # Download  [http://open-delta.googlecode.com/files/Open DELTA.dmg Open DELTA.dmg] to your computer.
  # Double click on the file in the Finder application.
  # In the window that opens, drag the "Open DELTA" folder into the "Applications" folder.
 
