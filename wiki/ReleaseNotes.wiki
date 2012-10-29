@@ -34,7 +34,6 @@ None.
  * ISSUE 33 - Intkey character layout can be untidy 
 
 ====Known Problems====
- * ISSUE 59 - Intkey hangs when loading remotely hosted images
  * ISSUE 156 - Attempting to view character images when there are none causes issues in Intkey
  * ISSUE 163 - Double click issues in Intkey
  * ISSUE 167 - Font size in RTF reports
