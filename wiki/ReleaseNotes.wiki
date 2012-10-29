@@ -13,8 +13,8 @@ This is the 1.0 release of the Open DELTA suite.
 ==DELTA Editor Release Notes==
 
 ====New Features====
-None.
-
+ * ISSUE 212 - Added a warning if exporting a dataset that has not yet been saved.
+ 
 ====Bug Fixes====
 None.
 
@@ -49,7 +49,7 @@ None.
 
 = Release Candidate 4 =
 
-The Open DELTA Release Candidate 4 (RC4) release has been created primarily to address bugs identified via feedback on RC2 received from the community. 
+The Open DELTA Release Candidate 4 (RC4) release has been created primarily to address bugs identified via feedback on RC3 received from the community. 
 
 ==Known Problems==
  * ISSUE 140 - PClass not implemented.
@@ -62,7 +62,7 @@ The Open DELTA Release Candidate 4 (RC4) release has been created primarily to a
 None.
 
 ====Bug Fixes====
-None.
+ * ISSUE 211 - Treat as variant checkbox not updating character state unless other fields are changed at the same time.
 
 ====Known Problems====
  * ISSUE 126 - The import dialog exclusion filter doesn't seem to work correctly on Windows XP.
