@@ -29,7 +29,9 @@ None.
 None.
 
 ====Bug Fixes====
-
+ * ISSUE 210 - User prompted to add dataset URLs to dataset index when the URL has already been added 
+ * ISSUE 59 - Intkey hangs when loading remotely hosted images 
+ * ISSUE 33 - Intkey character layout can be untidy 
 
 ====Known Problems====
  * ISSUE 59 - Intkey hangs when loading remotely hosted images
