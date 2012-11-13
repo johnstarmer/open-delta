@@ -24,7 +24,7 @@ For example, to set the maximum memory heap size available to !IntKey you would 
 -Xmx1024m
 }}}
 
-= "Unable to run program for file" error when using Action Sets =
+= "Unable to run program for file" error when running Action Sets =
 
 For large DELTA data sets, the default JVM memory size can be insufficient to run some CONFOR actions using the Action Sets dialog.
 
