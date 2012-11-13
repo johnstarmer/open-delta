@@ -23,3 +23,9 @@ For example, to set the maximum memory heap size available to !IntKey you would 
 {{{
 -Xmx1024m
 }}}
+
+= "Unable to run program for file" error when using Action Sets =
+
+For large DELTA data sets, the default JVM memory size can be insufficient to run some CONFOR actions using the Action Sets dialog.
+
+To fix this problem, increase the memory available to the DELTA Editor by adding -Xmx1024m to the DeltaEditor.l4j.ini as described in "Specifying JVM options", above.
