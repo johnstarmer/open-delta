@@ -65,7 +65,7 @@ None.
  * ISSUE 242 - ToInt in some cases writes character values to the wrong items
 
 ====Known Issues====
- * ISSUE 245 -  * ISSUE 244 - Various CONFOR issues reported by Mike Dallwitz via DELTA-L 
+ * ISSUE 245 - Various CONFOR issues reported by Mike Dallwitz via DELTA-L 
 
 ==KEY Release Notes==
 
