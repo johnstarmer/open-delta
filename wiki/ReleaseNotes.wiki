@@ -1,6 +1,75 @@
 #summary Open Delta release notes.
 #labels releasenotes
 
+= Release 1.01 =
+
+This is the 1.01 release of the Open DELTA suite.
+
+==Known Problems==
+ * ISSUE 140 - PClass not implemented.
+ * ISSUE 141 - NSim not implemented.
+ * ISSUE 205 - Mac OS installer file associations don't work correctly.
+
+==DELTA Editor Release Notes==
+
+====New Features====
+None.
+ 
+====Bug Fixes====
+ * ISSUE 212 - Export directives should warn if the dataset has not been saved
+ * ISSUE 213 - Open saved DELTA (.dlt) file
+ * ISSUE 220 - scrolling corrupted in grid view if header row is resized
+ * ISSUE 243 - Deleting character states associated with a controlling character causes editing problems
+
+
+====Known Problems====
+ * ISSUE 126 - The import dialog exclusion filter doesn't seem to work correctly on Windows XP.
+ * ISSUE 127 - Opening an action set in the editor marks the data set as needing to be saved.
+ * ISSUE 134 - Pressing ESC in the attribute editor commits changes instead of cancelling them.
+
+==Intkey Release Notes==
+ 
+====New Features====
+None.
+
+====Bug Fixes====
+ * ISSUE 215 - Error "Index 13, Size 13" when running input file
+ * ISSUE 216 - Text from intkey OUTPUT directives appears in output file in incorrect order
+ * ISSUE 224 - Newlines and semicolons in Intkey dataset titles cause problems with preferences
+ * ISSUE 230 - Some intkey datasets fail to load with a nullpointerexception. 
+
+
+====Known Problems====
+ * ISSUE 156 - Attempting to view character images when there are none causes issues in Intkey
+ * ISSUE 163 - Double click issues in Intkey
+ * ISSUE 167 - Font size in RTF reports
+ * ISSUE 169 - Hanging styles should be used in windows displaying hierarchical information
+ * ISSUE 170 - Integer values are sometimes displayed with a decimal point
+ * ISSUE 174 - When there is more than 1 level in a menu, the pop-up help is obscured by the next level
+ * ISSUE 178 - Cannot select states, characters, taxa using the keyboard
+ * ISSUE 179 - Cannot select from keywords and lists simultaneously
+ * ISSUE 183 - The character-notes window should be positioned away from the underlying dialog when possible
+ * ISSUE 187 - When any state-selection window is canceled, or a state-selection text window is closed, the focus should move to the next character
+ * ISSUE 192 - Should be able to selection multiple items with single clicks in state selection windows.
+ * ISSUE 200 - Popup windows have no options for maximizing or minimizing
+ * ISSUE 204 - RTF renderer does not centre text in some circumstances
+
+
+==CONFOR Release Notes==
+
+====Bug Fixes====
+ * ISSUE 218 - Incorrect formatting in tonatr output
+ * ISSUE 225 - tokey not excluding characters
+ * ISSUE 226 - tokey writing incorrect values for item abundances
+ * ISSUE 242 - ToInt in some cases writes character values to the wrong items
+
+==KEY Release Notes==
+
+====Bug Fixes====
+ * ISSUE 227 - KEY fails to open dataset
+ * ISSUE 231 - Formatting errors with taxon names in tabulated KEY output
+ * ISSUE 229 - Open DELTA produces different KEY than original
+
 = Release 1.0 =
 
 This is the 1.0 release of the Open DELTA suite.
