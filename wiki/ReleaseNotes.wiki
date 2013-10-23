@@ -18,6 +18,7 @@ None.
 ====Bug Fixes====
  * ISSUE 212 - Export directives should warn if the dataset has not been saved
  * ISSUE 213 - Open saved DELTA (.dlt) file
+ * ISSUE 220 - scrolling corrupted in grid view if header row is resized
  * ISSUE 243 - Deleting character states associated with a controlling character causes editing problems
 
 
@@ -26,7 +27,6 @@ None.
  * ISSUE 127 - Opening an action set in the editor marks the data set as needing to be saved.
  * ISSUE 134 - Pressing ESC in the attribute editor commits changes instead of cancelling them.
  * ISSUE 214 - Missing keyboard shortcuts from DELTA editors
- * ISSUE 220 - scrolling corrupted in grid view if header row is resized
  * ISSUE 222 - Coding an overlapping range in a directive can result in strange output
  * ISSUE 223 - Errors in font size conversion in the DELTA Editor
  * ISSUE 228 - Default "Centre in box" preference not respected by the image editor
