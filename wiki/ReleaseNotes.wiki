@@ -18,7 +18,6 @@ None.
 ====Bug Fixes====
  * ISSUE 212 - Export directives should warn if the dataset has not been saved
  * ISSUE 213 - Open saved DELTA (.dlt) file
- * ISSUE 220 - scrolling corrupted in grid view if header row is resized
  * ISSUE 243 - Deleting character states associated with a controlling character causes editing problems
 
 
@@ -26,6 +25,18 @@ None.
  * ISSUE 126 - The import dialog exclusion filter doesn't seem to work correctly on Windows XP.
  * ISSUE 127 - Opening an action set in the editor marks the data set as needing to be saved.
  * ISSUE 134 - Pressing ESC in the attribute editor commits changes instead of cancelling them.
+ * ISSUE 214 - Missing keyboard shortcuts from DELTA editors
+ * ISSUE 220 - scrolling corrupted in grid view if header row is resized
+ * ISSUE 222 - Coding an overlapping range in a directive can result in strange output
+ * ISSUE 223 - Errors in font size conversion in the DELTA Editor
+ * ISSUE 228 - Default "Centre in box" preference not respected by the image editor
+ * ISSUE 232 - Increase the size of the output window in Action Sets and make abnormal termination more prominent.
+ * ISSUE 233 - no scroll bar for states in grid view
+ * ISSUE 234 - unable to reopen dlt file
+ * ISSUE 236 - Hardcoding implicit state fails in DELTA editor
+ * ISSUE 237 - Character descriptions not matching in nexus files (+ two other issues)
+ * ISSUE 238 - Variant attributes not importing correctly
+ * ISSUE 239 - Impossible to rectify some errors in delta editor within open delta
  * ISSUE 244 - Various DELTA Editor issues reported by Mike Dallwitz via DELTA-L 
 
 ==Intkey Release Notes==
@@ -54,7 +65,7 @@ None.
  * ISSUE 192 - Should be able to selection multiple items with single clicks in state selection windows.
  * ISSUE 200 - Popup windows have no options for maximizing or minimizing
  * ISSUE 204 - RTF renderer does not centre text in some circumstances
-
+ * ISSUE 217 - Cannot append output to multiple files in Intkey
 
 ==CONFOR Release Notes==
 
@@ -72,6 +83,12 @@ None.
  * ISSUE 139 - INSERT UNCODED ATTRIBUTES not implemented
  * USE LANGUAGE not implemented
  * ALTERNATE LANGUAGES not implemented
+ * ISSUE 219 - EXCLUDE CHARACTERS directive corrupts
+ * ISSUE 221 - Omitted prefix due to LINK CHARACTERS not the same as CONFOR in some circumstances
+ * ISSUE 235 - confor tonex not producing correct Nexus file
+ * ISSUE 240 - inability to edit directive files
+ * ISSUE 241 - confor tonatsr generates individual .rtf files that will not display in Open-Delta Intkey
+
 
 ==KEY Release Notes==
 
