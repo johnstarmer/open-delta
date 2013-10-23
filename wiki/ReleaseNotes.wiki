@@ -66,6 +66,12 @@ None.
 
 ====Known Issues====
  * ISSUE 245 - Various CONFOR issues reported by Mike Dallwitz via DELTA-L 
+ * ISSUE 136 - page break directives not implemented (NEW LISTING PAGE, NEW PRINT PAGE, PAGE LENGTH)
+ * ISSUE 137 - DATA COMPRESSION not implemented
+ * ISSUE 138 - CHINESE FORMAT not implemented
+ * ISSUE 139 - INSERT UNCODED ATTRIBUTES not implemented
+ * USE LANGUAGE not implemented
+ * ALTERNATE LANGUAGES not implemented
 
 ==KEY Release Notes==
 
