@@ -26,6 +26,7 @@ None.
  * ISSUE 126 - The import dialog exclusion filter doesn't seem to work correctly on Windows XP.
  * ISSUE 127 - Opening an action set in the editor marks the data set as needing to be saved.
  * ISSUE 134 - Pressing ESC in the attribute editor commits changes instead of cancelling them.
+ * ISSUE 244 - Various DELTA Editor issues reported by Mike Dallwitz via DELTA-L 
 
 ==Intkey Release Notes==
  
@@ -62,6 +63,9 @@ None.
  * ISSUE 225 - tokey not excluding characters
  * ISSUE 226 - tokey writing incorrect values for item abundances
  * ISSUE 242 - ToInt in some cases writes character values to the wrong items
+
+====Known Issues====
+ * ISSUE 245 -  * ISSUE 244 - Various CONFOR issues reported by Mike Dallwitz via DELTA-L 
 
 ==KEY Release Notes==
 
