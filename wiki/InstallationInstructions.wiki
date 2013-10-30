@@ -47,7 +47,7 @@ on earlier versions of Windows.
  # Download  [http://open-delta.googlecode.com/files/open-delta-1.0.dmg open-delta-1.0.dmg] to your computer.
  # Double click on the file in the Finder application.
  # In the window that opens, drag the "Open DELTA" folder into the "Applications" folder.
- # If you are using OS X 10.8 you may encounter an error ""Delta Editor" can't be opened because it is from an unidentified developer".  If you encounter this error you must either use one of the other distributions or change your security preferences (System Preferences->Security & Privacy -> Allow application downloaded from: Anywhere).  Please be aware of the implications of changing your security preferences if you decide to do so - this is intended for informational purposes and is not a recommendation.   
+ # If you are using OS X 10.8 you may encounter an error ""Delta Editor" can't be opened because it is from an unidentified developer".  If you encounter this error, you can hold down the "control" key before clicking on the Application to be presented with a different dialog that allows you to proceed.   
  * Please note there is a bug in the installer that prevents the file associations from working.*  See ISSUE 205 for more information.
 
 
