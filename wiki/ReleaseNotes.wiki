@@ -1,6 +1,13 @@
 #summary Open Delta release notes.
 #labels releasenotes
 
+= Release 1.02 =
+This is the 1.01 release of the Open DELTA suite.
+
+====Bug Fixes====
+ * ISSUE 236 - Hardcoding implicit state fails
+ * 
+
 = Release 1.01 =
 
 This is the 1.01 release of the Open DELTA suite.
