@@ -16,7 +16,7 @@ Currently we distribute the Open DELTA software as either a .zip/.tar.gz archive
 
 ===If you have a Java 6 or 7 runtime environment installed===
 
- # Download and run [http://downloads.ala.org.au/admin/editProjectArtifact?artifactId=13]
+ # Download and run [http://downloads.ala.org.au/p/Open%20DELTA/open-delta-1.02-Installer-NOJRE.exe]
 
 ===If you do not have a Java 6 or 7 runtime environment installed or do not know if you have a Java 6 or 7 runtime installed===
  
