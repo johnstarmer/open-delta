@@ -2,11 +2,17 @@
 #labels releasenotes
 
 = Release 1.02 =
-This is the 1.01 release of the Open DELTA suite.
+This is the 1.02 release of the Open DELTA suite.
+
+====New Features====
+
+The Windows installer is now bundled with the Java 1.7.0_u55 JRE.
 
 ====Bug Fixes====
  * ISSUE 236 - Hardcoding implicit state fails
- * 
+ * ISSUE 250 - Intkey unable to open some files form crustacea.net
+ * ISSUE 251 - Inconsistent taxon highlighting after character deletion.
+
 
 = Release 1.01 =
 
